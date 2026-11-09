@@ -1,0 +1,309 @@
+{
+ "prereg": "preregistrations/exp47-N_noise_stress_preregistration_v1.md",
+ "stage": "stage 3 minimal probe (pre-registration section 4): SSL encoders RE-pretrained on the noisy unlabelled pool each fold may see; N7's precondition was met in stage 1",
+ "protocol": "folds, noise seeds/magnitudes, arm lists, encoder architecture, SSL_EPOCHS and SEED are identical to stages 1-2 and to the clean Part C run - only the representation source changes; ssl cache cleared per fold so no cell can inherit another cell's embedding; leak guard raises if an encoder sees its fold's test rows",
+ "cells_requested": [
+  "clean/0.0/matched",
+  "iso/2.0/matched",
+  "iso/2.0/shift"
+ ],
+ "kinds": [
+  "vicreg",
+  "barlow",
+  "randinit"
+ ],
+ "ssl_epochs": 80,
+ "ssl_seed": 0,
+ "models_T1": [
+  "lda",
+  "logit",
+  "knn",
+  "gbdt"
+ ],
+ "models_T2": [
+  "gbdt",
+  "nls_cal",
+  "dictargmin"
+ ],
+ "torch_version": "2.15.0+cu132",
+ "torch_device": "cuda",
+ "cuda_available": true,
+ "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+ "n_folds_limit": null,
+ "window": [
+  900.0,
+  1800.0
+ ],
+ "seed_base": 1000,
+ "n_spectra": 450,
+ "n_channels": 933,
+ "cells": [
+  {
+   "family": "clean",
+   "k": 0.0,
+   "regime": "matched",
+   "n_folds": 5,
+   "minutes": 10.845,
+   "noise_rms_per_channel": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "fold_errors": [],
+   "T1": {
+    "ssl_vicreg": {
+     "lda": 0.862,
+     "logit": 0.791,
+     "knn": 0.753,
+     "gbdt": 0.811
+    },
+    "ssl_barlow": {
+     "lda": 0.802,
+     "logit": 0.489,
+     "knn": 0.545,
+     "gbdt": 0.647
+    },
+    "ssl_randinit": {
+     "lda": 0.869,
+     "logit": 0.564,
+     "knn": 0.447,
+     "gbdt": 0.64
+    }
+   },
+   "T1_spread": {
+    "ssl_vicreg": {
+     "lda": 0.044,
+     "logit": 0.069,
+     "knn": 0.069,
+     "gbdt": 0.045
+    },
+    "ssl_barlow": {
+     "lda": 0.081,
+     "logit": 0.085,
+     "knn": 0.062,
+     "gbdt": 0.04
+    },
+    "ssl_randinit": {
+     "lda": 0.057,
+     "logit": 0.043,
+     "knn": 0.038,
+     "gbdt": 0.051
+    }
+   },
+   "T2": {
+    "ssl_vicreg": {
+     "gbdt": 0.0,
+     "nls_cal": 0.06,
+     "dictargmin": 0.02
+    },
+    "ssl_barlow": {
+     "gbdt": 0.0,
+     "nls_cal": 0.07,
+     "dictargmin": 0.02
+    },
+    "ssl_randinit": {
+     "gbdt": 0.02,
+     "nls_cal": 0.0,
+     "dictargmin": 0.0
+    }
+   },
+   "T2_micro": {
+    "ssl_vicreg": {
+     "gbdt": 0.435,
+     "nls_cal": 0.459,
+     "dictargmin": 0.396
+    },
+    "ssl_barlow": {
+     "gbdt": 0.184,
+     "nls_cal": 0.305,
+     "dictargmin": 0.298
+    },
+    "ssl_randinit": {
+     "gbdt": 0.204,
+     "nls_cal": 0.377,
+     "dictargmin": 0.29
+    }
+   }
+  },
+  {
+   "family": "iso",
+   "k": 2.0,
+   "regime": "matched",
+   "n_folds": 5,
+   "minutes": 10.459,
+   "noise_rms_per_channel": [
+    0.202,
+    0.204,
+    0.203,
+    0.204,
+    0.185
+   ],
+   "fold_errors": [],
+   "T1": {
+    "ssl_vicreg": {
+     "lda": 0.3,
+     "logit": 0.269,
+     "knn": 0.224,
+     "gbdt": 0.267
+    },
+    "ssl_barlow": {
+     "lda": 0.224,
+     "logit": 0.262,
+     "knn": 0.262,
+     "gbdt": 0.3
+    },
+    "ssl_randinit": {
+     "lda": 0.269,
+     "logit": 0.273,
+     "knn": 0.285,
+     "gbdt": 0.316
+    }
+   },
+   "T1_spread": {
+    "ssl_vicreg": {
+     "lda": 0.054,
+     "logit": 0.049,
+     "knn": 0.012,
+     "gbdt": 0.019
+    },
+    "ssl_barlow": {
+     "lda": 0.042,
+     "logit": 0.015,
+     "knn": 0.048,
+     "gbdt": 0.034
+    },
+    "ssl_randinit": {
+     "lda": 0.066,
+     "logit": 0.044,
+     "knn": 0.026,
+     "gbdt": 0.049
+    }
+   },
+   "T2": {
+    "ssl_vicreg": {
+     "gbdt": 0.0,
+     "nls_cal": 0.05,
+     "dictargmin": 0.05
+    },
+    "ssl_barlow": {
+     "gbdt": 0.0,
+     "nls_cal": 0.02,
+     "dictargmin": 0.0
+    },
+    "ssl_randinit": {
+     "gbdt": 0.0,
+     "nls_cal": 0.0,
+     "dictargmin": 0.01
+    }
+   },
+   "T2_micro": {
+    "ssl_vicreg": {
+     "gbdt": 0.127,
+     "nls_cal": 0.397,
+     "dictargmin": 0.412
+    },
+    "ssl_barlow": {
+     "gbdt": 0.113,
+     "nls_cal": 0.283,
+     "dictargmin": 0.305
+    },
+    "ssl_randinit": {
+     "gbdt": 0.204,
+     "nls_cal": 0.315,
+     "dictargmin": 0.275
+    }
+   }
+  },
+  {
+   "family": "iso",
+   "k": 2.0,
+   "regime": "shift",
+   "n_folds": 5,
+   "minutes": 17.968,
+   "noise_rms_per_channel": [
+    0.203,
+    0.204,
+    0.203,
+    0.204,
+    0.184
+   ],
+   "fold_errors": [],
+   "T1": {
+    "ssl_vicreg": {
+     "lda": 0.125,
+     "logit": 0.206,
+     "knn": 0.213,
+     "gbdt": 0.185
+    },
+    "ssl_barlow": {
+     "lda": 0.098,
+     "logit": 0.158,
+     "knn": 0.207,
+     "gbdt": 0.155
+    },
+    "ssl_randinit": {
+     "lda": 0.091,
+     "logit": 0.154,
+     "knn": 0.229,
+     "gbdt": 0.171
+    }
+   },
+   "T1_spread": {
+    "ssl_vicreg": {
+     "lda": 0.048,
+     "logit": 0.036,
+     "knn": 0.045,
+     "gbdt": 0.017
+    },
+    "ssl_barlow": {
+     "lda": 0.031,
+     "logit": 0.053,
+     "knn": 0.047,
+     "gbdt": 0.042
+    },
+    "ssl_randinit": {
+     "lda": 0.026,
+     "logit": 0.019,
+     "knn": 0.034,
+     "gbdt": 0.026
+    }
+   },
+   "T2": {
+    "ssl_vicreg": {
+     "gbdt": 0.01,
+     "nls_cal": 0.04,
+     "dictargmin": 0.0
+    },
+    "ssl_barlow": {
+     "gbdt": 0.0,
+     "nls_cal": 0.01,
+     "dictargmin": 0.01
+    },
+    "ssl_randinit": {
+     "gbdt": 0.0,
+     "nls_cal": 0.0,
+     "dictargmin": 0.01
+    }
+   },
+   "T2_micro": {
+    "ssl_vicreg": {
+     "gbdt": 0.146,
+     "nls_cal": 0.356,
+     "dictargmin": 0.306
+    },
+    "ssl_barlow": {
+     "gbdt": 0.063,
+     "nls_cal": 0.363,
+     "dictargmin": 0.299
+    },
+    "ssl_randinit": {
+     "gbdt": 0.023,
+     "nls_cal": 0.298,
+     "dictargmin": 0.18
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+stage-1 cells: 13/13   stage-2 cells: 13/13
+
+## N1  sub family, whitened arm minus raw arm on T1, two readings
+  clean reference: LDA gap +0.000   T1max gap +0.000
+  [matched] k=2: LDA gap +0.009  T1max gap +0.058   (white lda 0.947 raw lda 0.938 | white max 0.996 raw max 0.938)
+  [matched] k=10: LDA gap -0.498  T1max gap +0.007   (white lda 0.491 raw lda 0.989 | white max 0.996 raw max 0.989)
+  [matched] N1 on LDA: gain>=clean False, not falling with k False => not triggered
+  [matched] N1 on T1max: gain>=clean True, not falling with k False => not triggered
+  [shift] k=2: LDA gap +0.000  T1max gap +0.000   (white lda 0.996 raw lda 0.996 | white max 0.996 raw max 0.996)
+  [shift] k=10: LDA gap -0.005  T1max gap +0.000   (white lda 0.991 raw lda 0.996 | white max 0.996 raw max 0.996)
+  [shift] N1 on LDA: gain>=clean False, not falling with k False => not triggered
+  [shift] N1 on T1max: gain>=clean True, not falling with k True => TRIGGERED
+
+## N2  whitened quotable NLS (exact set) vs raw, at k=2
+  clean white nls_cal = 0.61 (pre-registration quoted the 0.88 binary-tier figure from the cross-fold-pooled headline; the same-fold per-fold-path reference is 0.61)
+  iso/k=2/matched: white 0.02 vs raw 0.09 (white-raw -0.070)
+  iso/k=2/shift: white 0.01 vs raw 0.08 (white-raw -0.070)
+  drift/k=2/matched: white 0.61 vs raw 0.06 (white-raw +0.550)
+  drift/k=2/shift: white 0.56 vs raw 0.04 (white-raw +0.520)
+  N2 TRIGGERED: iso/matched, iso/shift
+
+## N3  drift family at k=2, abstention gate
+  [matched] ours_gate: adult AUROC 0.958 vs 0.952 (+0.006), composite coverage 0.996
+  [matched] ours_gate_abs: adult AUROC 0.961 vs 0.957 (+0.004), composite coverage 0.996
+  [shift] ours_gate: adult AUROC 0.942 vs 0.952 (-0.010), composite coverage 0.985
+  [shift] ours_gate_abs: adult AUROC 0.95 vs 0.957 (-0.007), composite coverage 0.988
+
+## N4  coverage floor 0.85 (ours_gate, composite column)
+  matched breaches: none
+  shift breaches:   ['sub/k=10 cov=0.465 size=12.523', 'drift/k=10 cov=0.841 size=1.303']
+  N4 TRIGGERED
+  degenerate-set check (coverage = 1.0 with mean_size = full dictionary):
+    iso/k=2/shift: cov 1.000 but mean set size 64.0 (out of 64 candidates), top1_accepted 0.037
+    iso/k=10/shift: cov 1.000 but mean set size 64.0 (out of 64 candidates), top1_accepted 0.037
+
+## N5  ours_gate - knn_all_white adult AUROC (clean reference gap = +0.011)
+  [matched/iso] k=2: +0.058  k=10: +0.040
+  [matched/sub] k=2: -0.009  k=10: -0.007
+  [matched/drift] k=2: +0.012  k=10: +0.011
+  [shift/iso] k=2: +0.057  k=10: -0.010
+  [shift/sub] k=2: +0.014  k=10: +0.032   | monotone rising, endpoint >0.02
+  [shift/drift] k=2: +0.012  k=10: +0.136   | monotone rising, endpoint >0.02
+
+## N6  prior-free detectors vs the gate on the composite column (iso / drift)
+  no detector both rises above its own clean AUROC and exceeds the gate => N6's conjunction is NOT met on composite AUROC
+  exceed-only rows (not N6 as written, but they weaken §3.7):
+  [matched/iso/k=2] ae_resid: AUROC 0.813 (clean 0.928) vs gate 0.657; orphan flag 0.48 vs gate 0.19, inset flag 0.077 vs gate 0.043   <- exceeds the gate but does NOT rise with k
+  [matched/iso/k=10] ae_resid: AUROC 0.554 (clean 0.928) vs gate 0.545; orphan flag 0.21 vs gate 0.16, inset flag 0.117 vs gate 0.097   <- exceeds the gate but does NOT rise with k
+  [matched/iso/k=2] hotelling_t2: AUROC 0.817 (clean 0.885) vs gate 0.657; orphan flag 0.47 vs gate 0.19, inset flag 0.11 vs gate 0.043   <- exceeds the gate but does NOT rise with k
+  [matched/iso/k=2] knn_all_raw: AUROC 0.665 (clean 0.774) vs gate 0.657; orphan flag 0.12 vs gate 0.19, inset flag 0.063 vs gate 0.043   <- exceeds the gate but does NOT rise with k
+  [matched/iso/k=2] knn_all_white: AUROC 0.700 (clean 0.896) vs gate 0.657; orphan flag 0.24 vs gate 0.19, inset flag 0.07 vs gate 0.043   <- exceeds the gate but does NOT rise with k
+  [matched/iso/k=10] knn_all_white: AUROC 0.550 (clean 0.896) vs gate 0.545; orphan flag 0.16 vs gate 0.16, inset flag 0.117 vs gate 0.097   <- exceeds the gate but does NOT rise with k
+  [matched/iso/k=2] knn_pure_raw: AUROC 0.704 (clean 0.732) vs gate 0.657; orphan flag 0.03 vs gate 0.19, inset flag 0.11 vs gate 0.043   <- exceeds the gate but does NOT rise with k
+  [matched/iso/k=2] maha_white: AUROC 0.828 (clean 0.909) vs gate 0.657; orphan flag 0.62 vs gate 0.19, inset flag 0.127 vs gate 0.043   <- exceeds the gate but does NOT rise with k
+  [matched/iso/k=2] spe_q: AUROC 0.691 (clean 0.817) vs gate 0.657; orphan flag 0.19 vs gate 0.19, inset flag 0.09 vs gate 0.043   <- exceeds the gate but does NOT rise with k
+  [shift/iso/k=2] ae_resid: AUROC 0.786 (clean 0.928) vs gate 0.463; orphan flag 1.0 vs gate 0.0, inset flag 1.0 vs gate 0.0   <- exceeds the gate but does NOT rise with k
+  [shift/iso/k=10] ae_resid: AUROC 0.549 (clean 0.928) vs gate 0.494; orphan flag 1.0 vs gate 0.0, inset flag 1.0 vs gate 0.0   <- exceeds the gate but does NOT rise with k
+  [shift/iso/k=2] d2m0: AUROC 0.529 (clean 0.539) vs gate 0.463; orphan flag 0.61 vs gate 0.0, inset flag 0.527 vs gate 0.0   <- exceeds the gate but does NOT rise with k
+  [shift/iso/k=10] d2m0: AUROC 0.522 (clean 0.539) vs gate 0.494; orphan flag 1.0 vs gate 0.0, inset flag 1.0 vs gate 0.0   <- exceeds the gate but does NOT rise with k
+  [shift/iso/k=2] hotelling_t2: AUROC 0.753 (clean 0.885) vs gate 0.463; orphan flag 0.71 vs gate 0.0, inset flag 0.353 vs gate 0.0   <- exceeds the gate but does NOT rise with k
+  N6 not triggered on AUROC; see exceed-only rows
+
+## N7  premise: does noise break the T1 ceiling (best balanced accuracy < 0.90)?
+  premise met: iso/k=2/matched best T1 = 0.609
+  premise met: iso/k=10/matched best T1 = 0.262
+  premise met: iso/k=2/shift best T1 = 0.831
+  premise met: iso/k=10/shift best T1 = 0.418
+  N7 itself needs the SSL representation arm (stage 3, GPU, author's call) - NOT RUN.

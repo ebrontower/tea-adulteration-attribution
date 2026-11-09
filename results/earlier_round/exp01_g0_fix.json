@@ -1,0 +1,593 @@
+{
+ "runs": {
+  "D1": {
+   "name": "D1",
+   "n_train": 297,
+   "n_test": 55,
+   "n_groups": 55,
+   "region": [
+    900.695,
+    1793.675
+   ],
+   "atr": {
+    "factor_range_in_region": [
+     0.5557,
+     1.1103
+    ],
+    "mean_abs_delta_A": 0.00702
+   },
+   "is_ir": true,
+   "tuned_hyper": {
+    "dct_10": 0.04911128472049152,
+    "pca_5": 0.00028085444303398784,
+    "svt_0.2": 0.0003930662112478863,
+    "fista_0.01": 0.04966388026917915
+   },
+   "rmse": {
+    "interp_spline": {
+     "mean": 0.01275,
+     "sd": 0.002285
+    },
+    "interp_pchip": {
+     "mean": 0.01923,
+     "sd": 0.002811
+    },
+    "dct_10": {
+     "mean": 0.033374,
+     "sd": 0.00819
+    },
+    "pca_5": {
+     "mean": 0.000299,
+     "sd": 7e-06
+    },
+    "svt_0.2": {
+     "mean": 0.000445,
+     "sd": 7e-06
+    },
+    "fista_0.01": {
+     "mean": 0.042745,
+     "sd": 0.006031
+    },
+    "ctx_cnn": {
+     "mean": 0.019251,
+     "sd": 0.012712
+    },
+    "mae_s0": {
+     "mean": 0.032491,
+     "sd": 0.003366
+    },
+    "mae_s1": {
+     "mean": 0.031369,
+     "sd": 0.003171
+    },
+    "mae_s2": {
+     "mean": 0.030818,
+     "sd": 0.003328
+    },
+    "mae_mean": {
+     "mean": 0.031559,
+     "sd": 0.003288
+    }
+   },
+   "best_baseline": "pca_5",
+   "mae_rmse": 0.031559,
+   "g0a": {
+    "reduction_vs_best_baseline": -104.5485,
+    "pass_50pct": false
+   },
+   "g0b": {
+    "spearman_rho": -0.0193,
+    "low_freq_frac_mae": 0.9162,
+    "low_freq_frac_base": 0.9208,
+    "peak_region_ratio": 171.2609,
+    "verdict": "分布不同构（通过）"
+   },
+   "elapsed_sec": 533.9
+  },
+  "D2": {
+   "name": "D2",
+   "n_train": 350,
+   "n_test": 55,
+   "n_groups": 55,
+   "region": [
+    900.695,
+    1793.675
+   ],
+   "atr": {
+    "factor_range_in_region": [
+     0.5557,
+     1.1103
+    ],
+    "mean_abs_delta_A": 0.01879
+   },
+   "is_ir": true,
+   "tuned_hyper": {
+    "dct_10": 0.027271578188552425,
+    "pca_5": 0.00447586420511888,
+    "svt_0.2": 0.007256207685872514,
+    "fista_0.01": 0.0661359723816888
+   },
+   "rmse": {
+    "interp_spline": {
+     "mean": 0.014441,
+     "sd": 0.012079
+    },
+    "interp_pchip": {
+     "mean": 0.01451,
+     "sd": 0.012031
+    },
+    "dct_10": {
+     "mean": 0.024265,
+     "sd": 0.015377
+    },
+    "pca_5": {
+     "mean": 0.005868,
+     "sd": 0.000286
+    },
+    "svt_0.2": {
+     "mean": 0.010353,
+     "sd": 0.000707
+    },
+    "fista_0.01": {
+     "mean": 0.07269,
+     "sd": 0.005741
+    },
+    "ctx_cnn": {
+     "mean": 0.011489,
+     "sd": 0.000985
+    },
+    "mae_s0": {
+     "mean": 0.042917,
+     "sd": 0.003718
+    },
+    "mae_s1": {
+     "mean": 0.042337,
+     "sd": 0.003664
+    },
+    "mae_s2": {
+     "mean": 0.042006,
+     "sd": 0.003707
+    },
+    "mae_mean": {
+     "mean": 0.04242,
+     "sd": 0.003696
+    }
+   },
+   "best_baseline": "pca_5",
+   "mae_rmse": 0.04242,
+   "g0a": {
+    "reduction_vs_best_baseline": -6.229,
+    "pass_50pct": false
+   },
+   "g0b": {
+    "spearman_rho": -0.1792,
+    "low_freq_frac_mae": 0.9261,
+    "low_freq_frac_base": 0.9678,
+    "peak_region_ratio": 71.6021,
+    "verdict": "分布不同构（通过）"
+   },
+   "elapsed_sec": 302.5
+  },
+  "D3": {
+   "name": "D3",
+   "n_train": 358,
+   "n_test": 55,
+   "n_groups": 55,
+   "region": [
+    900.695,
+    1793.675
+   ],
+   "atr": {
+    "factor_range_in_region": [
+     0.5557,
+     1.1103
+    ],
+    "mean_abs_delta_A": 0.04544
+   },
+   "is_ir": true,
+   "tuned_hyper": {
+    "dct_10": 0.02591368453516895,
+    "pca_5": 0.001012263810504083,
+    "svt_0.2": 0.0015601702494454843,
+    "fista_0.01": 0.02510469795523974
+   },
+   "rmse": {
+    "interp_spline": {
+     "mean": 0.00906,
+     "sd": 0.005248
+    },
+    "interp_pchip": {
+     "mean": 0.01278,
+     "sd": 0.007843
+    },
+    "dct_10": {
+     "mean": 0.019652,
+     "sd": 0.006149
+    },
+    "pca_5": {
+     "mean": 0.000782,
+     "sd": 0.000219
+    },
+    "svt_0.2": {
+     "mean": 0.001464,
+     "sd": 0.000261
+    },
+    "fista_0.01": {
+     "mean": 0.02299,
+     "sd": 0.007132
+    },
+    "ctx_cnn": {
+     "mean": 0.013198,
+     "sd": 0.002275
+    },
+    "mae_s0": {
+     "mean": 0.019783,
+     "sd": 0.004194
+    },
+    "mae_s1": {
+     "mean": 0.019191,
+     "sd": 0.00391
+    },
+    "mae_s2": {
+     "mean": 0.019236,
+     "sd": 0.00392
+    },
+    "mae_mean": {
+     "mean": 0.019403,
+     "sd": 0.004008
+    }
+   },
+   "best_baseline": "pca_5",
+   "mae_rmse": 0.019403,
+   "g0a": {
+    "reduction_vs_best_baseline": -23.812,
+    "pass_50pct": false
+   },
+   "g0b": {
+    "spearman_rho": 0.02,
+    "low_freq_frac_mae": 0.894,
+    "low_freq_frac_base": 0.9269,
+    "peak_region_ratio": 130.7822,
+    "verdict": "分布不同构（通过）"
+   },
+   "elapsed_sec": 186.8
+  },
+  "D7w": {
+   "name": "D7w",
+   "n_train": 520,
+   "n_test": 130,
+   "n_groups": 650,
+   "region": [
+    900.24584,
+    1789.0781
+   ],
+   "atr": {
+    "factor_range_in_region": [
+     0.5558,
+     1.1108
+    ],
+    "mean_abs_delta_A": 0.00487
+   },
+   "is_ir": true,
+   "tuned_hyper": {
+    "dct_10": 0.004711971461409484,
+    "pca_5": 0.004579851558223801,
+    "svt_0.2": 0.006002717155043169,
+    "fista_0.01": 0.011582551726483028
+   },
+   "rmse": {
+    "interp_spline": {
+     "mean": 0.014135,
+     "sd": 0.002148
+    },
+    "interp_pchip": {
+     "mean": 0.004975,
+     "sd": 0.002168
+    },
+    "dct_10": {
+     "mean": 0.004334,
+     "sd": 0.000935
+    },
+    "pca_5": {
+     "mean": 0.005581,
+     "sd": 0.001639
+    },
+    "svt_0.2": {
+     "mean": 0.007342,
+     "sd": 0.002008
+    },
+    "fista_0.01": {
+     "mean": 0.015243,
+     "sd": 0.001097
+    },
+    "ctx_cnn": {
+     "mean": 0.006195,
+     "sd": 0.000878
+    },
+    "mae_s0": {
+     "mean": 0.013442,
+     "sd": 0.002204
+    },
+    "mae_s1": {
+     "mean": 0.013,
+     "sd": 0.002098
+    },
+    "mae_s2": {
+     "mean": 0.012732,
+     "sd": 0.001998
+    },
+    "mae_mean": {
+     "mean": 0.013058,
+     "sd": 0.0021
+    }
+   },
+   "best_baseline": "dct_10",
+   "mae_rmse": 0.013058,
+   "g0a": {
+    "reduction_vs_best_baseline": -2.0129,
+    "pass_50pct": false
+   },
+   "g0b": {
+    "spearman_rho": -0.1175,
+    "low_freq_frac_mae": 0.9313,
+    "low_freq_frac_base": 0.981,
+    "peak_region_ratio": 28.5559,
+    "verdict": "分布不同构（通过）"
+   },
+   "elapsed_sec": 660.0
+  },
+  "D7p": {
+   "name": "D7p",
+   "n_train": 520,
+   "n_test": 130,
+   "n_groups": 650,
+   "region": [
+    900.24584,
+    1789.0781
+   ],
+   "atr": {
+    "factor_range_in_region": [
+     0.5558,
+     1.1108
+    ],
+    "mean_abs_delta_A": 0.01248
+   },
+   "is_ir": true,
+   "tuned_hyper": {
+    "dct_10": 0.012463434507679227,
+    "pca_5": 0.0010682559595611915,
+    "svt_0.2": 0.0011445862172572306,
+    "fista_0.01": 0.03550281733192741
+   },
+   "rmse": {
+    "interp_spline": {
+     "mean": 0.014768,
+     "sd": 0.005772
+    },
+    "interp_pchip": {
+     "mean": 0.010619,
+     "sd": 0.006283
+    },
+    "dct_10": {
+     "mean": 0.009757,
+     "sd": 0.002314
+    },
+    "pca_5": {
+     "mean": 0.001045,
+     "sd": 5.7e-05
+    },
+    "svt_0.2": {
+     "mean": 0.001122,
+     "sd": 6.1e-05
+    },
+    "fista_0.01": {
+     "mean": 0.038234,
+     "sd": 0.002781
+    },
+    "ctx_cnn": {
+     "mean": 0.013378,
+     "sd": 0.005445
+    },
+    "mae_s0": {
+     "mean": 0.028226,
+     "sd": 0.004695
+    },
+    "mae_s1": {
+     "mean": 0.027325,
+     "sd": 0.004547
+    },
+    "mae_s2": {
+     "mean": 0.026985,
+     "sd": 0.004687
+    },
+    "mae_mean": {
+     "mean": 0.027512,
+     "sd": 0.004643
+    }
+   },
+   "best_baseline": "pca_5",
+   "mae_rmse": 0.027512,
+   "g0a": {
+    "reduction_vs_best_baseline": -25.3273,
+    "pass_50pct": false
+   },
+   "g0b": {
+    "spearman_rho": -0.2631,
+    "low_freq_frac_mae": 0.907,
+    "low_freq_frac_base": 0.9507,
+    "peak_region_ratio": 3767.1909,
+    "verdict": "分布不同构（通过）"
+   },
+   "elapsed_sec": 1107.3
+  },
+  "D7d": {
+   "name": "D7d",
+   "n_train": 520,
+   "n_test": 130,
+   "n_groups": 650,
+   "region": [
+    900.24584,
+    1789.0781
+   ],
+   "atr": {
+    "factor_range_in_region": [
+     0.5558,
+     1.1108
+    ],
+    "mean_abs_delta_A": 0.00991
+   },
+   "is_ir": true,
+   "tuned_hyper": {
+    "dct_10": 0.009025427311742143,
+    "pca_5": 0.007059496336921903,
+    "svt_0.2": 0.009372145203557582,
+    "fista_0.01": 0.0268035208092831
+   },
+   "rmse": {
+    "interp_spline": {
+     "mean": 0.017092,
+     "sd": 0.004182
+    },
+    "interp_pchip": {
+     "mean": 0.009167,
+     "sd": 0.004939
+    },
+    "dct_10": {
+     "mean": 0.008478,
+     "sd": 0.002716
+    },
+    "pca_5": {
+     "mean": 0.007733,
+     "sd": 0.001784
+    },
+    "svt_0.2": {
+     "mean": 0.010731,
+     "sd": 0.002374
+    },
+    "fista_0.01": {
+     "mean": 0.030081,
+     "sd": 0.002047
+    },
+    "ctx_cnn": {
+     "mean": 0.009937,
+     "sd": 0.001899
+    },
+    "mae_s0": {
+     "mean": 0.02406,
+     "sd": 0.003843
+    },
+    "mae_s1": {
+     "mean": 0.023432,
+     "sd": 0.00359
+    },
+    "mae_s2": {
+     "mean": 0.023206,
+     "sd": 0.003484
+    },
+    "mae_mean": {
+     "mean": 0.023566,
+     "sd": 0.003639
+    }
+   },
+   "best_baseline": "pca_5",
+   "mae_rmse": 0.023566,
+   "g0a": {
+    "reduction_vs_best_baseline": -2.0475,
+    "pass_50pct": false
+   },
+   "g0b": {
+    "spearman_rho": -0.3753,
+    "low_freq_frac_mae": 0.9281,
+    "low_freq_frac_base": 0.9535,
+    "peak_region_ratio": 78.6471,
+    "verdict": "分布不同构（通过）"
+   },
+   "elapsed_sec": 3284.5
+  },
+  "D8": {
+   "name": "D8",
+   "n_train": 280,
+   "n_test": 70,
+   "n_groups": 350,
+   "region": [
+    900.24088,
+    1789.06825
+   ],
+   "atr": {
+    "factor_range_in_region": [
+     0.5558,
+     1.1108
+    ],
+    "mean_abs_delta_A": 0.0138
+   },
+   "is_ir": true,
+   "tuned_hyper": {
+    "dct_10": 0.0269399387463592,
+    "pca_5": 0.015947394882484096,
+    "svt_0.2": 0.01703726912958878,
+    "fista_0.01": 0.046228267742513145
+   },
+   "rmse": {
+    "interp_spline": {
+     "mean": 0.128838,
+     "sd": 0.009801
+    },
+    "interp_pchip": {
+     "mean": 0.023652,
+     "sd": 0.004147
+    },
+    "dct_10": {
+     "mean": 0.023793,
+     "sd": 0.006336
+    },
+    "pca_5": {
+     "mean": 0.014584,
+     "sd": 0.00315
+    },
+    "svt_0.2": {
+     "mean": 0.015362,
+     "sd": 0.00368
+    },
+    "fista_0.01": {
+     "mean": 0.056988,
+     "sd": 0.004491
+    },
+    "ctx_cnn": {
+     "mean": 0.019135,
+     "sd": 0.001228
+    },
+    "mae_s0": {
+     "mean": 0.036356,
+     "sd": 0.009244
+    },
+    "mae_s1": {
+     "mean": 0.035225,
+     "sd": 0.008787
+    },
+    "mae_s2": {
+     "mean": 0.034977,
+     "sd": 0.00854
+    },
+    "mae_mean": {
+     "mean": 0.035519,
+     "sd": 0.008857
+    }
+   },
+   "best_baseline": "pca_5",
+   "mae_rmse": 0.035519,
+   "g0a": {
+    "reduction_vs_best_baseline": -1.4355,
+    "pass_50pct": false
+   },
+   "g0b": {
+    "spearman_rho": -0.3794,
+    "low_freq_frac_mae": 0.9226,
+    "low_freq_frac_base": 0.9404,
+    "peak_region_ratio": 89045330518.5784,
+    "verdict": "分布不同构（通过）"
+   },
+   "elapsed_sec": 1386.8
+  }
+ },
+ "fix": "MAE1D.forward zeroes masked patches before embedding"
+}

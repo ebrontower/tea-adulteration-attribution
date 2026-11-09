@@ -1,0 +1,1863 @@
+{
+ "window": [
+  900.0,
+  1800.0
+ ],
+ "n_channels": 631,
+ "n_spectra": 1950,
+ "duplicate_rows": 0,
+ "levels": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  6,
+  8,
+  10,
+  12,
+  15,
+  18,
+  21,
+  24
+ ],
+ "per_class": {
+  "walnut shell": 600,
+  "peanut": 600,
+  "wood dust": 600
+ },
+ "pure": 150,
+ "n_candidates": 8,
+ "alpha": 0.1,
+ "k_white": 60,
+ "k_local": 5,
+ "source": "D7w/D7p/D7d cinnamon (walnut shell, peanut, wood dust), 0-24% m/m, three independent pure sets of 50",
+ "role_sizes_per_fold": {
+  "fit": [
+   780,
+   780,
+   780,
+   780,
+   780
+  ],
+  "cal": [
+   780,
+   780,
+   780,
+   780,
+   780
+  ],
+  "test": [
+   390,
+   390,
+   390,
+   390,
+   390
+  ]
+ },
+ "geometry": {
+  "n_atoms": 3,
+  "coh_raw": 0.994,
+  "cond_raw": 550.13,
+  "corr_raw": [
+   [
+    1.0,
+    -0.897,
+    -0.882
+   ],
+   [
+    -0.897,
+    1.0,
+    0.994
+   ],
+   [
+    -0.882,
+    0.994,
+    1.0
+   ]
+  ],
+  "gauge_raw": [
+   -0.953,
+   0.988,
+   0.978
+  ],
+  "sigma_rms": 0.011876,
+  "incr_norm": [
+   0.152,
+   0.756,
+   0.495
+  ],
+  "incr_snr": [
+   12.81,
+   63.66,
+   41.67
+  ],
+  "white_a": {
+   "coh": 0.611,
+   "cond": 4.21,
+   "gauge": [
+    -0.876,
+    0.017,
+    -0.516
+   ],
+   "absmax_gauge": 0.876,
+   "evr": 0.9915,
+   "dim": 60,
+   "incr_norm": [
+    10.651,
+    6.191,
+    12.075
+   ],
+   "incr_snr": [
+    896.83,
+    521.26,
+    1016.69
+   ]
+  },
+  "white_b": {
+   "coh": 0.994,
+   "cond": 529.51,
+   "gauge": [
+    -0.951,
+    0.988,
+    0.978
+   ],
+   "absmax_gauge": 0.988,
+   "evr": 0.21101,
+   "dim": 60,
+   "incr_norm": [
+    126.781,
+    634.566,
+    416.436
+   ],
+   "incr_snr": [
+    10674.99,
+    53430.65,
+    35064.1
+   ]
+  }
+ },
+ "arms": {
+  "blocked/euclid/std": {
+   "all": {
+    "n": 1950,
+    "coverage": 0.895,
+    "size": 3.41,
+    "top1": 0.513,
+    "abstain": 0.0,
+    "accept": 0.884,
+    "accept_two": 0.875,
+    "n_accepted": 1724,
+    "coverage_acc": 0.91,
+    "size_acc": 3.73,
+    "top1_acc": 0.478
+   },
+   "by_adulterant": {
+    "walnut shell": {
+     "n": 600,
+     "coverage": 0.908,
+     "size": 2.58,
+     "top1": 0.667,
+     "abstain": 0.0,
+     "accept": 0.707,
+     "accept_two": 0.678,
+     "n_accepted": 424,
+     "coverage_acc": 0.87,
+     "size_acc": 3.23,
+     "top1_acc": 0.528
+    },
+    "peanut": {
+     "n": 600,
+     "coverage": 1.0,
+     "size": 4.08,
+     "top1": 1.0,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 1.0,
+     "size_acc": 4.08,
+     "top1_acc": 1.0
+    },
+    "wood dust": {
+     "n": 600,
+     "coverage": 0.917,
+     "size": 3.86,
+     "top1": 0.0,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 0.917,
+     "size_acc": 3.86,
+     "top1_acc": 0.0
+    }
+   },
+   "pure": {
+    "n": 150,
+    "coverage": 0.333,
+    "size": 2.33,
+    "top1": 0.0,
+    "abstain": 0.0,
+    "accept": 0.667,
+    "accept_two": 0.667,
+    "n_accepted": 100,
+    "coverage_acc": 0.5,
+    "size_acc": 3.0,
+    "top1_acc": 0.0
+   },
+   "by_level": {
+    "1-4%": {
+     "n": 600,
+     "coverage": 0.908,
+     "size": 4.24,
+     "top1": 0.333,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 0.908,
+     "size_acc": 4.24,
+     "top1_acc": 0.333
+    },
+    "6-12%": {
+     "n": 600,
+     "coverage": 1.0,
+     "size": 3.02,
+     "top1": 0.667,
+     "abstain": 0.0,
+     "accept": 0.707,
+     "accept_two": 0.678,
+     "n_accepted": 424,
+     "coverage_acc": 1.0,
+     "size_acc": 3.86,
+     "top1_acc": 0.528
+    },
+    "15-24%": {
+     "n": 600,
+     "coverage": 0.917,
+     "size": 3.25,
+     "top1": 0.667,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 0.917,
+     "size_acc": 3.25,
+     "top1_acc": 0.667
+    }
+   },
+   "q_per_fold": [
+    8.705,
+    9.238,
+    9.223,
+    9.226,
+    9.21
+   ],
+   "q_std_per_fold": [
+    0.396,
+    0.396,
+    0.396,
+    0.396,
+    0.396
+   ],
+   "tau_per_fold": [
+    7.467,
+    7.455,
+    7.48,
+    7.484,
+    7.475
+   ]
+  },
+  "blocked/euclid/norm": {
+   "all": {
+    "n": 1950,
+    "coverage": 0.906,
+    "size": 3.08,
+    "top1": 0.513,
+    "abstain": 0.0,
+    "accept": 0.884,
+    "accept_two": 0.875,
+    "n_accepted": 1724,
+    "coverage_acc": 0.922,
+    "size_acc": 3.35,
+    "top1_acc": 0.478
+   },
+   "by_adulterant": {
+    "walnut shell": {
+     "n": 600,
+     "coverage": 0.943,
+     "size": 2.61,
+     "top1": 0.667,
+     "abstain": 0.0,
+     "accept": 0.707,
+     "accept_two": 0.678,
+     "n_accepted": 424,
+     "coverage_acc": 0.92,
+     "size_acc": 3.28,
+     "top1_acc": 0.528
+    },
+    "peanut": {
+     "n": 600,
+     "coverage": 1.0,
+     "size": 2.79,
+     "top1": 1.0,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 1.0,
+     "size_acc": 2.79,
+     "top1_acc": 1.0
+    },
+    "wood dust": {
+     "n": 600,
+     "coverage": 0.917,
+     "size": 4.2,
+     "top1": 0.0,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 0.917,
+     "size_acc": 4.2,
+     "top1_acc": 0.0
+    }
+   },
+   "pure": {
+    "n": 150,
+    "coverage": 0.333,
+    "size": 1.69,
+    "top1": 0.0,
+    "abstain": 0.0,
+    "accept": 0.667,
+    "accept_two": 0.667,
+    "n_accepted": 100,
+    "coverage_acc": 0.5,
+    "size_acc": 2.03,
+    "top1_acc": 0.0
+   },
+   "by_level": {
+    "1-4%": {
+     "n": 600,
+     "coverage": 0.943,
+     "size": 3.8,
+     "top1": 0.333,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 0.943,
+     "size_acc": 3.8,
+     "top1_acc": 0.333
+    },
+    "6-12%": {
+     "n": 600,
+     "coverage": 1.0,
+     "size": 2.96,
+     "top1": 0.667,
+     "abstain": 0.0,
+     "accept": 0.707,
+     "accept_two": 0.678,
+     "n_accepted": 424,
+     "coverage_acc": 1.0,
+     "size_acc": 3.77,
+     "top1_acc": 0.528
+    },
+    "15-24%": {
+     "n": 600,
+     "coverage": 0.917,
+     "size": 2.83,
+     "top1": 0.667,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 0.917,
+     "size_acc": 2.83,
+     "top1_acc": 0.667
+    }
+   },
+   "q_per_fold": [
+    8.705,
+    9.238,
+    9.223,
+    9.226,
+    9.21
+   ],
+   "q_std_per_fold": [
+    0.396,
+    0.396,
+    0.396,
+    0.396,
+    0.396
+   ],
+   "tau_per_fold": [
+    7.467,
+    7.455,
+    7.48,
+    7.484,
+    7.475
+   ]
+  },
+  "blocked/white_a/std": {
+   "all": {
+    "n": 1950,
+    "coverage": 0.899,
+    "size": 3.91,
+    "top1": 0.964,
+    "abstain": 0.101,
+    "accept": 0.87,
+    "accept_two": 0.808,
+    "n_accepted": 1697,
+    "coverage_acc": 0.922,
+    "size_acc": 4.22,
+    "top1_acc": 0.962
+   },
+   "by_adulterant": {
+    "walnut shell": {
+     "n": 600,
+     "coverage": 0.995,
+     "size": 3.6,
+     "top1": 1.0,
+     "abstain": 0.005,
+     "accept": 0.858,
+     "accept_two": 0.858,
+     "n_accepted": 515,
+     "coverage_acc": 1.0,
+     "size_acc": 3.84,
+     "top1_acc": 1.0
+    },
+    "peanut": {
+     "n": 600,
+     "coverage": 1.0,
+     "size": 6.81,
+     "top1": 1.0,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 1.0,
+     "size_acc": 6.81,
+     "top1_acc": 1.0
+    },
+    "wood dust": {
+     "n": 600,
+     "coverage": 0.678,
+     "size": 1.28,
+     "top1": 0.967,
+     "abstain": 0.322,
+     "accept": 0.855,
+     "accept_two": 0.652,
+     "n_accepted": 513,
+     "coverage_acc": 0.743,
+     "size_acc": 1.41,
+     "top1_acc": 0.971
+    }
+   },
+   "pure": {
+    "n": 150,
+    "coverage": 1.0,
+    "size": 4.09,
+    "top1": 0.667,
+    "abstain": 0.0,
+    "accept": 0.46,
+    "accept_two": 0.46,
+    "n_accepted": 69,
+    "coverage_acc": 1.0,
+    "size_acc": 5.49,
+    "top1_acc": 0.275
+   },
+   "by_level": {
+    "1-4%": {
+     "n": 600,
+     "coverage": 0.798,
+     "size": 3.12,
+     "top1": 1.0,
+     "abstain": 0.202,
+     "accept": 0.83,
+     "accept_two": 0.698,
+     "n_accepted": 498,
+     "coverage_acc": 0.833,
+     "size_acc": 3.54,
+     "top1_acc": 1.0
+    },
+    "6-12%": {
+     "n": 600,
+     "coverage": 0.997,
+     "size": 4.53,
+     "top1": 1.0,
+     "abstain": 0.003,
+     "accept": 0.97,
+     "accept_two": 0.97,
+     "n_accepted": 582,
+     "coverage_acc": 0.998,
+     "size_acc": 4.6,
+     "top1_acc": 1.0
+    },
+    "15-24%": {
+     "n": 600,
+     "coverage": 0.878,
+     "size": 4.04,
+     "top1": 0.967,
+     "abstain": 0.122,
+     "accept": 0.913,
+     "accept_two": 0.842,
+     "n_accepted": 548,
+     "coverage_acc": 0.912,
+     "size_acc": 4.27,
+     "top1_acc": 0.973
+    }
+   },
+   "q_per_fold": [
+    0.826,
+    0.85,
+    0.85,
+    0.85,
+    0.849
+   ],
+   "q_std_per_fold": [
+    31.143,
+    31.338,
+    31.256,
+    31.231,
+    31.285
+   ],
+   "tau_per_fold": [
+    0.82,
+    0.848,
+    0.847,
+    0.847,
+    0.846
+   ]
+  },
+  "blocked/white_a/norm": {
+   "all": {
+    "n": 1950,
+    "coverage": 0.912,
+    "size": 1.37,
+    "top1": 0.964,
+    "abstain": 0.085,
+    "accept": 0.87,
+    "accept_two": 0.808,
+    "n_accepted": 1697,
+    "coverage_acc": 0.999,
+    "size_acc": 1.52,
+    "top1_acc": 0.962
+   },
+   "by_adulterant": {
+    "walnut shell": {
+     "n": 600,
+     "coverage": 0.912,
+     "size": 1.05,
+     "top1": 1.0,
+     "abstain": 0.088,
+     "accept": 0.858,
+     "accept_two": 0.858,
+     "n_accepted": 515,
+     "coverage_acc": 1.0,
+     "size_acc": 1.16,
+     "top1_acc": 1.0
+    },
+    "peanut": {
+     "n": 600,
+     "coverage": 1.0,
+     "size": 1.94,
+     "top1": 1.0,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 1.0,
+     "size_acc": 1.94,
+     "top1_acc": 1.0
+    },
+    "wood dust": {
+     "n": 600,
+     "coverage": 0.915,
+     "size": 1.23,
+     "top1": 0.967,
+     "abstain": 0.077,
+     "accept": 0.855,
+     "accept_two": 0.652,
+     "n_accepted": 513,
+     "coverage_acc": 0.996,
+     "size_acc": 1.36,
+     "top1_acc": 0.971
+    }
+   },
+   "pure": {
+    "n": 150,
+    "coverage": 0.553,
+    "size": 0.89,
+    "top1": 0.667,
+    "abstain": 0.447,
+    "accept": 0.46,
+    "accept_two": 0.46,
+    "n_accepted": 69,
+    "coverage_acc": 1.0,
+    "size_acc": 1.72,
+    "top1_acc": 0.275
+   },
+   "by_level": {
+    "1-4%": {
+     "n": 600,
+     "coverage": 0.905,
+     "size": 1.34,
+     "top1": 1.0,
+     "abstain": 0.095,
+     "accept": 0.83,
+     "accept_two": 0.698,
+     "n_accepted": 498,
+     "coverage_acc": 1.0,
+     "size_acc": 1.53,
+     "top1_acc": 1.0
+    },
+    "6-12%": {
+     "n": 600,
+     "coverage": 0.982,
+     "size": 1.48,
+     "top1": 1.0,
+     "abstain": 0.018,
+     "accept": 0.97,
+     "accept_two": 0.97,
+     "n_accepted": 582,
+     "coverage_acc": 1.0,
+     "size_acc": 1.51,
+     "top1_acc": 1.0
+    },
+    "15-24%": {
+     "n": 600,
+     "coverage": 0.94,
+     "size": 1.4,
+     "top1": 0.967,
+     "abstain": 0.052,
+     "accept": 0.913,
+     "accept_two": 0.842,
+     "n_accepted": 548,
+     "coverage_acc": 0.996,
+     "size_acc": 1.5,
+     "top1_acc": 0.973
+    }
+   },
+   "q_per_fold": [
+    0.826,
+    0.85,
+    0.85,
+    0.85,
+    0.849
+   ],
+   "q_std_per_fold": [
+    31.143,
+    31.338,
+    31.256,
+    31.231,
+    31.285
+   ],
+   "tau_per_fold": [
+    0.82,
+    0.848,
+    0.847,
+    0.847,
+    0.846
+   ]
+  },
+  "blocked/white_b/std": {
+   "all": {
+    "n": 1950,
+    "coverage": 0.897,
+    "size": 3.42,
+    "top1": 0.513,
+    "abstain": 0.0,
+    "accept": 0.884,
+    "accept_two": 0.874,
+    "n_accepted": 1723,
+    "coverage_acc": 0.913,
+    "size_acc": 3.74,
+    "top1_acc": 0.478
+   },
+   "by_adulterant": {
+    "walnut shell": {
+     "n": 600,
+     "coverage": 0.917,
+     "size": 2.58,
+     "top1": 0.667,
+     "abstain": 0.0,
+     "accept": 0.705,
+     "accept_two": 0.675,
+     "n_accepted": 423,
+     "coverage_acc": 0.882,
+     "size_acc": 3.25,
+     "top1_acc": 0.527
+    },
+    "peanut": {
+     "n": 600,
+     "coverage": 1.0,
+     "size": 4.07,
+     "top1": 1.0,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 1.0,
+     "size_acc": 4.07,
+     "top1_acc": 1.0
+    },
+    "wood dust": {
+     "n": 600,
+     "coverage": 0.917,
+     "size": 3.87,
+     "top1": 0.0,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 0.917,
+     "size_acc": 3.87,
+     "top1_acc": 0.0
+    }
+   },
+   "pure": {
+    "n": 150,
+    "coverage": 0.333,
+    "size": 2.33,
+    "top1": 0.0,
+    "abstain": 0.0,
+    "accept": 0.667,
+    "accept_two": 0.667,
+    "n_accepted": 100,
+    "coverage_acc": 0.5,
+    "size_acc": 3.0,
+    "top1_acc": 0.0
+   },
+   "by_level": {
+    "1-4%": {
+     "n": 600,
+     "coverage": 0.917,
+     "size": 4.25,
+     "top1": 0.333,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 0.917,
+     "size_acc": 4.25,
+     "top1_acc": 0.333
+    },
+    "6-12%": {
+     "n": 600,
+     "coverage": 1.0,
+     "size": 3.04,
+     "top1": 0.667,
+     "abstain": 0.0,
+     "accept": 0.705,
+     "accept_two": 0.675,
+     "n_accepted": 423,
+     "coverage_acc": 1.0,
+     "size_acc": 3.89,
+     "top1_acc": 0.527
+    },
+    "15-24%": {
+     "n": 600,
+     "coverage": 0.917,
+     "size": 3.24,
+     "top1": 0.667,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 0.917,
+     "size_acc": 3.24,
+     "top1_acc": 0.667
+    }
+   },
+   "q_per_fold": [
+    8.935,
+    9.524,
+    9.403,
+    9.469,
+    9.619
+   ],
+   "q_std_per_fold": [
+    353.865,
+    358.524,
+    354.205,
+    356.385,
+    362.337
+   ],
+   "tau_per_fold": [
+    7.573,
+    7.672,
+    7.592,
+    7.651,
+    7.721
+   ]
+  },
+  "blocked/white_b/norm": {
+   "all": {
+    "n": 1950,
+    "coverage": 0.905,
+    "size": 3.11,
+    "top1": 0.513,
+    "abstain": 0.0,
+    "accept": 0.884,
+    "accept_two": 0.874,
+    "n_accepted": 1723,
+    "coverage_acc": 0.922,
+    "size_acc": 3.38,
+    "top1_acc": 0.478
+   },
+   "by_adulterant": {
+    "walnut shell": {
+     "n": 600,
+     "coverage": 0.942,
+     "size": 2.61,
+     "top1": 0.667,
+     "abstain": 0.0,
+     "accept": 0.705,
+     "accept_two": 0.675,
+     "n_accepted": 423,
+     "coverage_acc": 0.917,
+     "size_acc": 3.28,
+     "top1_acc": 0.527
+    },
+    "peanut": {
+     "n": 600,
+     "coverage": 1.0,
+     "size": 2.91,
+     "top1": 1.0,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 1.0,
+     "size_acc": 2.91,
+     "top1_acc": 1.0
+    },
+    "wood dust": {
+     "n": 600,
+     "coverage": 0.917,
+     "size": 4.13,
+     "top1": 0.0,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 0.917,
+     "size_acc": 4.13,
+     "top1_acc": 0.0
+    }
+   },
+   "pure": {
+    "n": 150,
+    "coverage": 0.333,
+    "size": 1.79,
+    "top1": 0.0,
+    "abstain": 0.0,
+    "accept": 0.667,
+    "accept_two": 0.667,
+    "n_accepted": 100,
+    "coverage_acc": 0.5,
+    "size_acc": 2.19,
+    "top1_acc": 0.0
+   },
+   "by_level": {
+    "1-4%": {
+     "n": 600,
+     "coverage": 0.942,
+     "size": 3.85,
+     "top1": 0.333,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 0.942,
+     "size_acc": 3.85,
+     "top1_acc": 0.333
+    },
+    "6-12%": {
+     "n": 600,
+     "coverage": 1.0,
+     "size": 2.97,
+     "top1": 0.667,
+     "abstain": 0.0,
+     "accept": 0.705,
+     "accept_two": 0.675,
+     "n_accepted": 423,
+     "coverage_acc": 1.0,
+     "size_acc": 3.79,
+     "top1_acc": 0.527
+    },
+    "15-24%": {
+     "n": 600,
+     "coverage": 0.917,
+     "size": 2.83,
+     "top1": 0.667,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 0.917,
+     "size_acc": 2.83,
+     "top1_acc": 0.667
+    }
+   },
+   "q_per_fold": [
+    8.935,
+    9.524,
+    9.403,
+    9.469,
+    9.619
+   ],
+   "q_std_per_fold": [
+    353.865,
+    358.524,
+    354.205,
+    356.385,
+    362.337
+   ],
+   "tau_per_fold": [
+    7.573,
+    7.672,
+    7.592,
+    7.651,
+    7.721
+   ]
+  },
+  "random/euclid/std": {
+   "all": {
+    "n": 1950,
+    "coverage": 0.903,
+    "size": 3.67,
+    "top1": 0.51,
+    "abstain": 0.0,
+    "accept": 0.875,
+    "accept_two": 0.867,
+    "n_accepted": 1706,
+    "coverage_acc": 0.917,
+    "size_acc": 4.02,
+    "top1_acc": 0.477
+   },
+   "by_adulterant": {
+    "walnut shell": {
+     "n": 600,
+     "coverage": 0.93,
+     "size": 2.66,
+     "top1": 0.667,
+     "abstain": 0.0,
+     "accept": 0.7,
+     "accept_two": 0.68,
+     "n_accepted": 420,
+     "coverage_acc": 0.9,
+     "size_acc": 3.31,
+     "top1_acc": 0.524
+    },
+    "peanut": {
+     "n": 600,
+     "coverage": 1.0,
+     "size": 4.37,
+     "top1": 0.99,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 1.0,
+     "size_acc": 4.37,
+     "top1_acc": 0.99
+    },
+    "wood dust": {
+     "n": 600,
+     "coverage": 0.917,
+     "size": 4.28,
+     "top1": 0.0,
+     "abstain": 0.0,
+     "accept": 0.998,
+     "accept_two": 0.993,
+     "n_accepted": 599,
+     "coverage_acc": 0.917,
+     "size_acc": 4.28,
+     "top1_acc": 0.0
+    }
+   },
+   "pure": {
+    "n": 150,
+    "coverage": 0.347,
+    "size": 2.4,
+    "top1": 0.0,
+    "abstain": 0.0,
+    "accept": 0.58,
+    "accept_two": 0.58,
+    "n_accepted": 87,
+    "coverage_acc": 0.425,
+    "size_acc": 3.24,
+    "top1_acc": 0.0
+   },
+   "by_level": {
+    "1-4%": {
+     "n": 600,
+     "coverage": 0.93,
+     "size": 4.49,
+     "top1": 0.333,
+     "abstain": 0.0,
+     "accept": 0.998,
+     "accept_two": 0.993,
+     "n_accepted": 599,
+     "coverage_acc": 0.93,
+     "size_acc": 4.49,
+     "top1_acc": 0.334
+    },
+    "6-12%": {
+     "n": 600,
+     "coverage": 1.0,
+     "size": 3.45,
+     "top1": 0.667,
+     "abstain": 0.0,
+     "accept": 0.7,
+     "accept_two": 0.68,
+     "n_accepted": 420,
+     "coverage_acc": 1.0,
+     "size_acc": 4.44,
+     "top1_acc": 0.524
+    },
+    "15-24%": {
+     "n": 600,
+     "coverage": 0.917,
+     "size": 3.37,
+     "top1": 0.657,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 0.917,
+     "size_acc": 3.37,
+     "top1_acc": 0.657
+    }
+   },
+   "q_per_fold": [
+    9.32,
+    11.253,
+    8.772,
+    9.55,
+    8.844
+   ],
+   "q_std_per_fold": [
+    0.399,
+    0.493,
+    0.398,
+    0.41,
+    0.4
+   ],
+   "tau_per_fold": [
+    3.796,
+    7.748,
+    7.494,
+    7.149,
+    3.762
+   ]
+  },
+  "random/euclid/norm": {
+   "all": {
+    "n": 1950,
+    "coverage": 0.911,
+    "size": 3.24,
+    "top1": 0.51,
+    "abstain": 0.0,
+    "accept": 0.875,
+    "accept_two": 0.867,
+    "n_accepted": 1706,
+    "coverage_acc": 0.923,
+    "size_acc": 3.53,
+    "top1_acc": 0.477
+   },
+   "by_adulterant": {
+    "walnut shell": {
+     "n": 600,
+     "coverage": 0.948,
+     "size": 2.67,
+     "top1": 0.667,
+     "abstain": 0.0,
+     "accept": 0.7,
+     "accept_two": 0.68,
+     "n_accepted": 420,
+     "coverage_acc": 0.926,
+     "size_acc": 3.33,
+     "top1_acc": 0.524
+    },
+    "peanut": {
+     "n": 600,
+     "coverage": 1.0,
+     "size": 3.01,
+     "top1": 0.99,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 1.0,
+     "size_acc": 3.01,
+     "top1_acc": 0.99
+    },
+    "wood dust": {
+     "n": 600,
+     "coverage": 0.917,
+     "size": 4.36,
+     "top1": 0.0,
+     "abstain": 0.0,
+     "accept": 0.998,
+     "accept_two": 0.993,
+     "n_accepted": 599,
+     "coverage_acc": 0.917,
+     "size_acc": 4.36,
+     "top1_acc": 0.0
+    }
+   },
+   "pure": {
+    "n": 150,
+    "coverage": 0.38,
+    "size": 1.94,
+    "top1": 0.0,
+    "abstain": 0.0,
+    "accept": 0.58,
+    "accept_two": 0.58,
+    "n_accepted": 87,
+    "coverage_acc": 0.425,
+    "size_acc": 2.39,
+    "top1_acc": 0.0
+   },
+   "by_level": {
+    "1-4%": {
+     "n": 600,
+     "coverage": 0.948,
+     "size": 4.06,
+     "top1": 0.333,
+     "abstain": 0.0,
+     "accept": 0.998,
+     "accept_two": 0.993,
+     "n_accepted": 599,
+     "coverage_acc": 0.948,
+     "size_acc": 4.06,
+     "top1_acc": 0.334
+    },
+    "6-12%": {
+     "n": 600,
+     "coverage": 1.0,
+     "size": 3.01,
+     "top1": 0.667,
+     "abstain": 0.0,
+     "accept": 0.7,
+     "accept_two": 0.68,
+     "n_accepted": 420,
+     "coverage_acc": 1.0,
+     "size_acc": 3.81,
+     "top1_acc": 0.524
+    },
+    "15-24%": {
+     "n": 600,
+     "coverage": 0.917,
+     "size": 2.98,
+     "top1": 0.657,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 0.917,
+     "size_acc": 2.98,
+     "top1_acc": 0.657
+    }
+   },
+   "q_per_fold": [
+    9.32,
+    11.253,
+    8.772,
+    9.55,
+    8.844
+   ],
+   "q_std_per_fold": [
+    0.399,
+    0.493,
+    0.398,
+    0.41,
+    0.4
+   ],
+   "tau_per_fold": [
+    3.796,
+    7.748,
+    7.494,
+    7.149,
+    3.762
+   ]
+  },
+  "random/white_a/std": {
+   "all": {
+    "n": 1950,
+    "coverage": 0.91,
+    "size": 4.21,
+    "top1": 0.966,
+    "abstain": 0.09,
+    "accept": 0.884,
+    "accept_two": 0.829,
+    "n_accepted": 1724,
+    "coverage_acc": 0.929,
+    "size_acc": 4.49,
+    "top1_acc": 0.962
+   },
+   "by_adulterant": {
+    "walnut shell": {
+     "n": 600,
+     "coverage": 0.997,
+     "size": 4.02,
+     "top1": 1.0,
+     "abstain": 0.003,
+     "accept": 0.88,
+     "accept_two": 0.88,
+     "n_accepted": 528,
+     "coverage_acc": 1.0,
+     "size_acc": 4.23,
+     "top1_acc": 1.0
+    },
+    "peanut": {
+     "n": 600,
+     "coverage": 1.0,
+     "size": 7.13,
+     "top1": 1.0,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 1.0,
+     "size_acc": 7.13,
+     "top1_acc": 1.0
+    },
+    "wood dust": {
+     "n": 600,
+     "coverage": 0.71,
+     "size": 1.46,
+     "top1": 0.972,
+     "abstain": 0.29,
+     "accept": 0.868,
+     "accept_two": 0.688,
+     "n_accepted": 521,
+     "coverage_acc": 0.766,
+     "size_acc": 1.58,
+     "top1_acc": 0.971
+    }
+   },
+   "pure": {
+    "n": 150,
+    "coverage": 1.0,
+    "size": 4.32,
+    "top1": 0.667,
+    "abstain": 0.0,
+    "accept": 0.5,
+    "accept_two": 0.5,
+    "n_accepted": 75,
+    "coverage_acc": 1.0,
+    "size_acc": 5.56,
+    "top1_acc": 0.333
+   },
+   "by_level": {
+    "1-4%": {
+     "n": 600,
+     "coverage": 0.805,
+     "size": 3.32,
+     "top1": 1.0,
+     "abstain": 0.195,
+     "accept": 0.85,
+     "accept_two": 0.727,
+     "n_accepted": 510,
+     "coverage_acc": 0.843,
+     "size_acc": 3.71,
+     "top1_acc": 1.0
+    },
+    "6-12%": {
+     "n": 600,
+     "coverage": 0.997,
+     "size": 4.88,
+     "top1": 1.0,
+     "abstain": 0.003,
+     "accept": 0.97,
+     "accept_two": 0.968,
+     "n_accepted": 582,
+     "coverage_acc": 0.997,
+     "size_acc": 4.94,
+     "top1_acc": 1.0
+    },
+    "15-24%": {
+     "n": 600,
+     "coverage": 0.905,
+     "size": 4.42,
+     "top1": 0.972,
+     "abstain": 0.095,
+     "accept": 0.928,
+     "accept_two": 0.873,
+     "n_accepted": 557,
+     "coverage_acc": 0.928,
+     "size_acc": 4.61,
+     "top1_acc": 0.973
+    }
+   },
+   "q_per_fold": [
+    0.85,
+    0.849,
+    0.826,
+    0.851,
+    0.825
+   ],
+   "q_std_per_fold": [
+    30.587,
+    30.856,
+    30.337,
+    30.57,
+    30.581
+   ],
+   "tau_per_fold": [
+    0.848,
+    0.847,
+    0.822,
+    0.85,
+    0.822
+   ]
+  },
+  "random/white_a/norm": {
+   "all": {
+    "n": 1950,
+    "coverage": 0.911,
+    "size": 1.4,
+    "top1": 0.966,
+    "abstain": 0.087,
+    "accept": 0.884,
+    "accept_two": 0.829,
+    "n_accepted": 1724,
+    "coverage_acc": 0.998,
+    "size_acc": 1.55,
+    "top1_acc": 0.962
+   },
+   "by_adulterant": {
+    "walnut shell": {
+     "n": 600,
+     "coverage": 0.917,
+     "size": 1.12,
+     "top1": 1.0,
+     "abstain": 0.083,
+     "accept": 0.88,
+     "accept_two": 0.88,
+     "n_accepted": 528,
+     "coverage_acc": 1.0,
+     "size_acc": 1.23,
+     "top1_acc": 1.0
+    },
+    "peanut": {
+     "n": 600,
+     "coverage": 1.0,
+     "size": 1.95,
+     "top1": 1.0,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 600,
+     "coverage_acc": 1.0,
+     "size_acc": 1.95,
+     "top1_acc": 1.0
+    },
+    "wood dust": {
+     "n": 600,
+     "coverage": 0.907,
+     "size": 1.25,
+     "top1": 0.972,
+     "abstain": 0.088,
+     "accept": 0.868,
+     "accept_two": 0.688,
+     "n_accepted": 521,
+     "coverage_acc": 0.994,
+     "size_acc": 1.4,
+     "top1_acc": 0.971
+    }
+   },
+   "pure": {
+    "n": 150,
+    "coverage": 0.553,
+    "size": 0.89,
+    "top1": 0.667,
+    "abstain": 0.447,
+    "accept": 0.5,
+    "accept_two": 0.5,
+    "n_accepted": 75,
+    "coverage_acc": 1.0,
+    "size_acc": 1.67,
+    "top1_acc": 0.333
+   },
+   "by_level": {
+    "1-4%": {
+     "n": 600,
+     "coverage": 0.897,
+     "size": 1.34,
+     "top1": 1.0,
+     "abstain": 0.103,
+     "accept": 0.85,
+     "accept_two": 0.727,
+     "n_accepted": 510,
+     "coverage_acc": 1.0,
+     "size_acc": 1.52,
+     "top1_acc": 1.0
+    },
+    "6-12%": {
+     "n": 600,
+     "coverage": 0.982,
+     "size": 1.5,
+     "top1": 1.0,
+     "abstain": 0.018,
+     "accept": 0.97,
+     "accept_two": 0.968,
+     "n_accepted": 582,
+     "coverage_acc": 1.0,
+     "size_acc": 1.54,
+     "top1_acc": 1.0
+    },
+    "15-24%": {
+     "n": 600,
+     "coverage": 0.945,
+     "size": 1.48,
+     "top1": 0.972,
+     "abstain": 0.05,
+     "accept": 0.928,
+     "accept_two": 0.873,
+     "n_accepted": 557,
+     "coverage_acc": 0.995,
+     "size_acc": 1.57,
+     "top1_acc": 0.973
+    }
+   },
+   "q_per_fold": [
+    0.85,
+    0.849,
+    0.826,
+    0.851,
+    0.825
+   ],
+   "q_std_per_fold": [
+    30.587,
+    30.856,
+    30.337,
+    30.57,
+    30.581
+   ],
+   "tau_per_fold": [
+    0.848,
+    0.847,
+    0.822,
+    0.85,
+    0.822
+   ]
+  }
+ },
+ "intervals": {
+  "blocked/euclid/std": {
+   "coverage": [
+    0.86,
+    0.927
+   ],
+   "size": [
+    3.292,
+    3.542
+   ],
+   "top1": [
+    0.462,
+    0.568
+   ],
+   "abstain": [
+    0.0,
+    0.0
+   ]
+  },
+  "blocked/euclid/norm": {
+   "coverage": [
+    0.872,
+    0.938
+   ],
+   "size": [
+    2.942,
+    3.222
+   ],
+   "top1": [
+    0.462,
+    0.568
+   ],
+   "abstain": [
+    0.0,
+    0.0
+   ]
+  },
+  "blocked/white_a/std": {
+   "coverage": [
+    0.875,
+    0.922
+   ],
+   "size": [
+    3.673,
+    4.141
+   ],
+   "top1": [
+    0.947,
+    0.979
+   ],
+   "abstain": [
+    0.078,
+    0.125
+   ]
+  },
+  "blocked/white_a/norm": {
+   "coverage": [
+    0.891,
+    0.934
+   ],
+   "size": [
+    1.315,
+    1.418
+   ],
+   "top1": [
+    0.947,
+    0.979
+   ],
+   "abstain": [
+    0.064,
+    0.107
+   ]
+  },
+  "blocked/white_b/std": {
+   "coverage": [
+    0.863,
+    0.929
+   ],
+   "size": [
+    3.297,
+    3.547
+   ],
+   "top1": [
+    0.462,
+    0.568
+   ],
+   "abstain": [
+    0.0,
+    0.0
+   ]
+  },
+  "blocked/white_b/norm": {
+   "coverage": [
+    0.872,
+    0.937
+   ],
+   "size": [
+    2.976,
+    3.242
+   ],
+   "top1": [
+    0.462,
+    0.568
+   ],
+   "abstain": [
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "confusion_white_a": {
+  "walnut shell": {
+   "walnut shell": 600
+  },
+  "peanut": {
+   "peanut": 600
+  },
+  "wood dust": {
+   "wood dust": 580,
+   "walnut shell": 19,
+   "walnut shell+wood dust": 1
+  }
+ },
+ "open_set": {
+  "walnut shell": {
+   "all": {
+    "n": 600,
+    "coverage": 0.0,
+    "size": 0.05,
+    "top1": 0.0,
+    "abstain": 0.955,
+    "accept": 0.012,
+    "accept_two": 0.012,
+    "n_accepted": 7,
+    "coverage_acc": 0.0,
+    "size_acc": 1.57,
+    "top1_acc": 0.0
+   },
+   "by_adulterant": {
+    "walnut shell": {
+     "n": 600,
+     "coverage": 0.0,
+     "size": 0.05,
+     "top1": 0.0,
+     "abstain": 0.955,
+     "accept": 0.012,
+     "accept_two": 0.012,
+     "n_accepted": 7,
+     "coverage_acc": 0.0,
+     "size_acc": 1.57,
+     "top1_acc": 0.0
+    },
+    "peanut": null,
+    "wood dust": null
+   },
+   "pure": null,
+   "by_level": {
+    "1-4%": {
+     "n": 200,
+     "coverage": 0.0,
+     "size": 0.02,
+     "top1": 0.0,
+     "abstain": 0.995,
+     "accept": 0.005,
+     "accept_two": 0.005,
+     "n_accepted": 1,
+     "coverage_acc": 0.0,
+     "size_acc": 4.0,
+     "top1_acc": 0.0
+    },
+    "6-12%": {
+     "n": 200,
+     "coverage": 0.0,
+     "size": 0.0,
+     "top1": 0.0,
+     "abstain": 1.0,
+     "accept": 0.0,
+     "accept_two": 0.0,
+     "n_accepted": 0,
+     "coverage_acc": null,
+     "size_acc": null,
+     "top1_acc": null
+    },
+    "15-24%": {
+     "n": 200,
+     "coverage": 0.0,
+     "size": 0.14,
+     "top1": 0.0,
+     "abstain": 0.87,
+     "accept": 0.03,
+     "accept_two": 0.03,
+     "n_accepted": 6,
+     "coverage_acc": 0.0,
+     "size_acc": 1.17,
+     "top1_acc": 0.0
+    }
+   },
+   "all_std": {
+    "n": 600,
+    "coverage": 0.0,
+    "size": 1.28,
+    "top1": 0.0,
+    "abstain": 0.428,
+    "accept": 0.012,
+    "accept_two": 0.012,
+    "n_accepted": 7,
+    "coverage_acc": 0.0,
+    "size_acc": 2.57,
+    "top1_acc": 0.0
+   },
+   "n_test": 600,
+   "returned_on_accept": {
+    "wood dust": 6,
+    "peanut+wood dust": 1
+   }
+  },
+  "peanut": {
+   "all": {
+    "n": 600,
+    "coverage": 0.0,
+    "size": 0.6,
+    "top1": 0.0,
+    "abstain": 0.425,
+    "accept": 0.552,
+    "accept_two": 0.552,
+    "n_accepted": 331,
+    "coverage_acc": 0.0,
+    "size_acc": 1.05,
+    "top1_acc": 0.0
+   },
+   "by_adulterant": {
+    "walnut shell": null,
+    "peanut": {
+     "n": 600,
+     "coverage": 0.0,
+     "size": 0.6,
+     "top1": 0.0,
+     "abstain": 0.425,
+     "accept": 0.552,
+     "accept_two": 0.552,
+     "n_accepted": 331,
+     "coverage_acc": 0.0,
+     "size_acc": 1.05,
+     "top1_acc": 0.0
+    },
+    "wood dust": null
+   },
+   "pure": null,
+   "by_level": {
+    "1-4%": {
+     "n": 200,
+     "coverage": 0.0,
+     "size": 1.01,
+     "top1": 0.0,
+     "abstain": 0.0,
+     "accept": 1.0,
+     "accept_two": 1.0,
+     "n_accepted": 200,
+     "coverage_acc": 0.0,
+     "size_acc": 1.01,
+     "top1_acc": 0.0
+    },
+    "6-12%": {
+     "n": 200,
+     "coverage": 0.0,
+     "size": 0.79,
+     "top1": 0.0,
+     "abstain": 0.285,
+     "accept": 0.65,
+     "accept_two": 0.65,
+     "n_accepted": 130,
+     "coverage_acc": 0.0,
+     "size_acc": 1.1,
+     "top1_acc": 0.0
+    },
+    "15-24%": {
+     "n": 200,
+     "coverage": 0.0,
+     "size": 0.01,
+     "top1": 0.0,
+     "abstain": 0.99,
+     "accept": 0.005,
+     "accept_two": 0.005,
+     "n_accepted": 1,
+     "coverage_acc": 0.0,
+     "size_acc": 1.0,
+     "top1_acc": 0.0
+    }
+   },
+   "all_std": {
+    "n": 600,
+    "coverage": 0.0,
+    "size": 2.24,
+    "top1": 0.0,
+    "abstain": 0.243,
+    "accept": 0.552,
+    "accept_two": 0.552,
+    "n_accepted": 331,
+    "coverage_acc": 0.0,
+    "size_acc": 3.33,
+    "top1_acc": 0.0
+   },
+   "n_test": 600,
+   "returned_on_accept": {
+    "pure": 327,
+    "walnut shell": 4
+   }
+  },
+  "wood dust": {
+   "all": {
+    "n": 600,
+    "coverage": 0.0,
+    "size": 0.02,
+    "top1": 0.0,
+    "abstain": 0.982,
+    "accept": 0.012,
+    "accept_two": 0.005,
+    "n_accepted": 7,
+    "coverage_acc": 0.0,
+    "size_acc": 1.0,
+    "top1_acc": 0.0
+   },
+   "by_adulterant": {
+    "walnut shell": null,
+    "peanut": null,
+    "wood dust": {
+     "n": 600,
+     "coverage": 0.0,
+     "size": 0.02,
+     "top1": 0.0,
+     "abstain": 0.982,
+     "accept": 0.012,
+     "accept_two": 0.005,
+     "n_accepted": 7,
+     "coverage_acc": 0.0,
+     "size_acc": 1.0,
+     "top1_acc": 0.0
+    }
+   },
+   "pure": null,
+   "by_level": {
+    "1-4%": {
+     "n": 200,
+     "coverage": 0.0,
+     "size": 0.0,
+     "top1": 0.0,
+     "abstain": 1.0,
+     "accept": 0.0,
+     "accept_two": 0.0,
+     "n_accepted": 0,
+     "coverage_acc": null,
+     "size_acc": null,
+     "top1_acc": null
+    },
+    "6-12%": {
+     "n": 200,
+     "coverage": 0.0,
+     "size": 0.0,
+     "top1": 0.0,
+     "abstain": 1.0,
+     "accept": 0.0,
+     "accept_two": 0.0,
+     "n_accepted": 0,
+     "coverage_acc": null,
+     "size_acc": null,
+     "top1_acc": null
+    },
+    "15-24%": {
+     "n": 200,
+     "coverage": 0.0,
+     "size": 0.06,
+     "top1": 0.0,
+     "abstain": 0.945,
+     "accept": 0.035,
+     "accept_two": 0.015,
+     "n_accepted": 7,
+     "coverage_acc": 0.0,
+     "size_acc": 1.0,
+     "top1_acc": 0.0
+    }
+   },
+   "all_std": {
+    "n": 600,
+    "coverage": 0.0,
+    "size": 0.01,
+    "top1": 0.0,
+    "abstain": 0.993,
+    "accept": 0.012,
+    "accept_two": 0.005,
+    "n_accepted": 7,
+    "coverage_acc": 0.0,
+    "size_acc": 0.43,
+    "top1_acc": 0.0
+   },
+   "n_test": 600,
+   "returned_on_accept": {
+    "walnut shell": 7
+   }
+  }
+ },
+ "random_split_seeds": {
+  "arm": "white_a, standard score, random split",
+  "mean_cov": 0.903,
+  "sd_cov": 0.007,
+  "range_cov": [
+   0.887,
+   0.914
+  ],
+  "mean_top1": 0.965,
+  "sd_top1": 0.002
+ }
+}

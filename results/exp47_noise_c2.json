@@ -1,0 +1,370 @@
+{
+ "prereg": "preregistrations/exp47-N_noise_stress_preregistration_v1.md",
+ "protocol": "exp47 folds and arms unchanged (blocked 5-fold, fit blocks<5 / cal blocks>=5 / test blocks%5==k); noise applied per fold with its own seed; every arm sees the same X_n; k=0 reference cell runs through this same per-fold path",
+ "families": [
+  "iso",
+  "sub",
+  "drift"
+ ],
+ "levels": [
+  2.0,
+  10.0
+ ],
+ "regimes": [
+  "matched",
+  "shift"
+ ],
+ "stages": {
+  "T1_T2": true,
+  "partA": false
+ },
+ "torch_arms": "cnn and cnn6 excluded from this sweep (see module docstring)",
+ "noise_definitions": {
+  "iso": "iid Gaussian, SD = k x mean within-class residual SD over channels",
+  "sub": "k x draw from the within-class residual covariance on its leading 60 directions - the part the whitener absorbs by construction",
+  "drift": "k x (random offset + random slope), per-channel amplitude = observed between-block drift SD fitted on training blocks only"
+ },
+ "calibration": "noise magnitude is a multiple of this corpus's own measured repeatability / block drift, never an arbitrary SNR",
+ "window": [
+  900.0,
+  1800.0
+ ],
+ "seed_base": 1000,
+ "n_spectra": 450,
+ "n_channels": 933,
+ "cells": [
+  {
+   "family": "iso",
+   "k": 2.0,
+   "regime": "shift",
+   "n_folds": 5,
+   "minutes": 26.261,
+   "noise_rms_per_channel": [
+    0.203,
+    0.204,
+    0.203,
+    0.204,
+    0.184
+   ],
+   "fold_errors": [],
+   "T1": {
+    "raw": {
+     "lda": 0.138,
+     "logit": 0.749,
+     "knn": 0.831,
+     "gbdt": 0.4
+    },
+    "snv": {
+     "lda": 0.122,
+     "logit": 0.333,
+     "knn": 0.549,
+     "gbdt": 0.187
+    },
+    "white": {
+     "lda": 0.147,
+     "logit": 0.147,
+     "knn": 0.154,
+     "gbdt": 0.129
+    },
+    "whitek": {
+     "lda": 0.193,
+     "logit": 0.176,
+     "knn": 0.18,
+     "gbdt": 0.202
+    }
+   },
+   "T1_spread": {
+    "raw": {
+     "lda": 0.045,
+     "logit": 0.015,
+     "knn": 0.018,
+     "gbdt": 0.08
+    },
+    "snv": {
+     "lda": 0.048,
+     "logit": 0.045,
+     "knn": 0.055,
+     "gbdt": 0.025
+    },
+    "white": {
+     "lda": 0.053,
+     "logit": 0.027,
+     "knn": 0.026,
+     "gbdt": 0.018
+    },
+    "whitek": {
+     "lda": 0.048,
+     "logit": 0.032,
+     "knn": 0.023,
+     "gbdt": 0.028
+    }
+   },
+   "T2": {
+    "raw": {
+     "gbdt": 0.13,
+     "nls_cal": 0.08,
+     "dictargmin": 0.05
+    },
+    "snv": {
+     "gbdt": 0.04,
+     "nls_cal": 0.01,
+     "dictargmin": 0.06
+    },
+    "white": {
+     "gbdt": 0.01,
+     "nls_cal": 0.01,
+     "dictargmin": 0.02
+    },
+    "whitek": {
+     "gbdt": 0.02,
+     "nls_cal": 0.06,
+     "dictargmin": 0.05
+    }
+   },
+   "T2_micro": {
+    "raw": {
+     "gbdt": 0.491,
+     "nls_cal": 0.563,
+     "dictargmin": 0.52
+    },
+    "snv": {
+     "gbdt": 0.436,
+     "nls_cal": 0.524,
+     "dictargmin": 0.383
+    },
+    "white": {
+     "gbdt": 0.453,
+     "nls_cal": 0.392,
+     "dictargmin": 0.456
+    },
+    "whitek": {
+     "gbdt": 0.426,
+     "nls_cal": 0.446,
+     "dictargmin": 0.471
+    }
+   }
+  },
+  {
+   "family": "sub",
+   "k": 2.0,
+   "regime": "shift",
+   "n_folds": 5,
+   "minutes": 23.464,
+   "noise_rms_per_channel": [
+    0.181,
+    0.157,
+    0.183,
+    0.172,
+    0.15
+   ],
+   "fold_errors": [],
+   "T1": {
+    "raw": {
+     "lda": 0.996,
+     "logit": 0.662,
+     "knn": 0.311,
+     "gbdt": 0.36
+    },
+    "snv": {
+     "lda": 0.98,
+     "logit": 0.74,
+     "knn": 0.558,
+     "gbdt": 0.556
+    },
+    "white": {
+     "lda": 0.996,
+     "logit": 0.996,
+     "knn": 0.996,
+     "gbdt": 0.849
+    },
+    "whitek": {
+     "lda": 0.989,
+     "logit": 0.991,
+     "knn": 0.989,
+     "gbdt": 0.742
+    }
+   },
+   "T1_spread": {
+    "raw": {
+     "lda": 0.01,
+     "logit": 0.046,
+     "knn": 0.032,
+     "gbdt": 0.039
+    },
+    "snv": {
+     "lda": 0.02,
+     "logit": 0.026,
+     "knn": 0.043,
+     "gbdt": 0.05
+    },
+    "white": {
+     "lda": 0.01,
+     "logit": 0.01,
+     "knn": 0.01,
+     "gbdt": 0.046
+    },
+    "whitek": {
+     "lda": 0.013,
+     "logit": 0.009,
+     "knn": 0.013,
+     "gbdt": 0.043
+    }
+   },
+   "T2": {
+    "raw": {
+     "gbdt": 0.1,
+     "nls_cal": 0.05,
+     "dictargmin": 0.05
+    },
+    "snv": {
+     "gbdt": 0.23,
+     "nls_cal": 0.01,
+     "dictargmin": 0.01
+    },
+    "white": {
+     "gbdt": 0.05,
+     "nls_cal": 0.55,
+     "dictargmin": 0.08
+    },
+    "whitek": {
+     "gbdt": 0.02,
+     "nls_cal": 0.2,
+     "dictargmin": 0.06
+    }
+   },
+   "T2_micro": {
+    "raw": {
+     "gbdt": 0.481,
+     "nls_cal": 0.496,
+     "dictargmin": 0.45
+    },
+    "snv": {
+     "gbdt": 0.678,
+     "nls_cal": 0.567,
+     "dictargmin": 0.441
+    },
+    "white": {
+     "gbdt": 0.545,
+     "nls_cal": 0.896,
+     "dictargmin": 0.614
+    },
+    "whitek": {
+     "gbdt": 0.46,
+     "nls_cal": 0.756,
+     "dictargmin": 0.665
+    }
+   }
+  },
+  {
+   "family": "drift",
+   "k": 2.0,
+   "regime": "shift",
+   "n_folds": 5,
+   "minutes": 27.784,
+   "noise_rms_per_channel": [
+    0.058,
+    0.054,
+    0.056,
+    0.051,
+    0.05
+   ],
+   "fold_errors": [],
+   "T1": {
+    "raw": {
+     "lda": 0.993,
+     "logit": 0.867,
+     "knn": 0.635,
+     "gbdt": 0.638
+    },
+    "snv": {
+     "lda": 0.991,
+     "logit": 0.956,
+     "knn": 0.813,
+     "gbdt": 0.809
+    },
+    "white": {
+     "lda": 0.993,
+     "logit": 0.991,
+     "knn": 0.993,
+     "gbdt": 0.849
+    },
+    "whitek": {
+     "lda": 0.996,
+     "logit": 0.993,
+     "knn": 0.993,
+     "gbdt": 0.935
+    }
+   },
+   "T1_spread": {
+    "raw": {
+     "lda": 0.01,
+     "logit": 0.03,
+     "knn": 0.025,
+     "gbdt": 0.032
+    },
+    "snv": {
+     "lda": 0.009,
+     "logit": 0.057,
+     "knn": 0.054,
+     "gbdt": 0.039
+    },
+    "white": {
+     "lda": 0.01,
+     "logit": 0.014,
+     "knn": 0.01,
+     "gbdt": 0.047
+    },
+    "whitek": {
+     "lda": 0.006,
+     "logit": 0.015,
+     "knn": 0.01,
+     "gbdt": 0.055
+    }
+   },
+   "T2": {
+    "raw": {
+     "gbdt": 0.18,
+     "nls_cal": 0.04,
+     "dictargmin": 0.02
+    },
+    "snv": {
+     "gbdt": 0.27,
+     "nls_cal": 0.0,
+     "dictargmin": 0.0
+    },
+    "white": {
+     "gbdt": 0.01,
+     "nls_cal": 0.56,
+     "dictargmin": 0.07
+    },
+    "whitek": {
+     "gbdt": 0.0,
+     "nls_cal": 0.3,
+     "dictargmin": 0.03
+    }
+   },
+   "T2_micro": {
+    "raw": {
+     "gbdt": 0.616,
+     "nls_cal": 0.527,
+     "dictargmin": 0.466
+    },
+    "snv": {
+     "gbdt": 0.666,
+     "nls_cal": 0.509,
+     "dictargmin": 0.457
+    },
+    "white": {
+     "gbdt": 0.531,
+     "nls_cal": 0.907,
+     "dictargmin": 0.602
+    },
+    "whitek": {
+     "gbdt": 0.464,
+     "nls_cal": 0.797,
+     "dictargmin": 0.636
+    }
+   }
+  }
+ ]
+}

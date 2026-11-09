@@ -1,0 +1,54 @@
+{
+ "grid": [
+  "e40_lr0.001",
+  "e200_lr0.001",
+  "e200_lr0.0003",
+  "e400_lr0.0003"
+ ],
+ "selection": "fit block only -> calibration block; test never consulted",
+ "refit": "chosen config refit on fit + calibration, as every other Part B baseline",
+ "raw": {
+  "calibration_ba_by_config": {
+   "e40_lr0.001": 0.296,
+   "e200_lr0.001": 0.231,
+   "e200_lr0.0003": 0.321,
+   "e400_lr0.0003": 0.307
+  },
+  "chosen": "e200_lr0.0003",
+  "test_ba_tuned": 0.393,
+  "n_train_refit": 360
+ },
+ "snv": {
+  "calibration_ba_by_config": {
+   "e40_lr0.001": 0.307,
+   "e200_lr0.001": 0.409,
+   "e200_lr0.0003": 0.362,
+   "e400_lr0.0003": 0.39
+  },
+  "chosen": "e200_lr0.001",
+  "test_ba_tuned": 0.762,
+  "n_train_refit": 360
+ },
+ "white": {
+  "calibration_ba_by_config": {
+   "e40_lr0.001": 0.613,
+   "e200_lr0.001": 0.711,
+   "e200_lr0.0003": 0.688,
+   "e400_lr0.0003": 0.713
+  },
+  "chosen": "e400_lr0.0003",
+  "test_ba_tuned": 0.944,
+  "n_train_refit": 360
+ },
+ "whitek": {
+  "calibration_ba_by_config": {
+   "e40_lr0.001": 0.68,
+   "e200_lr0.001": 0.716,
+   "e200_lr0.0003": 0.687,
+   "e400_lr0.0003": 0.707
+  },
+  "chosen": "e200_lr0.001",
+  "test_ba_tuned": 0.993,
+  "n_train_refit": 360
+ }
+}

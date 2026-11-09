@@ -1,0 +1,36 @@
+{
+ "corpus": "cinnamon (D7w+D7p+D7d, absorbance)",
+ "n": 1950,
+ "p": 631,
+ "grid": [
+  "e40_lr0.001",
+  "e200_lr0.001",
+  "e400_lr0.0003"
+ ],
+ "selection": "fit block only -> calibration block; test never consulted",
+ "refit": "chosen config refit on fit + calibration, as every other Part B baseline",
+ "ladder_reference": {
+  "raw": 0.789,
+  "white": 0.703
+ },
+ "raw": {
+  "calibration_ba_by_config": {
+   "e40_lr0.001": 0.73,
+   "e200_lr0.001": 0.845,
+   "e400_lr0.0003": 0.799
+  },
+  "chosen": "e200_lr0.001",
+  "test_ba_tuned": 0.913,
+  "n_train_refit": 1560
+ },
+ "white": {
+  "calibration_ba_by_config": {
+   "e40_lr0.001": 0.622,
+   "e200_lr0.001": 0.749,
+   "e400_lr0.0003": 0.722
+  },
+  "chosen": "e200_lr0.001",
+  "test_ba_tuned": 0.762,
+  "n_train_refit": 1560
+ }
+}

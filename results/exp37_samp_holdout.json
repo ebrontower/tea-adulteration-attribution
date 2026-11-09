@@ -1,0 +1,231 @@
+{
+ "alpha": 0.1,
+ "k_local": 5,
+ "n_clusters": 5,
+ "window": [
+  900.0,
+  1800.0
+ ],
+ "n_eff": {
+  "0": {
+   "tau": 5.5,
+   "n_eff": 9.1,
+   "pc1_var": 0.979,
+   "n_scans": 50
+  },
+  "1": {
+   "tau": 9.26,
+   "n_eff": 5.4,
+   "pc1_var": 0.967,
+   "n_scans": 50
+  },
+  "2": {
+   "tau": 19.33,
+   "n_eff": 2.6,
+   "pc1_var": 0.711,
+   "n_scans": 50
+  },
+  "3": {
+   "tau": 6.41,
+   "n_eff": 7.8,
+   "pc1_var": 0.969,
+   "n_scans": 50
+  },
+  "4": {
+   "tau": 12.3,
+   "n_eff": 4.1,
+   "pc1_var": 0.979,
+   "n_scans": 50
+  },
+  "5": {
+   "tau": 6.16,
+   "n_eff": 8.1,
+   "pc1_var": 0.482,
+   "n_scans": 50
+  },
+  "6": {
+   "tau": 10.46,
+   "n_eff": 4.8,
+   "pc1_var": 0.762,
+   "n_scans": 50
+  },
+  "7": {
+   "tau": 3.27,
+   "n_eff": 15.3,
+   "pc1_var": 0.948,
+   "n_scans": 50
+  },
+  "8": {
+   "tau": 1.72,
+   "n_eff": 29.1,
+   "pc1_var": 0.941,
+   "n_scans": 50
+  },
+  "mean": 9.6,
+  "median": 7.8
+ },
+ "cluster_sizes": {
+  "0": [
+   37,
+   7,
+   2,
+   3,
+   1
+  ],
+  "1": [
+   5,
+   2,
+   28,
+   9,
+   6
+  ],
+  "2": [
+   1,
+   7,
+   1,
+   29,
+   12
+  ],
+  "3": [
+   19,
+   11,
+   2,
+   2,
+   16
+  ],
+  "4": [
+   4,
+   11,
+   20,
+   14,
+   1
+  ],
+  "5": [
+   4,
+   4,
+   26,
+   10,
+   6
+  ],
+  "6": [
+   2,
+   8,
+   11,
+   1,
+   28
+  ],
+  "7": [
+   1,
+   8,
+   11,
+   2,
+   28
+  ],
+  "8": [
+   12,
+   10,
+   3,
+   24,
+   1
+  ]
+ },
+ "cluster": {
+  "coverage": 0.896,
+  "mean_size": 23.09,
+  "empty": 0.009,
+  "top1": 0.696,
+  "abstain": 0.149,
+  "q": 108.3,
+  "tau": 67.019,
+  "n_test": 450,
+  "groups": {
+   "single": {
+    "n": 300,
+    "coverage": 1.0,
+    "mean_size": 25.09,
+    "top1": 0.877,
+    "abstain": 0.073
+   },
+   "binary": {
+    "n": 50,
+    "coverage": 1.0,
+    "mean_size": 25.32,
+    "top1": 0.56,
+    "abstain": 0.04
+   },
+   "ternary": {
+    "n": 50,
+    "coverage": 0.16,
+    "mean_size": 18.92,
+    "top1": 0.0,
+    "abstain": 0.68
+   }
+  }
+ },
+ "macro": {
+  "coverage": 0.9,
+  "mean_size": 17.77,
+  "empty": 0.031,
+  "top1": 0.753,
+  "abstain": 0.093,
+  "q": 118.748,
+  "tau": 111.333,
+  "n_test": 450,
+  "groups": {
+   "single": {
+    "n": 300,
+    "coverage": 0.993,
+    "mean_size": 18.33,
+    "top1": 0.923,
+    "abstain": 0.057
+   },
+   "binary": {
+    "n": 50,
+    "coverage": 0.76,
+    "mean_size": 15.36,
+    "top1": 0.24,
+    "abstain": 0.24
+   },
+   "ternary": {
+    "n": 50,
+    "coverage": 0.4,
+    "mean_size": 20.02,
+    "top1": 0.0,
+    "abstain": 0.24
+   }
+  }
+ },
+ "blocked": {
+  "coverage": 0.907,
+  "mean_size": 25.04,
+  "empty": 0.013,
+  "top1": 0.747,
+  "abstain": 0.056,
+  "q": 124.166,
+  "tau": 85.623,
+  "n_test": 450,
+  "groups": {
+   "single": {
+    "n": 300,
+    "coverage": 0.98,
+    "mean_size": 25.52,
+    "top1": 0.97,
+    "abstain": 0.057
+   },
+   "binary": {
+    "n": 50,
+    "coverage": 1.0,
+    "mean_size": 26.06,
+    "top1": 0.0,
+    "abstain": 0.08
+   },
+   "ternary": {
+    "n": 50,
+    "coverage": 0.28,
+    "mean_size": 28.58,
+    "top1": 0.0,
+    "abstain": 0.02
+   }
+  }
+ }
+}

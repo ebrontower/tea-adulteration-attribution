@@ -1,0 +1,30 @@
+cells done: 13 / expected 13
+
+===== regime = matched =====
+fam/k      reg        raw T1max  snv T1maxwhite T1maxwhitek T1max  white-raw  raw nlsC  snv nlsCwhite nlsCwhitek nlsCwhite dictarg
+clean/k=0  matched        0.996      0.996      0.996      0.998     +0.000     0.080     0.000     0.610     0.300        0.070
+iso/k=2    matched        0.609      0.580      0.589      0.553     +0.004     0.090     0.000     0.020     0.050        0.010
+iso/k=10   matched        0.262      0.191      0.251      0.253     -0.002     0.010     0.020     0.010     0.030        0.000
+sub/k=2    matched        0.938      0.949      0.996      0.993     +0.009     0.100     0.000     0.800     0.160        0.060
+sub/k=10   matched        0.989      0.669      0.996      0.451     -0.498     0.010     0.010     0.870     0.070        0.150
+drift/k=2  matched        0.996      1.000      0.996      0.993     +0.000     0.060     0.000     0.610     0.290        0.070
+drift/k=10 matched        0.996      0.993      0.996      0.996     +0.000     0.070     0.000     0.410     0.230        0.070
+  reference (k=0): raw/lda=0.996 snv/lda=0.996 white/lda=0.996 whitek/lda=0.998  nls_cal raw=0.08 snv=0.0 white=0.61 whitek=0.3
+
+===== regime = shift =====
+fam/k      reg        raw T1max  snv T1maxwhite T1maxwhitek T1max  white-raw  raw nlsC  snv nlsCwhite nlsCwhitek nlsCwhite dictarg
+iso/k=2    shift          0.831      0.549      0.154      0.202     +0.009     0.080     0.010     0.010     0.060        0.020
+iso/k=10   shift          0.418      0.136      0.122      0.120     -0.009     0.040     0.000     0.020     0.000        0.000
+sub/k=2    shift          0.996      0.980      0.996      0.991     +0.000     0.050     0.010     0.550     0.200        0.080
+sub/k=10   shift          0.996      0.698      0.996      0.576     -0.005     0.010     0.020     0.140     0.070        0.070
+drift/k=2  shift          0.993      0.991      0.993      0.996     +0.000     0.040     0.000     0.560     0.300        0.070
+drift/k=10 shift          0.900      0.835      0.900      0.898     +0.000     0.030     0.040     0.340     0.210        0.040
+  reference (k=0): raw/lda=0.996 snv/lda=0.996 white/lda=0.996 whitek/lda=0.998  nls_cal raw=0.08 snv=0.0 white=0.61 whitek=0.3
+
+notes:
+ T1max = best balanced accuracy over lda/logit/knn/gbdt within that representation;
+ white-raw = change, vs the k=0 cell, in the LDA(svd) white-minus-raw gap (LDA(svd) is
+   scale-invariant, so that gap is the metric's contribution, not the learner's);
+ nlsC = quotable NLS exact-set on held-out composites; the post-hoc best constant set
+   scores 0.50 pooled, so pooled rows must be read against 0.50, not against 0;
+ shift = noise on test rows only, which breaks split-conformal exchangeability by design.

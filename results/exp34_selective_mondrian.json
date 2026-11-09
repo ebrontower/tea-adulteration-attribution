@@ -1,0 +1,990 @@
+{
+ "geometry": {
+  "coherence": 0.9866,
+  "coherence_white": 0.581,
+  "cond": 44.71,
+  "cond_white": 8.2,
+  "sigma": 0.10241,
+  "snr_euclid": 46.376,
+  "snr_white": 48.233,
+  "gauge_gamma": {
+   "白糖": 0.1034,
+   "滑石粉": 0.2243,
+   "硫磺": 0.1182,
+   "石蜡": -0.4952,
+   "色素": 0.2976,
+   "香精": 0.2188
+  },
+  "gauge_cos_white": {
+   "白糖": 0.0027,
+   "滑石粉": -0.3472,
+   "硫磺": -0.3324,
+   "石蜡": -0.4031,
+   "色素": -0.2678,
+   "香精": -0.3261
+  },
+  "perp_frac": {
+   "白糖": 0.7764,
+   "滑石粉": 0.6437,
+   "硫磺": 0.5945,
+   "石蜡": 0.1151,
+   "色素": 0.424,
+   "香精": 0.6445
+  },
+  "increments_euclid": {
+   "白糖": 2.723,
+   "滑石粉": 4.863,
+   "硫磺": 2.439,
+   "石蜡": 8.271,
+   "色素": 5.453,
+   "香精": 4.747
+  },
+  "increments_white": {
+   "白糖": 39.198,
+   "滑石粉": 52.249,
+   "硫磺": 38.979,
+   "石蜡": 54.1,
+   "色素": 57.071,
+   "香精": 47.798
+  }
+ },
+ "alphas": [
+  0.05,
+  0.1,
+  0.15,
+  0.2
+ ],
+ "k_local": 5,
+ "euclid|random": {
+  "standard": {
+   "coverage": 0.889,
+   "mean_size": 30.96,
+   "abstain": 0.0,
+   "top1": 0.402,
+   "q": 6.445,
+   "tau": 2.748,
+   "n_test": 450,
+   "groups": {
+    "single": {
+     "n": 350,
+     "coverage": 0.949,
+     "mean_size": 28.9,
+     "top1": 0.509,
+     "accept": 0.917
+    },
+    "binary": {
+     "n": 50,
+     "coverage": 0.52,
+     "mean_size": 35.84,
+     "top1": 0.06,
+     "accept": 1.0
+    },
+    "ternary": {
+     "n": 50,
+     "coverage": 0.84,
+     "mean_size": 40.5,
+     "top1": 0.0,
+     "accept": 1.0
+    }
+   },
+   "selective": {
+    "accept_rate": 0.936,
+    "cond_coverage": 0.884,
+    "cond_mean_size": 32.67,
+    "cond_top1": 0.375
+   }
+  },
+  "normalized": {
+   "coverage": 0.938,
+   "mean_size": 41.59,
+   "abstain": 0.0,
+   "top1": 0.402,
+   "q": 11.813,
+   "tau": 3.455,
+   "n_test": 450,
+   "groups": {
+    "single": {
+     "n": 350,
+     "coverage": 0.997,
+     "mean_size": 41.1,
+     "top1": 0.509,
+     "accept": 0.894
+    },
+    "binary": {
+     "n": 50,
+     "coverage": 0.86,
+     "mean_size": 52.22,
+     "top1": 0.06,
+     "accept": 0.76
+    },
+    "ternary": {
+     "n": 50,
+     "coverage": 0.6,
+     "mean_size": 34.34,
+     "top1": 0.0,
+     "accept": 0.94
+    }
+   },
+   "selective": {
+    "accept_rate": 0.884,
+    "cond_coverage": 0.937,
+    "cond_mean_size": 44.39,
+    "cond_top1": 0.382
+   }
+  }
+ },
+ "euclid|blocked": {
+  "standard": {
+   "coverage": 0.929,
+   "mean_size": 42.6,
+   "abstain": 0.0,
+   "top1": 0.391,
+   "q": 12.396,
+   "tau": 3.341,
+   "n_test": 450,
+   "groups": {
+    "single": {
+     "n": 350,
+     "coverage": 0.983,
+     "mean_size": 40.97,
+     "top1": 0.503,
+     "accept": 0.894
+    },
+    "binary": {
+     "n": 50,
+     "coverage": 0.48,
+     "mean_size": 45.88,
+     "top1": 0.0,
+     "accept": 0.68
+    },
+    "ternary": {
+     "n": 50,
+     "coverage": 1.0,
+     "mean_size": 50.7,
+     "top1": 0.0,
+     "accept": 0.98
+    }
+   },
+   "selective": {
+    "accept_rate": 0.88,
+    "cond_coverage": 0.929,
+    "cond_mean_size": 44.84,
+    "cond_top1": 0.394
+   }
+  },
+  "normalized": {
+   "coverage": 0.876,
+   "mean_size": 39.78,
+   "abstain": 0.0,
+   "top1": 0.391,
+   "q": 13.894,
+   "tau": 2.033,
+   "n_test": 450,
+   "groups": {
+    "single": {
+     "n": 350,
+     "coverage": 0.991,
+     "mean_size": 39.35,
+     "top1": 0.503,
+     "accept": 0.831
+    },
+    "binary": {
+     "n": 50,
+     "coverage": 0.48,
+     "mean_size": 53.06,
+     "top1": 0.0,
+     "accept": 0.52
+    },
+    "ternary": {
+     "n": 50,
+     "coverage": 0.46,
+     "mean_size": 29.48,
+     "top1": 0.0,
+     "accept": 0.4
+    }
+   },
+   "selective": {
+    "accept_rate": 0.749,
+    "cond_coverage": 0.953,
+    "cond_mean_size": 44.95,
+    "cond_top1": 0.401
+   }
+  }
+ },
+ "white|random": {
+  "standard": {
+   "coverage": 0.907,
+   "mean_size": 19.28,
+   "abstain": 0.007,
+   "top1": 0.78,
+   "q": 75.113,
+   "tau": 30.123,
+   "n_test": 450,
+   "groups": {
+    "single": {
+     "n": 350,
+     "coverage": 0.991,
+     "mean_size": 19.54,
+     "top1": 1.0,
+     "accept": 0.903
+    },
+    "binary": {
+     "n": 50,
+     "coverage": 1.0,
+     "mean_size": 16.32,
+     "top1": 0.02,
+     "accept": 0.0
+    },
+    "ternary": {
+     "n": 50,
+     "coverage": 0.22,
+     "mean_size": 20.44,
+     "top1": 0.0,
+     "accept": 0.0
+    }
+   },
+   "selective": {
+    "accept_rate": 0.702,
+    "cond_coverage": 1.0,
+    "cond_mean_size": 20.25,
+    "cond_top1": 1.0
+   }
+  },
+  "normalized": {
+   "coverage": 0.909,
+   "mean_size": 22.27,
+   "abstain": 0.0,
+   "top1": 0.78,
+   "q": 3.233,
+   "tau": 0.943,
+   "n_test": 450,
+   "groups": {
+    "single": {
+     "n": 350,
+     "coverage": 1.0,
+     "mean_size": 23.86,
+     "top1": 1.0,
+     "accept": 0.926
+    },
+    "binary": {
+     "n": 50,
+     "coverage": 1.0,
+     "mean_size": 18.24,
+     "top1": 0.02,
+     "accept": 0.0
+    },
+    "ternary": {
+     "n": 50,
+     "coverage": 0.18,
+     "mean_size": 15.2,
+     "top1": 0.0,
+     "accept": 0.0
+    }
+   },
+   "selective": {
+    "accept_rate": 0.72,
+    "cond_coverage": 1.0,
+    "cond_mean_size": 22.03,
+    "cond_top1": 1.0
+   }
+  }
+ },
+ "white|blocked": {
+  "standard": {
+   "coverage": 0.907,
+   "mean_size": 25.04,
+   "abstain": 0.013,
+   "top1": 0.747,
+   "q": 124.166,
+   "tau": 84.314,
+   "n_test": 450,
+   "groups": {
+    "single": {
+     "n": 350,
+     "coverage": 0.983,
+     "mean_size": 24.39,
+     "top1": 0.96,
+     "accept": 0.94
+    },
+    "binary": {
+     "n": 50,
+     "coverage": 1.0,
+     "mean_size": 26.06,
+     "top1": 0.0,
+     "accept": 0.92
+    },
+    "ternary": {
+     "n": 50,
+     "coverage": 0.28,
+     "mean_size": 28.58,
+     "top1": 0.0,
+     "accept": 0.98
+    }
+   },
+   "selective": {
+    "accept_rate": 0.942,
+    "cond_coverage": 0.917,
+    "cond_mean_size": 25.98,
+    "cond_top1": 0.752
+   }
+  },
+  "normalized": {
+   "coverage": 0.871,
+   "mean_size": 19.2,
+   "abstain": 0.013,
+   "top1": 0.747,
+   "q": 3.238,
+   "tau": 1.001,
+   "n_test": 450,
+   "groups": {
+    "single": {
+     "n": 350,
+     "coverage": 1.0,
+     "mean_size": 21.57,
+     "top1": 0.96,
+     "accept": 0.946
+    },
+    "binary": {
+     "n": 50,
+     "coverage": 0.72,
+     "mean_size": 10.72,
+     "top1": 0.0,
+     "accept": 0.0
+    },
+    "ternary": {
+     "n": 50,
+     "coverage": 0.12,
+     "mean_size": 11.08,
+     "top1": 0.0,
+     "accept": 0.0
+    }
+   },
+   "selective": {
+    "accept_rate": 0.736,
+    "cond_coverage": 1.0,
+    "cond_mean_size": 20.02,
+    "cond_top1": 0.97
+   }
+  }
+ },
+ "alpha_map|random": {
+  "standard": {
+   "0.05": {
+    "coverage": 0.951,
+    "mean_size": 21.49,
+    "abstain": 0.007,
+    "top1": 0.78,
+    "q": 77.818,
+    "tau": 34.608,
+    "n_test": 450,
+    "groups": {
+     "single": {
+      "n": 350,
+      "coverage": 0.991,
+      "mean_size": 21.66,
+      "top1": 1.0,
+      "accept": 0.963
+     },
+     "binary": {
+      "n": 50,
+      "coverage": 1.0,
+      "mean_size": 18.4,
+      "top1": 0.02,
+      "accept": 0.0
+     },
+     "ternary": {
+      "n": 50,
+      "coverage": 0.62,
+      "mean_size": 23.36,
+      "top1": 0.0,
+      "accept": 0.0
+     }
+    },
+    "selective": {
+     "accept_rate": 0.749,
+     "cond_coverage": 1.0,
+     "cond_mean_size": 22.14,
+     "cond_top1": 1.0
+    }
+   },
+   "0.1": {
+    "coverage": 0.907,
+    "mean_size": 19.28,
+    "abstain": 0.007,
+    "top1": 0.78,
+    "q": 75.113,
+    "tau": 30.123,
+    "n_test": 450,
+    "groups": {
+     "single": {
+      "n": 350,
+      "coverage": 0.991,
+      "mean_size": 19.54,
+      "top1": 1.0,
+      "accept": 0.903
+     },
+     "binary": {
+      "n": 50,
+      "coverage": 1.0,
+      "mean_size": 16.32,
+      "top1": 0.02,
+      "accept": 0.0
+     },
+     "ternary": {
+      "n": 50,
+      "coverage": 0.22,
+      "mean_size": 20.44,
+      "top1": 0.0,
+      "accept": 0.0
+     }
+    },
+    "selective": {
+     "accept_rate": 0.702,
+     "cond_coverage": 1.0,
+     "cond_mean_size": 20.25,
+     "cond_top1": 1.0
+    }
+   },
+   "0.15": {
+    "coverage": 0.838,
+    "mean_size": 5.42,
+    "abstain": 0.04,
+    "top1": 0.78,
+    "q": 46.469,
+    "tau": 26.999,
+    "n_test": 450,
+    "groups": {
+     "single": {
+      "n": 350,
+      "coverage": 0.986,
+      "mean_size": 6.04,
+      "top1": 1.0,
+      "accept": 0.857
+     },
+     "binary": {
+      "n": 50,
+      "coverage": 0.64,
+      "mean_size": 3.6,
+      "top1": 0.02,
+      "accept": 0.0
+     },
+     "ternary": {
+      "n": 50,
+      "coverage": 0.0,
+      "mean_size": 2.88,
+      "top1": 0.0,
+      "accept": 0.0
+     }
+    },
+    "selective": {
+     "accept_rate": 0.667,
+     "cond_coverage": 1.0,
+     "cond_mean_size": 6.51,
+     "cond_top1": 1.0
+    }
+   },
+   "0.2": {
+    "coverage": 0.809,
+    "mean_size": 3.12,
+    "abstain": 0.096,
+    "top1": 0.78,
+    "q": 43.834,
+    "tau": 25.059,
+    "n_test": 450,
+    "groups": {
+     "single": {
+      "n": 350,
+      "coverage": 0.983,
+      "mean_size": 3.66,
+      "top1": 1.0,
+      "accept": 0.811
+     },
+     "binary": {
+      "n": 50,
+      "coverage": 0.4,
+      "mean_size": 1.64,
+      "top1": 0.02,
+      "accept": 0.0
+     },
+     "ternary": {
+      "n": 50,
+      "coverage": 0.0,
+      "mean_size": 0.8,
+      "top1": 0.0,
+      "accept": 0.0
+     }
+    },
+    "selective": {
+     "accept_rate": 0.631,
+     "cond_coverage": 1.0,
+     "cond_mean_size": 4.03,
+     "cond_top1": 1.0
+    }
+   }
+  },
+  "normalized": {
+   "0.05": {
+    "coverage": 0.947,
+    "mean_size": 30.56,
+    "abstain": 0.0,
+    "top1": 0.78,
+    "q": 3.541,
+    "tau": 0.958,
+    "n_test": 450,
+    "groups": {
+     "single": {
+      "n": 350,
+      "coverage": 1.0,
+      "mean_size": 31.87,
+      "top1": 1.0,
+      "accept": 0.946
+     },
+     "binary": {
+      "n": 50,
+      "coverage": 1.0,
+      "mean_size": 26.28,
+      "top1": 0.02,
+      "accept": 0.0
+     },
+     "ternary": {
+      "n": 50,
+      "coverage": 0.52,
+      "mean_size": 25.72,
+      "top1": 0.0,
+      "accept": 0.0
+     }
+    },
+    "selective": {
+     "accept_rate": 0.736,
+     "cond_coverage": 1.0,
+     "cond_mean_size": 30.55,
+     "cond_top1": 1.0
+    }
+   },
+   "0.1": {
+    "coverage": 0.909,
+    "mean_size": 22.27,
+    "abstain": 0.0,
+    "top1": 0.78,
+    "q": 3.233,
+    "tau": 0.943,
+    "n_test": 450,
+    "groups": {
+     "single": {
+      "n": 350,
+      "coverage": 1.0,
+      "mean_size": 23.86,
+      "top1": 1.0,
+      "accept": 0.926
+     },
+     "binary": {
+      "n": 50,
+      "coverage": 1.0,
+      "mean_size": 18.24,
+      "top1": 0.02,
+      "accept": 0.0
+     },
+     "ternary": {
+      "n": 50,
+      "coverage": 0.18,
+      "mean_size": 15.2,
+      "top1": 0.0,
+      "accept": 0.0
+     }
+    },
+    "selective": {
+     "accept_rate": 0.72,
+     "cond_coverage": 1.0,
+     "cond_mean_size": 22.03,
+     "cond_top1": 1.0
+    }
+   },
+   "0.15": {
+    "coverage": 0.849,
+    "mean_size": 7.94,
+    "abstain": 0.051,
+    "top1": 0.78,
+    "q": 2.122,
+    "tau": 0.924,
+    "n_test": 450,
+    "groups": {
+     "single": {
+      "n": 350,
+      "coverage": 1.0,
+      "mean_size": 9.21,
+      "top1": 1.0,
+      "accept": 0.846
+     },
+     "binary": {
+      "n": 50,
+      "coverage": 0.64,
+      "mean_size": 4.8,
+      "top1": 0.02,
+      "accept": 0.0
+     },
+     "ternary": {
+      "n": 50,
+      "coverage": 0.0,
+      "mean_size": 2.2,
+      "top1": 0.0,
+      "accept": 0.0
+     }
+    },
+    "selective": {
+     "accept_rate": 0.658,
+     "cond_coverage": 1.0,
+     "cond_mean_size": 7.11,
+     "cond_top1": 1.0
+    }
+   },
+   "0.2": {
+    "coverage": 0.8,
+    "mean_size": 3.73,
+    "abstain": 0.158,
+    "top1": 0.78,
+    "q": 1.804,
+    "tau": 0.906,
+    "n_test": 450,
+    "groups": {
+     "single": {
+      "n": 350,
+      "coverage": 1.0,
+      "mean_size": 4.53,
+      "top1": 1.0,
+      "accept": 0.78
+     },
+     "binary": {
+      "n": 50,
+      "coverage": 0.2,
+      "mean_size": 1.32,
+      "top1": 0.02,
+      "accept": 0.0
+     },
+     "ternary": {
+      "n": 50,
+      "coverage": 0.0,
+      "mean_size": 0.48,
+      "top1": 0.0,
+      "accept": 0.0
+     }
+    },
+    "selective": {
+     "accept_rate": 0.607,
+     "cond_coverage": 1.0,
+     "cond_mean_size": 2.98,
+     "cond_top1": 1.0
+    }
+   }
+  }
+ },
+ "alpha_map|blocked": {
+  "standard": {
+   "0.05": {
+    "coverage": 0.976,
+    "mean_size": 27.81,
+    "abstain": 0.011,
+    "top1": 0.747,
+    "q": 131.128,
+    "tau": 99.35,
+    "n_test": 450,
+    "groups": {
+     "single": {
+      "n": 350,
+      "coverage": 0.986,
+      "mean_size": 27.08,
+      "top1": 0.96,
+      "accept": 0.977
+     },
+     "binary": {
+      "n": 50,
+      "coverage": 1.0,
+      "mean_size": 28.72,
+      "top1": 0.0,
+      "accept": 1.0
+     },
+     "ternary": {
+      "n": 50,
+      "coverage": 0.88,
+      "mean_size": 32.0,
+      "top1": 0.0,
+      "accept": 1.0
+     }
+    },
+    "selective": {
+     "accept_rate": 0.982,
+     "cond_coverage": 0.986,
+     "cond_mean_size": 28.27,
+     "cond_top1": 0.751
+    }
+   },
+   "0.1": {
+    "coverage": 0.907,
+    "mean_size": 25.04,
+    "abstain": 0.013,
+    "top1": 0.747,
+    "q": 124.166,
+    "tau": 84.314,
+    "n_test": 450,
+    "groups": {
+     "single": {
+      "n": 350,
+      "coverage": 0.983,
+      "mean_size": 24.39,
+      "top1": 0.96,
+      "accept": 0.94
+     },
+     "binary": {
+      "n": 50,
+      "coverage": 1.0,
+      "mean_size": 26.06,
+      "top1": 0.0,
+      "accept": 0.92
+     },
+     "ternary": {
+      "n": 50,
+      "coverage": 0.28,
+      "mean_size": 28.58,
+      "top1": 0.0,
+      "accept": 0.98
+     }
+    },
+    "selective": {
+     "accept_rate": 0.942,
+     "cond_coverage": 0.917,
+     "cond_mean_size": 25.98,
+     "cond_top1": 0.752
+    }
+   },
+   "0.15": {
+    "coverage": 0.864,
+    "mean_size": 12.96,
+    "abstain": 0.018,
+    "top1": 0.747,
+    "q": 101.391,
+    "tau": 76.493,
+    "n_test": 450,
+    "groups": {
+     "single": {
+      "n": 350,
+      "coverage": 0.977,
+      "mean_size": 13.05,
+      "top1": 0.96,
+      "accept": 0.909
+     },
+     "binary": {
+      "n": 50,
+      "coverage": 0.94,
+      "mean_size": 12.68,
+      "top1": 0.0,
+      "accept": 0.92
+     },
+     "ternary": {
+      "n": 50,
+      "coverage": 0.0,
+      "mean_size": 12.6,
+      "top1": 0.0,
+      "accept": 0.96
+     }
+    },
+    "selective": {
+     "accept_rate": 0.916,
+     "cond_coverage": 0.883,
+     "cond_mean_size": 13.79,
+     "cond_top1": 0.748
+    }
+   },
+   "0.2": {
+    "coverage": 0.809,
+    "mean_size": 7.26,
+    "abstain": 0.033,
+    "top1": 0.747,
+    "q": 95.859,
+    "tau": 72.167,
+    "n_test": 450,
+    "groups": {
+     "single": {
+      "n": 350,
+      "coverage": 0.963,
+      "mean_size": 7.69,
+      "top1": 0.96,
+      "accept": 0.88
+     },
+     "binary": {
+      "n": 50,
+      "coverage": 0.54,
+      "mean_size": 5.64,
+      "top1": 0.0,
+      "accept": 0.88
+     },
+     "ternary": {
+      "n": 50,
+      "coverage": 0.0,
+      "mean_size": 5.84,
+      "top1": 0.0,
+      "accept": 0.86
+     }
+    },
+    "selective": {
+     "accept_rate": 0.878,
+     "cond_coverage": 0.848,
+     "cond_mean_size": 8.09,
+     "cond_top1": 0.754
+    }
+   }
+  },
+  "normalized": {
+   "0.05": {
+    "coverage": 0.913,
+    "mean_size": 26.57,
+    "abstain": 0.0,
+    "top1": 0.747,
+    "q": 3.695,
+    "tau": 1.004,
+    "n_test": 450,
+    "groups": {
+     "single": {
+      "n": 350,
+      "coverage": 1.0,
+      "mean_size": 28.81,
+      "top1": 0.96,
+      "accept": 0.966
+     },
+     "binary": {
+      "n": 50,
+      "coverage": 0.94,
+      "mean_size": 19.3,
+      "top1": 0.0,
+      "accept": 0.0
+     },
+     "ternary": {
+      "n": 50,
+      "coverage": 0.28,
+      "mean_size": 18.16,
+      "top1": 0.0,
+      "accept": 0.0
+     }
+    },
+    "selective": {
+     "accept_rate": 0.751,
+     "cond_coverage": 1.0,
+     "cond_mean_size": 27.83,
+     "cond_top1": 0.967
+    }
+   },
+   "0.1": {
+    "coverage": 0.871,
+    "mean_size": 19.2,
+    "abstain": 0.013,
+    "top1": 0.747,
+    "q": 3.238,
+    "tau": 1.001,
+    "n_test": 450,
+    "groups": {
+     "single": {
+      "n": 350,
+      "coverage": 1.0,
+      "mean_size": 21.57,
+      "top1": 0.96,
+      "accept": 0.946
+     },
+     "binary": {
+      "n": 50,
+      "coverage": 0.72,
+      "mean_size": 10.72,
+      "top1": 0.0,
+      "accept": 0.0
+     },
+     "ternary": {
+      "n": 50,
+      "coverage": 0.12,
+      "mean_size": 11.08,
+      "top1": 0.0,
+      "accept": 0.0
+     }
+    },
+    "selective": {
+     "accept_rate": 0.736,
+     "cond_coverage": 1.0,
+     "cond_mean_size": 20.02,
+     "cond_top1": 0.97
+    }
+   },
+   "0.15": {
+    "coverage": 0.827,
+    "mean_size": 15.09,
+    "abstain": 0.031,
+    "top1": 0.747,
+    "q": 2.744,
+    "tau": 0.999,
+    "n_test": 450,
+    "groups": {
+     "single": {
+      "n": 350,
+      "coverage": 1.0,
+      "mean_size": 17.41,
+      "top1": 0.96,
+      "accept": 0.926
+     },
+     "binary": {
+      "n": 50,
+      "coverage": 0.44,
+      "mean_size": 6.88,
+      "top1": 0.0,
+      "accept": 0.0
+     },
+     "ternary": {
+      "n": 50,
+      "coverage": 0.0,
+      "mean_size": 7.04,
+      "top1": 0.0,
+      "accept": 0.0
+     }
+    },
+    "selective": {
+     "accept_rate": 0.72,
+     "cond_coverage": 1.0,
+     "cond_mean_size": 15.0,
+     "cond_top1": 0.969
+    }
+   },
+   "0.2": {
+    "coverage": 0.798,
+    "mean_size": 11.0,
+    "abstain": 0.08,
+    "top1": 0.747,
+    "q": 2.507,
+    "tau": 0.999,
+    "n_test": 450,
+    "groups": {
+     "single": {
+      "n": 350,
+      "coverage": 1.0,
+      "mean_size": 13.12,
+      "top1": 0.96,
+      "accept": 0.909
+     },
+     "binary": {
+      "n": 50,
+      "coverage": 0.18,
+      "mean_size": 3.7,
+      "top1": 0.0,
+      "accept": 0.0
+     },
+     "ternary": {
+      "n": 50,
+      "coverage": 0.0,
+      "mean_size": 3.42,
+      "top1": 0.0,
+      "accept": 0.0
+     }
+    },
+    "selective": {
+     "accept_rate": 0.707,
+     "cond_coverage": 1.0,
+     "cond_mean_size": 10.45,
+     "cond_top1": 0.969
+    }
+   }
+  }
+ }
+}

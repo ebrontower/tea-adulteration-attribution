@@ -1,0 +1,4403 @@
+{
+ "rules": {
+  "min_fit_rows": 6,
+  "min_test_rows": 5,
+  "min_fit_groups": 2,
+  "min_test_groups": 2,
+  "pass_abs_bias_pct": 50.0
+ },
+ "corpora": {
+  "D1": {
+   "name": "D1",
+   "matrix": "olive oil",
+   "adulterant": "sunflower oil",
+   "instrument": "Bruker Tensor 27 + ATR",
+   "n": 352,
+   "n_channel": 1762,
+   "n_groups": 55,
+   "levels": [
+    0.0,
+    3.0,
+    6.0,
+    9.0,
+    12.0,
+    15.0,
+    18.0,
+    21.0,
+    24.0,
+    27.0,
+    30.0
+   ],
+   "spectra_per_level": [
+    102,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25
+   ],
+   "preps_per_level": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ],
+   "band_split": {
+    "low": [
+     3.0,
+     6.0,
+     9.0,
+     12.0,
+     15.0
+    ],
+    "high": [
+     18.0,
+     21.0,
+     24.0,
+     27.0,
+     30.0
+    ]
+   },
+   "prep_folds": [
+    28,
+    27
+   ],
+   "geometry": {
+    "abs": {
+     "full": {
+      "levels": [
+       3.0,
+       6.0,
+       9.0,
+       12.0,
+       15.0,
+       18.0,
+       21.0,
+       24.0,
+       27.0,
+       30.0
+      ],
+      "norms": [
+       0.016,
+       0.0167,
+       0.022,
+       0.0256,
+       0.0311,
+       0.0345,
+       0.0402,
+       0.0494,
+       0.0542,
+       0.0558
+      ],
+      "slope_cv": 0.4062,
+      "r2_in": 0.951,
+      "r2_pred_loo": 0.9441,
+      "sv1_share": 0.9527,
+      "monotone": true,
+      "worst_rel_step": 0.0281,
+      "snr_top": 2.13
+     },
+     "low": {
+      "levels": [
+       3.0,
+       6.0,
+       9.0,
+       12.0,
+       15.0
+      ],
+      "norms": [
+       0.016,
+       0.0167,
+       0.022,
+       0.0256,
+       0.0311
+      ],
+      "slope_cv": 0.4121,
+      "r2_in": 0.8842,
+      "r2_pred_loo": 0.8324,
+      "sv1_share": 0.8959,
+      "monotone": true,
+      "worst_rel_step": 0.0426,
+      "snr_top": 1.312
+     },
+     "high": {
+      "levels": [
+       18.0,
+       21.0,
+       24.0,
+       27.0,
+       30.0
+      ],
+      "norms": [
+       0.0345,
+       0.0402,
+       0.0494,
+       0.0542,
+       0.0558
+      ],
+      "slope_cv": 0.0365,
+      "r2_in": 0.9934,
+      "r2_pred_loo": 0.9894,
+      "sv1_share": 0.9951,
+      "monotone": true,
+      "worst_rel_step": 0.0281,
+      "snr_top": 2.13
+     }
+    },
+    "snv": {
+     "full": {
+      "levels": [
+       3.0,
+       6.0,
+       9.0,
+       12.0,
+       15.0,
+       18.0,
+       21.0,
+       24.0,
+       27.0,
+       30.0
+      ],
+      "norms": [
+       0.4158,
+       0.4225,
+       0.5691,
+       0.6732,
+       0.8205,
+       0.9105,
+       1.06,
+       1.297,
+       1.4243,
+       1.4743
+      ],
+      "slope_cv": 0.4003,
+      "r2_in": 0.9517,
+      "r2_pred_loo": 0.9451,
+      "sv1_share": 0.9534,
+      "monotone": true,
+      "worst_rel_step": 0.0162,
+      "snr_top": 2.426
+     },
+     "low": {
+      "levels": [
+       3.0,
+       6.0,
+       9.0,
+       12.0,
+       15.0
+      ],
+      "norms": [
+       0.4158,
+       0.4225,
+       0.5691,
+       0.6732,
+       0.8205
+      ],
+      "slope_cv": 0.4112,
+      "r2_in": 0.8873,
+      "r2_pred_loo": 0.8381,
+      "sv1_share": 0.8967,
+      "monotone": true,
+      "worst_rel_step": 0.0162,
+      "snr_top": 1.406
+     },
+     "high": {
+      "levels": [
+       18.0,
+       21.0,
+       24.0,
+       27.0,
+       30.0
+      ],
+      "norms": [
+       0.9105,
+       1.06,
+       1.297,
+       1.4243,
+       1.4743
+      ],
+      "slope_cv": 0.0341,
+      "r2_in": 0.9939,
+      "r2_pred_loo": 0.9903,
+      "sv1_share": 0.9953,
+      "monotone": true,
+      "worst_rel_step": 0.0352,
+      "snr_top": 2.426
+     }
+    }
+   },
+   "points": [
+    {
+     "metric": "abs",
+     "direction": "down",
+     "n_fit": 65,
+     "n_test": 65,
+     "groups_fit": 13,
+     "groups_test": 13,
+     "nc": 6,
+     "rmse": 8.944,
+     "rel_bias_pct": 93.92,
+     "mean_test_level": 9.0,
+     "interp_control": {
+      "rmse": 2.746,
+      "rel_bias_pct": 7.29,
+      "n_test": 65
+     },
+     "slope_cv_fit": 0.0365,
+     "r2_pred_loo": 0.9894,
+     "r2_in_fit": 0.9934,
+     "sv1_fit": 0.9951,
+     "monotone_fit": true,
+     "snr_fit": 2.13,
+     "fit_levels": [
+      18.0,
+      21.0,
+      24.0,
+      27.0,
+      30.0
+     ],
+     "test_levels": [
+      3.0,
+      6.0,
+      9.0,
+      12.0,
+      15.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "down",
+     "n_fit": 60,
+     "n_test": 60,
+     "groups_fit": 12,
+     "groups_test": 12,
+     "nc": 6,
+     "rmse": 9.918,
+     "rel_bias_pct": 104.13,
+     "mean_test_level": 9.0,
+     "interp_control": {
+      "rmse": 2.919,
+      "rel_bias_pct": 12.38,
+      "n_test": 60
+     },
+     "slope_cv_fit": 0.0365,
+     "r2_pred_loo": 0.9894,
+     "r2_in_fit": 0.9934,
+     "sv1_fit": 0.9951,
+     "monotone_fit": true,
+     "snr_fit": 2.13,
+     "fit_levels": [
+      18.0,
+      21.0,
+      24.0,
+      27.0,
+      30.0
+     ],
+     "test_levels": [
+      3.0,
+      6.0,
+      9.0,
+      12.0,
+      15.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "up",
+     "n_fit": 60,
+     "n_test": 60,
+     "groups_fit": 12,
+     "groups_test": 12,
+     "nc": 6,
+     "rmse": 6.678,
+     "rel_bias_pct": -21.99,
+     "mean_test_level": 24.0,
+     "interp_control": {
+      "rmse": 4.7,
+      "rel_bias_pct": -4.9,
+      "n_test": 60
+     },
+     "slope_cv_fit": 0.4121,
+     "r2_pred_loo": 0.8324,
+     "r2_in_fit": 0.8842,
+     "sv1_fit": 0.8959,
+     "monotone_fit": true,
+     "snr_fit": 1.312,
+     "fit_levels": [
+      3.0,
+      6.0,
+      9.0,
+      12.0,
+      15.0
+     ],
+     "test_levels": [
+      18.0,
+      21.0,
+      24.0,
+      27.0,
+      30.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "up",
+     "n_fit": 65,
+     "n_test": 65,
+     "groups_fit": 13,
+     "groups_test": 13,
+     "nc": 6,
+     "rmse": 6.819,
+     "rel_bias_pct": -22.48,
+     "mean_test_level": 24.0,
+     "interp_control": {
+      "rmse": 4.581,
+      "rel_bias_pct": -6.66,
+      "n_test": 65
+     },
+     "slope_cv_fit": 0.4121,
+     "r2_pred_loo": 0.8324,
+     "r2_in_fit": 0.8842,
+     "sv1_fit": 0.8959,
+     "monotone_fit": true,
+     "snr_fit": 1.312,
+     "fit_levels": [
+      3.0,
+      6.0,
+      9.0,
+      12.0,
+      15.0
+     ],
+     "test_levels": [
+      18.0,
+      21.0,
+      24.0,
+      27.0,
+      30.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "down",
+     "n_fit": 65,
+     "n_test": 65,
+     "groups_fit": 13,
+     "groups_test": 13,
+     "nc": 6,
+     "rmse": 8.728,
+     "rel_bias_pct": 91.56,
+     "mean_test_level": 9.0,
+     "interp_control": {
+      "rmse": 2.845,
+      "rel_bias_pct": 4.73,
+      "n_test": 65
+     },
+     "slope_cv_fit": 0.0341,
+     "r2_pred_loo": 0.9903,
+     "r2_in_fit": 0.9939,
+     "sv1_fit": 0.9953,
+     "monotone_fit": true,
+     "snr_fit": 2.426,
+     "fit_levels": [
+      18.0,
+      21.0,
+      24.0,
+      27.0,
+      30.0
+     ],
+     "test_levels": [
+      3.0,
+      6.0,
+      9.0,
+      12.0,
+      15.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "down",
+     "n_fit": 60,
+     "n_test": 60,
+     "groups_fit": 12,
+     "groups_test": 12,
+     "nc": 6,
+     "rmse": 9.95,
+     "rel_bias_pct": 104.74,
+     "mean_test_level": 9.0,
+     "interp_control": {
+      "rmse": 2.861,
+      "rel_bias_pct": 9.49,
+      "n_test": 60
+     },
+     "slope_cv_fit": 0.0341,
+     "r2_pred_loo": 0.9903,
+     "r2_in_fit": 0.9939,
+     "sv1_fit": 0.9953,
+     "monotone_fit": true,
+     "snr_fit": 2.426,
+     "fit_levels": [
+      18.0,
+      21.0,
+      24.0,
+      27.0,
+      30.0
+     ],
+     "test_levels": [
+      3.0,
+      6.0,
+      9.0,
+      12.0,
+      15.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "up",
+     "n_fit": 60,
+     "n_test": 60,
+     "groups_fit": 12,
+     "groups_test": 12,
+     "nc": 6,
+     "rmse": 6.686,
+     "rel_bias_pct": -22.25,
+     "mean_test_level": 24.0,
+     "interp_control": {
+      "rmse": 4.587,
+      "rel_bias_pct": -4.04,
+      "n_test": 60
+     },
+     "slope_cv_fit": 0.4112,
+     "r2_pred_loo": 0.8381,
+     "r2_in_fit": 0.8873,
+     "sv1_fit": 0.8967,
+     "monotone_fit": true,
+     "snr_fit": 1.406,
+     "fit_levels": [
+      3.0,
+      6.0,
+      9.0,
+      12.0,
+      15.0
+     ],
+     "test_levels": [
+      18.0,
+      21.0,
+      24.0,
+      27.0,
+      30.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "up",
+     "n_fit": 65,
+     "n_test": 65,
+     "groups_fit": 13,
+     "groups_test": 13,
+     "nc": 6,
+     "rmse": 7.04,
+     "rel_bias_pct": -25.33,
+     "mean_test_level": 24.0,
+     "interp_control": {
+      "rmse": 4.457,
+      "rel_bias_pct": -6.73,
+      "n_test": 65
+     },
+     "slope_cv_fit": 0.4112,
+     "r2_pred_loo": 0.8381,
+     "r2_in_fit": 0.8873,
+     "sv1_fit": 0.8967,
+     "monotone_fit": true,
+     "snr_fit": 1.406,
+     "fit_levels": [
+      3.0,
+      6.0,
+      9.0,
+      12.0,
+      15.0
+     ],
+     "test_levels": [
+      18.0,
+      21.0,
+      24.0,
+      27.0,
+      30.0
+     ]
+    }
+   ],
+   "skips": [],
+   "rows": {
+    "each_level_one_interval": false,
+    "intervals_ordered_by_level": false
+   },
+   "dose_axis": "usable",
+   "usable_in_metrics": [
+    "abs",
+    "snv"
+   ],
+   "aliasing_flag": false
+  },
+  "D2": {
+   "name": "D2",
+   "matrix": "roasted coffee",
+   "adulterant": "malt flour",
+   "instrument": "Bruker Tensor 27 + ATR",
+   "n": 405,
+   "n_channel": 1762,
+   "n_groups": 55,
+   "levels": [
+    0.0,
+    5.0,
+    10.0,
+    15.0,
+    20.0,
+    25.0,
+    30.0,
+    35.0,
+    40.0,
+    45.0,
+    50.0
+   ],
+   "spectra_per_level": [
+    152,
+    25,
+    25,
+    26,
+    26,
+    25,
+    25,
+    25,
+    25,
+    27,
+    24
+   ],
+   "preps_per_level": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ],
+   "band_split": {
+    "low": [
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     25.0
+    ],
+    "high": [
+     30.0,
+     35.0,
+     40.0,
+     45.0,
+     50.0
+    ]
+   },
+   "prep_folds": [
+    28,
+    27
+   ],
+   "geometry": {
+    "abs": {
+     "full": {
+      "levels": [
+       5.0,
+       10.0,
+       15.0,
+       20.0,
+       25.0,
+       30.0,
+       35.0,
+       40.0,
+       45.0,
+       50.0
+      ],
+      "norms": [
+       0.0668,
+       0.0957,
+       0.2112,
+       0.198,
+       0.2596,
+       0.296,
+       0.3414,
+       0.3773,
+       0.4344,
+       0.4514
+      ],
+      "slope_cv": 0.157,
+      "r2_in": 0.9424,
+      "r2_pred_loo": 0.9308,
+      "sv1_share": 0.9432,
+      "monotone": false,
+      "worst_rel_step": -0.0626,
+      "snr_top": 2.234
+     },
+     "low": {
+      "levels": [
+       5.0,
+       10.0,
+       15.0,
+       20.0,
+       25.0
+      ],
+      "norms": [
+       0.0668,
+       0.0957,
+       0.2112,
+       0.198,
+       0.2596
+      ],
+      "slope_cv": 0.1637,
+      "r2_in": 0.9214,
+      "r2_pred_loo": 0.8921,
+      "sv1_share": 0.9364,
+      "monotone": false,
+      "worst_rel_step": -0.0626,
+      "snr_top": 1.282
+     },
+     "high": {
+      "levels": [
+       30.0,
+       35.0,
+       40.0,
+       45.0,
+       50.0
+      ],
+      "norms": [
+       0.296,
+       0.3414,
+       0.3773,
+       0.4344,
+       0.4514
+      ],
+      "slope_cv": 0.031,
+      "r2_in": 0.9853,
+      "r2_pred_loo": 0.9767,
+      "sv1_share": 0.9861,
+      "monotone": true,
+      "worst_rel_step": 0.0392,
+      "snr_top": 2.234
+     }
+    },
+    "snv": {
+     "full": {
+      "levels": [
+       5.0,
+       10.0,
+       15.0,
+       20.0,
+       25.0,
+       30.0,
+       35.0,
+       40.0,
+       45.0,
+       50.0
+      ],
+      "norms": [
+       1.2342,
+       1.959,
+       2.9293,
+       4.0549,
+       5.1122,
+       6.5295,
+       7.4761,
+       8.3906,
+       9.5611,
+       10.2099
+      ],
+      "slope_cv": 0.0667,
+      "r2_in": 0.9941,
+      "r2_pred_loo": 0.9928,
+      "sv1_share": 0.995,
+      "monotone": true,
+      "worst_rel_step": 0.0679,
+      "snr_top": 9.257
+     },
+     "low": {
+      "levels": [
+       5.0,
+       10.0,
+       15.0,
+       20.0,
+       25.0
+      ],
+      "norms": [
+       1.2342,
+       1.959,
+       2.9293,
+       4.0549,
+       5.1122
+      ],
+      "slope_cv": 0.092,
+      "r2_in": 0.993,
+      "r2_pred_loo": 0.9885,
+      "sv1_share": 0.9942,
+      "monotone": true,
+      "worst_rel_step": 0.2607,
+      "snr_top": 4.025
+     },
+     "high": {
+      "levels": [
+       30.0,
+       35.0,
+       40.0,
+       45.0,
+       50.0
+      ],
+      "norms": [
+       6.5295,
+       7.4761,
+       8.3906,
+       9.5611,
+       10.2099
+      ],
+      "slope_cv": 0.0211,
+      "r2_in": 0.9985,
+      "r2_pred_loo": 0.9975,
+      "sv1_share": 0.9989,
+      "monotone": true,
+      "worst_rel_step": 0.0679,
+      "snr_top": 9.257
+     }
+    }
+   },
+   "points": [
+    {
+     "metric": "abs",
+     "direction": "down",
+     "n_fit": 64,
+     "n_test": 66,
+     "groups_fit": 13,
+     "groups_test": 13,
+     "nc": 6,
+     "rmse": 4.086,
+     "rel_bias_pct": 11.25,
+     "mean_test_level": 14.242,
+     "interp_control": {
+      "rmse": 2.734,
+      "rel_bias_pct": 1.59,
+      "n_test": 66
+     },
+     "slope_cv_fit": 0.031,
+     "r2_pred_loo": 0.9767,
+     "r2_in_fit": 0.9853,
+     "sv1_fit": 0.9861,
+     "monotone_fit": true,
+     "snr_fit": 2.234,
+     "fit_levels": [
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0
+     ],
+     "test_levels": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "down",
+     "n_fit": 62,
+     "n_test": 61,
+     "groups_fit": 12,
+     "groups_test": 12,
+     "nc": 6,
+     "rmse": 5.442,
+     "rel_bias_pct": 28.8,
+     "mean_test_level": 15.902,
+     "interp_control": {
+      "rmse": 2.917,
+      "rel_bias_pct": 3.77,
+      "n_test": 61
+     },
+     "slope_cv_fit": 0.031,
+     "r2_pred_loo": 0.9767,
+     "r2_in_fit": 0.9853,
+     "sv1_fit": 0.9861,
+     "monotone_fit": true,
+     "snr_fit": 2.234,
+     "fit_levels": [
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0
+     ],
+     "test_levels": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "up",
+     "n_fit": 61,
+     "n_test": 62,
+     "groups_fit": 12,
+     "groups_test": 12,
+     "nc": 6,
+     "rmse": 7.022,
+     "rel_bias_pct": -15.09,
+     "mean_test_level": 39.355,
+     "interp_control": {
+      "rmse": 3.617,
+      "rel_bias_pct": -0.41,
+      "n_test": 62
+     },
+     "slope_cv_fit": 0.1637,
+     "r2_pred_loo": 0.8921,
+     "r2_in_fit": 0.9214,
+     "sv1_fit": 0.9364,
+     "monotone_fit": false,
+     "snr_fit": 1.282,
+     "fit_levels": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0
+     ],
+     "test_levels": [
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "up",
+     "n_fit": 66,
+     "n_test": 64,
+     "groups_fit": 13,
+     "groups_test": 13,
+     "nc": 6,
+     "rmse": 4.329,
+     "rel_bias_pct": -5.2,
+     "mean_test_level": 40.625,
+     "interp_control": {
+      "rmse": 3.554,
+      "rel_bias_pct": -2.14,
+      "n_test": 64
+     },
+     "slope_cv_fit": 0.1637,
+     "r2_pred_loo": 0.8921,
+     "r2_in_fit": 0.9214,
+     "sv1_fit": 0.9364,
+     "monotone_fit": false,
+     "snr_fit": 1.282,
+     "fit_levels": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0
+     ],
+     "test_levels": [
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "down",
+     "n_fit": 64,
+     "n_test": 66,
+     "groups_fit": 13,
+     "groups_test": 13,
+     "nc": 6,
+     "rmse": 5.428,
+     "rel_bias_pct": 28.43,
+     "mean_test_level": 14.242,
+     "interp_control": {
+      "rmse": 2.517,
+      "rel_bias_pct": 0.03,
+      "n_test": 66
+     },
+     "slope_cv_fit": 0.0211,
+     "r2_pred_loo": 0.9975,
+     "r2_in_fit": 0.9985,
+     "sv1_fit": 0.9989,
+     "monotone_fit": true,
+     "snr_fit": 9.257,
+     "fit_levels": [
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0
+     ],
+     "test_levels": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "down",
+     "n_fit": 62,
+     "n_test": 61,
+     "groups_fit": 12,
+     "groups_test": 12,
+     "nc": 6,
+     "rmse": 6.138,
+     "rel_bias_pct": 32.53,
+     "mean_test_level": 15.902,
+     "interp_control": {
+      "rmse": 2.723,
+      "rel_bias_pct": 2.19,
+      "n_test": 61
+     },
+     "slope_cv_fit": 0.0211,
+     "r2_pred_loo": 0.9975,
+     "r2_in_fit": 0.9985,
+     "sv1_fit": 0.9989,
+     "monotone_fit": true,
+     "snr_fit": 9.257,
+     "fit_levels": [
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0
+     ],
+     "test_levels": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "up",
+     "n_fit": 61,
+     "n_test": 62,
+     "groups_fit": 12,
+     "groups_test": 12,
+     "nc": 6,
+     "rmse": 4.973,
+     "rel_bias_pct": -8.75,
+     "mean_test_level": 39.355,
+     "interp_control": {
+      "rmse": 3.48,
+      "rel_bias_pct": 0.52,
+      "n_test": 62
+     },
+     "slope_cv_fit": 0.092,
+     "r2_pred_loo": 0.9885,
+     "r2_in_fit": 0.993,
+     "sv1_fit": 0.9942,
+     "monotone_fit": true,
+     "snr_fit": 4.025,
+     "fit_levels": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0
+     ],
+     "test_levels": [
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "up",
+     "n_fit": 66,
+     "n_test": 64,
+     "groups_fit": 13,
+     "groups_test": 13,
+     "nc": 6,
+     "rmse": 3.896,
+     "rel_bias_pct": -4.86,
+     "mean_test_level": 40.625,
+     "interp_control": {
+      "rmse": 2.978,
+      "rel_bias_pct": -2.0,
+      "n_test": 64
+     },
+     "slope_cv_fit": 0.092,
+     "r2_pred_loo": 0.9885,
+     "r2_in_fit": 0.993,
+     "sv1_fit": 0.9942,
+     "monotone_fit": true,
+     "snr_fit": 4.025,
+     "fit_levels": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0
+     ],
+     "test_levels": [
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0
+     ]
+    }
+   ],
+   "skips": [],
+   "rows": {
+    "each_level_one_interval": false,
+    "intervals_ordered_by_level": false
+   },
+   "dose_axis": "usable",
+   "usable_in_metrics": [
+    "snv"
+   ],
+   "aliasing_flag": false
+  },
+  "D3": {
+   "name": "D3",
+   "matrix": "orange juice",
+   "adulterant": "apple juice",
+   "instrument": "Bruker Tensor 27 + ATR",
+   "n": 413,
+   "n_channel": 1762,
+   "n_groups": 55,
+   "levels": [
+    0.0,
+    5.0,
+    10.0,
+    15.0,
+    20.0,
+    25.0,
+    30.0,
+    35.0,
+    40.0,
+    45.0,
+    50.0
+   ],
+   "spectra_per_level": [
+    162,
+    25,
+    25,
+    26,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25
+   ],
+   "preps_per_level": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ],
+   "band_split": {
+    "low": [
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     25.0
+    ],
+    "high": [
+     30.0,
+     35.0,
+     40.0,
+     45.0,
+     50.0
+    ]
+   },
+   "prep_folds": [
+    28,
+    27
+   ],
+   "geometry": {
+    "abs": {
+     "full": {
+      "levels": [
+       5.0,
+       10.0,
+       15.0,
+       20.0,
+       25.0,
+       30.0,
+       35.0,
+       40.0,
+       45.0,
+       50.0
+      ],
+      "norms": [
+       0.0705,
+       0.0716,
+       0.0753,
+       0.0702,
+       0.0709,
+       0.0718,
+       0.0691,
+       0.07,
+       0.0688,
+       0.0679
+      ],
+      "slope_cv": 0.8965,
+      "r2_in": 0.7581,
+      "r2_pred_loo": 0.7254,
+      "sv1_share": 0.9791,
+      "monotone": false,
+      "worst_rel_step": -0.0668,
+      "snr_top": 2.36
+     },
+     "low": {
+      "levels": [
+       5.0,
+       10.0,
+       15.0,
+       20.0,
+       25.0
+      ],
+      "norms": [
+       0.0705,
+       0.0716,
+       0.0753,
+       0.0702,
+       0.0709
+      ],
+      "slope_cv": 0.6236,
+      "r2_in": 0.8085,
+      "r2_pred_loo": 0.7201,
+      "sv1_share": 0.9886,
+      "monotone": false,
+      "worst_rel_step": -0.0668,
+      "snr_top": 1.803
+     },
+     "high": {
+      "levels": [
+       30.0,
+       35.0,
+       40.0,
+       45.0,
+       50.0
+      ],
+      "norms": [
+       0.0718,
+       0.0691,
+       0.07,
+       0.0688,
+       0.0679
+      ],
+      "slope_cv": 0.2009,
+      "r2_in": 0.9538,
+      "r2_pred_loo": 0.93,
+      "sv1_share": 0.9885,
+      "monotone": false,
+      "worst_rel_step": -0.0382,
+      "snr_top": 2.36
+     }
+    },
+    "snv": {
+     "full": {
+      "levels": [
+       5.0,
+       10.0,
+       15.0,
+       20.0,
+       25.0,
+       30.0,
+       35.0,
+       40.0,
+       45.0,
+       50.0
+      ],
+      "norms": [
+       0.6153,
+       0.6163,
+       0.6067,
+       0.5907,
+       0.5929,
+       0.5586,
+       0.5726,
+       0.5802,
+       0.5431,
+       0.5294
+      ],
+      "slope_cv": 0.9378,
+      "r2_in": 0.741,
+      "r2_pred_loo": 0.7063,
+      "sv1_share": 0.9897,
+      "monotone": false,
+      "worst_rel_step": -0.0639,
+      "snr_top": 2.325
+     },
+     "low": {
+      "levels": [
+       5.0,
+       10.0,
+       15.0,
+       20.0,
+       25.0
+      ],
+      "norms": [
+       0.6153,
+       0.6163,
+       0.6067,
+       0.5907,
+       0.5929
+      ],
+      "slope_cv": 0.6482,
+      "r2_in": 0.8022,
+      "r2_pred_loo": 0.7179,
+      "sv1_share": 0.9958,
+      "monotone": false,
+      "worst_rel_step": -0.0263,
+      "snr_top": 2.051
+     },
+     "high": {
+      "levels": [
+       30.0,
+       35.0,
+       40.0,
+       45.0,
+       50.0
+      ],
+      "norms": [
+       0.5586,
+       0.5726,
+       0.5802,
+       0.5431,
+       0.5294
+      ],
+      "slope_cv": 0.2,
+      "r2_in": 0.9564,
+      "r2_pred_loo": 0.9312,
+      "sv1_share": 0.9949,
+      "monotone": false,
+      "worst_rel_step": -0.0639,
+      "snr_top": 2.325
+     }
+    }
+   },
+   "points": [
+    {
+     "metric": "abs",
+     "direction": "down",
+     "n_fit": 65,
+     "n_test": 60,
+     "groups_fit": 13,
+     "groups_test": 12,
+     "nc": 6,
+     "rmse": 19.132,
+     "rel_bias_pct": 118.71,
+     "mean_test_level": 15.0,
+     "interp_control": {
+      "rmse": 10.429,
+      "rel_bias_pct": 47.03,
+      "n_test": 60
+     },
+     "slope_cv_fit": 0.2009,
+     "r2_pred_loo": 0.93,
+     "r2_in_fit": 0.9538,
+     "sv1_fit": 0.9885,
+     "monotone_fit": false,
+     "snr_fit": 2.36,
+     "fit_levels": [
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0
+     ],
+     "test_levels": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "down",
+     "n_fit": 60,
+     "n_test": 66,
+     "groups_fit": 12,
+     "groups_test": 13,
+     "nc": 6,
+     "rmse": 19.592,
+     "rel_bias_pct": 118.45,
+     "mean_test_level": 15.0,
+     "interp_control": {
+      "rmse": 11.514,
+      "rel_bias_pct": 45.87,
+      "n_test": 66
+     },
+     "slope_cv_fit": 0.2009,
+     "r2_pred_loo": 0.93,
+     "r2_in_fit": 0.9538,
+     "sv1_fit": 0.9885,
+     "monotone_fit": false,
+     "snr_fit": 2.36,
+     "fit_levels": [
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0
+     ],
+     "test_levels": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "up",
+     "n_fit": 66,
+     "n_test": 60,
+     "groups_fit": 13,
+     "groups_test": 12,
+     "nc": 6,
+     "rmse": 20.362,
+     "rel_bias_pct": -48.04,
+     "mean_test_level": 39.167,
+     "interp_control": {
+      "rmse": 10.926,
+      "rel_bias_pct": -19.88,
+      "n_test": 60
+     },
+     "slope_cv_fit": 0.6236,
+     "r2_pred_loo": 0.7201,
+     "r2_in_fit": 0.8085,
+     "sv1_fit": 0.9886,
+     "monotone_fit": false,
+     "snr_fit": 1.803,
+     "fit_levels": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0
+     ],
+     "test_levels": [
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "up",
+     "n_fit": 60,
+     "n_test": 65,
+     "groups_fit": 12,
+     "groups_test": 13,
+     "nc": 6,
+     "rmse": 21.94,
+     "rel_bias_pct": -50.45,
+     "mean_test_level": 40.769,
+     "interp_control": {
+      "rmse": 11.839,
+      "rel_bias_pct": -23.26,
+      "n_test": 65
+     },
+     "slope_cv_fit": 0.6236,
+     "r2_pred_loo": 0.7201,
+     "r2_in_fit": 0.8085,
+     "sv1_fit": 0.9886,
+     "monotone_fit": false,
+     "snr_fit": 1.803,
+     "fit_levels": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0
+     ],
+     "test_levels": [
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "down",
+     "n_fit": 65,
+     "n_test": 60,
+     "groups_fit": 13,
+     "groups_test": 12,
+     "nc": 6,
+     "rmse": 19.873,
+     "rel_bias_pct": 123.52,
+     "mean_test_level": 15.0,
+     "interp_control": {
+      "rmse": 10.77,
+      "rel_bias_pct": 53.38,
+      "n_test": 60
+     },
+     "slope_cv_fit": 0.2,
+     "r2_pred_loo": 0.9312,
+     "r2_in_fit": 0.9564,
+     "sv1_fit": 0.9949,
+     "monotone_fit": false,
+     "snr_fit": 2.325,
+     "fit_levels": [
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0
+     ],
+     "test_levels": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "down",
+     "n_fit": 60,
+     "n_test": 66,
+     "groups_fit": 12,
+     "groups_test": 13,
+     "nc": 6,
+     "rmse": 20.58,
+     "rel_bias_pct": 125.27,
+     "mean_test_level": 15.0,
+     "interp_control": {
+      "rmse": 11.258,
+      "rel_bias_pct": 44.31,
+      "n_test": 66
+     },
+     "slope_cv_fit": 0.2,
+     "r2_pred_loo": 0.9312,
+     "r2_in_fit": 0.9564,
+     "sv1_fit": 0.9949,
+     "monotone_fit": false,
+     "snr_fit": 2.325,
+     "fit_levels": [
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0
+     ],
+     "test_levels": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "up",
+     "n_fit": 66,
+     "n_test": 60,
+     "groups_fit": 13,
+     "groups_test": 12,
+     "nc": 6,
+     "rmse": 19.244,
+     "rel_bias_pct": -44.98,
+     "mean_test_level": 39.167,
+     "interp_control": {
+      "rmse": 9.898,
+      "rel_bias_pct": -19.2,
+      "n_test": 60
+     },
+     "slope_cv_fit": 0.6482,
+     "r2_pred_loo": 0.7179,
+     "r2_in_fit": 0.8022,
+     "sv1_fit": 0.9958,
+     "monotone_fit": false,
+     "snr_fit": 2.051,
+     "fit_levels": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0
+     ],
+     "test_levels": [
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "up",
+     "n_fit": 60,
+     "n_test": 65,
+     "groups_fit": 12,
+     "groups_test": 13,
+     "nc": 6,
+     "rmse": 21.301,
+     "rel_bias_pct": -49.31,
+     "mean_test_level": 40.769,
+     "interp_control": {
+      "rmse": 10.929,
+      "rel_bias_pct": -22.12,
+      "n_test": 65
+     },
+     "slope_cv_fit": 0.6482,
+     "r2_pred_loo": 0.7179,
+     "r2_in_fit": 0.8022,
+     "sv1_fit": 0.9958,
+     "monotone_fit": false,
+     "snr_fit": 2.051,
+     "fit_levels": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0
+     ],
+     "test_levels": [
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0
+     ]
+    }
+   ],
+   "skips": [],
+   "rows": {
+    "each_level_one_interval": false,
+    "intervals_ordered_by_level": false
+   },
+   "dose_axis": "non_monotone",
+   "usable_in_metrics": [],
+   "aliasing_flag": false
+  },
+  "D7w": {
+   "name": "D7w",
+   "matrix": "cinnamon",
+   "adulterant": "walnut",
+   "instrument": "ATR-FTIR, one instrument, three series",
+   "n": 650,
+   "n_channel": 2523,
+   "n_groups": 650,
+   "levels": [
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    6.0,
+    8.0,
+    10.0,
+    12.0,
+    15.0,
+    18.0,
+    21.0,
+    24.0
+   ],
+   "spectra_per_level": [
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50
+   ],
+   "preps_per_level": [
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50
+   ],
+   "band_split": {
+    "low": [
+     1.0,
+     2.0,
+     3.0,
+     4.0,
+     6.0,
+     8.0
+    ],
+    "high": [
+     10.0,
+     12.0,
+     15.0,
+     18.0,
+     21.0,
+     24.0
+    ]
+   },
+   "prep_folds": [
+    325,
+    325
+   ],
+   "geometry": {
+    "abs": {
+     "full": {
+      "levels": [
+       1.0,
+       2.0,
+       3.0,
+       4.0,
+       6.0,
+       8.0,
+       10.0,
+       12.0,
+       15.0,
+       18.0,
+       21.0,
+       24.0
+      ],
+      "norms": [
+       0.8421,
+       0.8416,
+       0.8417,
+       0.842,
+       0.2075,
+       0.2072,
+       0.2074,
+       0.2074,
+       0.254,
+       0.2537,
+       0.2539,
+       0.2537
+      ],
+      "slope_cv": 1.531,
+      "r2_in": 0.1186,
+      "r2_pred_loo": 0.1015,
+      "sv1_share": 0.9401,
+      "monotone": false,
+      "worst_rel_step": -0.7536,
+      "snr_top": 3.98
+     },
+     "low": {
+      "levels": [
+       1.0,
+       2.0,
+       3.0,
+       4.0,
+       6.0,
+       8.0
+      ],
+      "norms": [
+       0.8421,
+       0.8416,
+       0.8417,
+       0.842,
+       0.2075,
+       0.2072
+      ],
+      "slope_cv": 0.918,
+      "r2_in": 0.1522,
+      "r2_pred_loo": -0.2628,
+      "sv1_share": 0.9763,
+      "monotone": false,
+      "worst_rel_step": -0.7536,
+      "snr_top": 3.293
+     },
+     "high": {
+      "levels": [
+       10.0,
+       12.0,
+       15.0,
+       18.0,
+       21.0,
+       24.0
+      ],
+      "norms": [
+       0.2074,
+       0.2074,
+       0.254,
+       0.2537,
+       0.2539,
+       0.2537
+      ],
+      "slope_cv": 0.2239,
+      "r2_in": 0.6575,
+      "r2_pred_loo": 0.5791,
+      "sv1_share": 0.7491,
+      "monotone": false,
+      "worst_rel_step": -0.0013,
+      "snr_top": 3.98
+     }
+    },
+    "snv": {
+     "full": {
+      "levels": [
+       1.0,
+       2.0,
+       3.0,
+       4.0,
+       6.0,
+       8.0,
+       10.0,
+       12.0,
+       15.0,
+       18.0,
+       21.0,
+       24.0
+      ],
+      "norms": [
+       22.7901,
+       22.7715,
+       22.7661,
+       22.7706,
+       25.9917,
+       25.9642,
+       26.0031,
+       25.9781,
+       22.6142,
+       22.6131,
+       22.6085,
+       22.6117
+      ],
+      "slope_cv": 1.1227,
+      "r2_in": 0.6001,
+      "r2_pred_loo": 0.5488,
+      "sv1_share": 0.9242,
+      "monotone": false,
+      "worst_rel_step": -0.1295,
+      "snr_top": 2.997
+     },
+     "low": {
+      "levels": [
+       1.0,
+       2.0,
+       3.0,
+       4.0,
+       6.0,
+       8.0
+      ],
+      "norms": [
+       22.7901,
+       22.7715,
+       22.7661,
+       22.7706,
+       25.9917,
+       25.9642
+      ],
+      "slope_cv": 0.7225,
+      "r2_in": 0.7386,
+      "r2_pred_loo": 0.6108,
+      "sv1_share": 0.9407,
+      "monotone": false,
+      "worst_rel_step": -0.0011,
+      "snr_top": 1.551
+     },
+     "high": {
+      "levels": [
+       10.0,
+       12.0,
+       15.0,
+       18.0,
+       21.0,
+       24.0
+      ],
+      "norms": [
+       26.0031,
+       25.9781,
+       22.6142,
+       22.6131,
+       22.6085,
+       22.6117
+      ],
+      "slope_cv": 0.3764,
+      "r2_in": 0.8333,
+      "r2_pred_loo": 0.7819,
+      "sv1_share": 0.9218,
+      "monotone": false,
+      "worst_rel_step": -0.1295,
+      "snr_top": 2.997
+     }
+    }
+   },
+   "points": [
+    {
+     "metric": "abs",
+     "direction": "down",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 26.779,
+     "rel_bias_pct": 576.78,
+     "mean_test_level": 4.0,
+     "interp_control": {
+      "rmse": 2.529,
+      "rel_bias_pct": 21.33,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.2239,
+     "r2_pred_loo": 0.5791,
+     "r2_in_fit": 0.6575,
+     "sv1_fit": 0.7491,
+     "monotone_fit": false,
+     "snr_fit": 3.98,
+     "fit_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ],
+     "test_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "down",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 23.905,
+     "rel_bias_pct": 516.24,
+     "mean_test_level": 4.0,
+     "interp_control": {
+      "rmse": 2.36,
+      "rel_bias_pct": 13.6,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.2239,
+     "r2_pred_loo": 0.5791,
+     "r2_in_fit": 0.6575,
+     "sv1_fit": 0.7491,
+     "monotone_fit": false,
+     "snr_fit": 3.98,
+     "fit_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ],
+     "test_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "up",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 12.215,
+     "rel_bias_pct": -65.24,
+     "mean_test_level": 16.667,
+     "interp_control": {
+      "rmse": 3.24,
+      "rel_bias_pct": -4.56,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.918,
+     "r2_pred_loo": -0.2628,
+     "r2_in_fit": 0.1522,
+     "sv1_fit": 0.9763,
+     "monotone_fit": false,
+     "snr_fit": 3.293,
+     "fit_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ],
+     "test_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "up",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 12.696,
+     "rel_bias_pct": -67.7,
+     "mean_test_level": 16.667,
+     "interp_control": {
+      "rmse": 3.521,
+      "rel_bias_pct": -4.35,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.918,
+     "r2_pred_loo": -0.2628,
+     "r2_in_fit": 0.1522,
+     "sv1_fit": 0.9763,
+     "monotone_fit": false,
+     "snr_fit": 3.293,
+     "fit_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ],
+     "test_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "down",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 13.307,
+     "rel_bias_pct": 299.79,
+     "mean_test_level": 4.0,
+     "interp_control": {
+      "rmse": 2.139,
+      "rel_bias_pct": 16.98,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.3764,
+     "r2_pred_loo": 0.7819,
+     "r2_in_fit": 0.8333,
+     "sv1_fit": 0.9218,
+     "monotone_fit": false,
+     "snr_fit": 2.997,
+     "fit_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ],
+     "test_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "down",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 12.561,
+     "rel_bias_pct": 283.55,
+     "mean_test_level": 4.0,
+     "interp_control": {
+      "rmse": 2.122,
+      "rel_bias_pct": 15.85,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.3764,
+     "r2_pred_loo": 0.7819,
+     "r2_in_fit": 0.8333,
+     "sv1_fit": 0.9218,
+     "monotone_fit": false,
+     "snr_fit": 2.997,
+     "fit_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ],
+     "test_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "up",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 14.669,
+     "rel_bias_pct": -78.16,
+     "mean_test_level": 16.667,
+     "interp_control": {
+      "rmse": 3.322,
+      "rel_bias_pct": -4.82,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.7225,
+     "r2_pred_loo": 0.6108,
+     "r2_in_fit": 0.7386,
+     "sv1_fit": 0.9407,
+     "monotone_fit": false,
+     "snr_fit": 1.551,
+     "fit_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ],
+     "test_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "up",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 14.688,
+     "rel_bias_pct": -77.94,
+     "mean_test_level": 16.667,
+     "interp_control": {
+      "rmse": 3.326,
+      "rel_bias_pct": -4.38,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.7225,
+     "r2_pred_loo": 0.6108,
+     "r2_in_fit": 0.7386,
+     "sv1_fit": 0.9407,
+     "monotone_fit": false,
+     "snr_fit": 1.551,
+     "fit_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ],
+     "test_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ]
+    }
+   ],
+   "skips": [],
+   "rows": {
+    "each_level_one_interval": true,
+    "intervals_ordered_by_level": true
+   },
+   "dose_axis": "non_monotone",
+   "usable_in_metrics": [],
+   "aliasing_flag": true
+  },
+  "D7p": {
+   "name": "D7p",
+   "matrix": "cinnamon",
+   "adulterant": "peanut",
+   "instrument": "ATR-FTIR, one instrument, three series",
+   "n": 650,
+   "n_channel": 2523,
+   "n_groups": 650,
+   "levels": [
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    6.0,
+    8.0,
+    10.0,
+    12.0,
+    15.0,
+    18.0,
+    21.0,
+    24.0
+   ],
+   "spectra_per_level": [
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50
+   ],
+   "preps_per_level": [
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50
+   ],
+   "band_split": {
+    "low": [
+     1.0,
+     2.0,
+     3.0,
+     4.0,
+     6.0,
+     8.0
+    ],
+    "high": [
+     10.0,
+     12.0,
+     15.0,
+     18.0,
+     21.0,
+     24.0
+    ]
+   },
+   "prep_folds": [
+    325,
+    325
+   ],
+   "geometry": {
+    "abs": {
+     "full": {
+      "levels": [
+       1.0,
+       2.0,
+       3.0,
+       4.0,
+       6.0,
+       8.0,
+       10.0,
+       12.0,
+       15.0,
+       18.0,
+       21.0,
+       24.0
+      ],
+      "norms": [
+       0.0149,
+       0.0251,
+       0.0364,
+       0.0477,
+       0.0708,
+       0.0939,
+       0.1171,
+       0.1401,
+       0.1751,
+       0.2099,
+       0.2444,
+       0.2792
+      ],
+      "slope_cv": 0.0742,
+      "r2_in": 0.9975,
+      "r2_pred_loo": 0.9971,
+      "sv1_share": 0.9975,
+      "monotone": true,
+      "worst_rel_step": 0.1424,
+      "snr_top": 6.111
+     },
+     "low": {
+      "levels": [
+       1.0,
+       2.0,
+       3.0,
+       4.0,
+       6.0,
+       8.0
+      ],
+      "norms": [
+       0.0149,
+       0.0251,
+       0.0364,
+       0.0477,
+       0.0708,
+       0.0939
+      ],
+      "slope_cv": 0.0891,
+      "r2_in": 0.9843,
+      "r2_pred_loo": 0.976,
+      "sv1_share": 0.9844,
+      "monotone": true,
+      "worst_rel_step": 0.308,
+      "snr_top": 2.039
+     },
+     "high": {
+      "levels": [
+       10.0,
+       12.0,
+       15.0,
+       18.0,
+       21.0,
+       24.0
+      ],
+      "norms": [
+       0.1171,
+       0.1401,
+       0.1751,
+       0.2099,
+       0.2444,
+       0.2792
+      ],
+      "slope_cv": 0.0021,
+      "r2_in": 0.999,
+      "r2_pred_loo": 0.9986,
+      "sv1_share": 0.999,
+      "monotone": true,
+      "worst_rel_step": 0.1424,
+      "snr_top": 6.111
+     }
+    },
+    "snv": {
+     "full": {
+      "levels": [
+       1.0,
+       2.0,
+       3.0,
+       4.0,
+       6.0,
+       8.0,
+       10.0,
+       12.0,
+       15.0,
+       18.0,
+       21.0,
+       24.0
+      ],
+      "norms": [
+       0.3395,
+       0.3443,
+       0.3472,
+       0.3356,
+       0.3478,
+       0.3454,
+       0.3341,
+       0.3489,
+       0.344,
+       0.3415,
+       0.3464,
+       0.3439
+      ],
+      "slope_cv": 1.1505,
+      "r2_in": 0.3751,
+      "r2_pred_loo": 0.2624,
+      "sv1_share": 0.5436,
+      "monotone": false,
+      "worst_rel_step": -0.0336,
+      "snr_top": 0.203
+     },
+     "low": {
+      "levels": [
+       1.0,
+       2.0,
+       3.0,
+       4.0,
+       6.0,
+       8.0
+      ],
+      "norms": [
+       0.3395,
+       0.3443,
+       0.3472,
+       0.3356,
+       0.3478,
+       0.3454
+      ],
+      "slope_cv": 0.742,
+      "r2_in": 0.4555,
+      "r2_pred_loo": 0.1676,
+      "sv1_share": 0.5847,
+      "monotone": false,
+      "worst_rel_step": -0.0336,
+      "snr_top": 0.204
+     },
+     "high": {
+      "levels": [
+       10.0,
+       12.0,
+       15.0,
+       18.0,
+       21.0,
+       24.0
+      ],
+      "norms": [
+       0.3341,
+       0.3489,
+       0.344,
+       0.3415,
+       0.3464,
+       0.3439
+      ],
+      "slope_cv": 0.3018,
+      "r2_in": 0.5491,
+      "r2_pred_loo": 0.3428,
+      "sv1_share": 0.5873,
+      "monotone": false,
+      "worst_rel_step": -0.014,
+      "snr_top": 0.203
+     }
+    }
+   },
+   "points": [
+    {
+     "metric": "abs",
+     "direction": "down",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 0.1,
+     "rel_bias_pct": -1.3,
+     "mean_test_level": 4.0,
+     "interp_control": {
+      "rmse": 0.099,
+      "rel_bias_pct": 0.24,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.0021,
+     "r2_pred_loo": 0.9986,
+     "r2_in_fit": 0.999,
+     "sv1_fit": 0.999,
+     "monotone_fit": true,
+     "snr_fit": 6.111,
+     "fit_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ],
+     "test_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "down",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 0.09,
+     "rel_bias_pct": -0.39,
+     "mean_test_level": 4.0,
+     "interp_control": {
+      "rmse": 0.095,
+      "rel_bias_pct": -0.03,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.0021,
+     "r2_pred_loo": 0.9986,
+     "r2_in_fit": 0.999,
+     "sv1_fit": 0.999,
+     "monotone_fit": true,
+     "snr_fit": 6.111,
+     "fit_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ],
+     "test_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "up",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 0.209,
+     "rel_bias_pct": -1.04,
+     "mean_test_level": 16.667,
+     "interp_control": {
+      "rmse": 0.104,
+      "rel_bias_pct": -0.01,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.0891,
+     "r2_pred_loo": 0.976,
+     "r2_in_fit": 0.9843,
+     "sv1_fit": 0.9844,
+     "monotone_fit": true,
+     "snr_fit": 2.039,
+     "fit_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ],
+     "test_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "up",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 0.216,
+     "rel_bias_pct": -1.09,
+     "mean_test_level": 16.667,
+     "interp_control": {
+      "rmse": 0.09,
+      "rel_bias_pct": 0.01,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.0891,
+     "r2_pred_loo": 0.976,
+     "r2_in_fit": 0.9843,
+     "sv1_fit": 0.9844,
+     "monotone_fit": true,
+     "snr_fit": 2.039,
+     "fit_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ],
+     "test_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "down",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 12.917,
+     "rel_bias_pct": 315.15,
+     "mean_test_level": 4.0,
+     "interp_control": {
+      "rmse": 7.553,
+      "rel_bias_pct": 137.52,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.3018,
+     "r2_pred_loo": 0.3428,
+     "r2_in_fit": 0.5491,
+     "sv1_fit": 0.5873,
+     "monotone_fit": false,
+     "snr_fit": 0.203,
+     "fit_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ],
+     "test_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "down",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 12.761,
+     "rel_bias_pct": 312.12,
+     "mean_test_level": 4.0,
+     "interp_control": {
+      "rmse": 6.798,
+      "rel_bias_pct": 127.0,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.3018,
+     "r2_pred_loo": 0.3428,
+     "r2_in_fit": 0.5491,
+     "sv1_fit": 0.5873,
+     "monotone_fit": false,
+     "snr_fit": 0.203,
+     "fit_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ],
+     "test_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "up",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 13.521,
+     "rel_bias_pct": -75.64,
+     "mean_test_level": 16.667,
+     "interp_control": {
+      "rmse": 9.122,
+      "rel_bias_pct": -41.26,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.742,
+     "r2_pred_loo": 0.1676,
+     "r2_in_fit": 0.4555,
+     "sv1_fit": 0.5847,
+     "monotone_fit": false,
+     "snr_fit": 0.204,
+     "fit_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ],
+     "test_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "up",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 13.552,
+     "rel_bias_pct": -75.61,
+     "mean_test_level": 16.667,
+     "interp_control": {
+      "rmse": 9.649,
+      "rel_bias_pct": -40.2,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.742,
+     "r2_pred_loo": 0.1676,
+     "r2_in_fit": 0.4555,
+     "sv1_fit": 0.5847,
+     "monotone_fit": false,
+     "snr_fit": 0.204,
+     "fit_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ],
+     "test_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ]
+    }
+   ],
+   "skips": [],
+   "rows": {
+    "each_level_one_interval": true,
+    "intervals_ordered_by_level": true
+   },
+   "dose_axis": "usable",
+   "usable_in_metrics": [
+    "abs"
+   ],
+   "aliasing_flag": false
+  },
+  "D7d": {
+   "name": "D7d",
+   "matrix": "cinnamon",
+   "adulterant": "wood dust",
+   "instrument": "ATR-FTIR, one instrument, three series",
+   "n": 650,
+   "n_channel": 2523,
+   "n_groups": 650,
+   "levels": [
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    6.0,
+    8.0,
+    10.0,
+    12.0,
+    15.0,
+    18.0,
+    21.0,
+    24.0
+   ],
+   "spectra_per_level": [
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50
+   ],
+   "preps_per_level": [
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50
+   ],
+   "band_split": {
+    "low": [
+     1.0,
+     2.0,
+     3.0,
+     4.0,
+     6.0,
+     8.0
+    ],
+    "high": [
+     10.0,
+     12.0,
+     15.0,
+     18.0,
+     21.0,
+     24.0
+    ]
+   },
+   "prep_folds": [
+    325,
+    325
+   ],
+   "geometry": {
+    "abs": {
+     "full": {
+      "levels": [
+       1.0,
+       2.0,
+       3.0,
+       4.0,
+       6.0,
+       8.0,
+       10.0,
+       12.0,
+       15.0,
+       18.0,
+       21.0,
+       24.0
+      ],
+      "norms": [
+       1.747,
+       1.7471,
+       1.7474,
+       1.747,
+       0.9768,
+       0.9767,
+       0.9772,
+       0.9767,
+       1.5949,
+       1.5947,
+       1.5945,
+       0.4287
+      ],
+      "slope_cv": 1.3244,
+      "r2_in": 0.4773,
+      "r2_pred_loo": 0.3836,
+      "sv1_share": 0.9936,
+      "monotone": false,
+      "worst_rel_step": -0.7311,
+      "snr_top": 6.729
+     },
+     "low": {
+      "levels": [
+       1.0,
+       2.0,
+       3.0,
+       4.0,
+       6.0,
+       8.0
+      ],
+      "norms": [
+       1.747,
+       1.7471,
+       1.7474,
+       1.747,
+       0.9768,
+       0.9767
+      ],
+      "slope_cv": 0.8418,
+      "r2_in": 0.5274,
+      "r2_pred_loo": 0.2983,
+      "sv1_share": 0.999,
+      "monotone": false,
+      "worst_rel_step": -0.4409,
+      "snr_top": 14.986
+     },
+     "high": {
+      "levels": [
+       10.0,
+       12.0,
+       15.0,
+       18.0,
+       21.0,
+       24.0
+      ],
+      "norms": [
+       0.9772,
+       0.9767,
+       1.5949,
+       1.5947,
+       1.5945,
+       0.4287
+      ],
+      "slope_cv": 0.3679,
+      "r2_in": 0.7864,
+      "r2_pred_loo": 0.6051,
+      "sv1_share": 0.9975,
+      "monotone": false,
+      "worst_rel_step": -0.7311,
+      "snr_top": 6.729
+     }
+    },
+    "snv": {
+     "full": {
+      "levels": [
+       1.0,
+       2.0,
+       3.0,
+       4.0,
+       6.0,
+       8.0,
+       10.0,
+       12.0,
+       15.0,
+       18.0,
+       21.0,
+       24.0
+      ],
+      "norms": [
+       37.0839,
+       37.08,
+       37.0801,
+       37.0849,
+       32.4738,
+       32.4613,
+       32.4791,
+       32.4751,
+       34.007,
+       34.0034,
+       34.0184,
+       32.3902
+      ],
+      "slope_cv": 1.2045,
+      "r2_in": 0.6161,
+      "r2_pred_loo": 0.5765,
+      "sv1_share": 0.9825,
+      "monotone": false,
+      "worst_rel_step": -0.1243,
+      "snr_top": 4.321
+     },
+     "low": {
+      "levels": [
+       1.0,
+       2.0,
+       3.0,
+       4.0,
+       6.0,
+       8.0
+      ],
+      "norms": [
+       37.0839,
+       37.08,
+       37.0801,
+       37.0849,
+       32.4738,
+       32.4613
+      ],
+      "slope_cv": 0.7734,
+      "r2_in": 0.6839,
+      "r2_pred_loo": 0.5315,
+      "sv1_share": 0.9943,
+      "monotone": false,
+      "worst_rel_step": -0.1243,
+      "snr_top": 8.13
+     },
+     "high": {
+      "levels": [
+       10.0,
+       12.0,
+       15.0,
+       18.0,
+       21.0,
+       24.0
+      ],
+      "norms": [
+       32.4791,
+       32.4751,
+       34.007,
+       34.0034,
+       34.0184,
+       32.3902
+      ],
+      "slope_cv": 0.2969,
+      "r2_in": 0.915,
+      "r2_pred_loo": 0.8766,
+      "sv1_share": 0.9903,
+      "monotone": false,
+      "worst_rel_step": -0.0479,
+      "snr_top": 4.321
+     }
+    }
+   },
+   "points": [
+    {
+     "metric": "abs",
+     "direction": "down",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 3.116,
+     "rel_bias_pct": 11.58,
+     "mean_test_level": 4.0,
+     "interp_control": {
+      "rmse": 2.217,
+      "rel_bias_pct": 15.77,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.3679,
+     "r2_pred_loo": 0.6051,
+     "r2_in_fit": 0.7864,
+     "sv1_fit": 0.9975,
+     "monotone_fit": false,
+     "snr_fit": 6.729,
+     "fit_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ],
+     "test_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "down",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 3.793,
+     "rel_bias_pct": -19.09,
+     "mean_test_level": 4.0,
+     "interp_control": {
+      "rmse": 2.373,
+      "rel_bias_pct": 19.5,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.3679,
+     "r2_pred_loo": 0.6051,
+     "r2_in_fit": 0.7864,
+     "sv1_fit": 0.9975,
+     "monotone_fit": false,
+     "snr_fit": 6.729,
+     "fit_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ],
+     "test_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "up",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 11.575,
+     "rel_bias_pct": -62.65,
+     "mean_test_level": 16.667,
+     "interp_control": {
+      "rmse": 2.849,
+      "rel_bias_pct": -5.4,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.8418,
+     "r2_pred_loo": 0.2983,
+     "r2_in_fit": 0.5274,
+     "sv1_fit": 0.999,
+     "monotone_fit": false,
+     "snr_fit": 14.986,
+     "fit_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ],
+     "test_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "up",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 12.254,
+     "rel_bias_pct": -66.4,
+     "mean_test_level": 16.667,
+     "interp_control": {
+      "rmse": 2.828,
+      "rel_bias_pct": -4.45,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.8418,
+     "r2_pred_loo": 0.2983,
+     "r2_in_fit": 0.5274,
+     "sv1_fit": 0.999,
+     "monotone_fit": false,
+     "snr_fit": 14.986,
+     "fit_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ],
+     "test_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "down",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 5.369,
+     "rel_bias_pct": 130.02,
+     "mean_test_level": 4.0,
+     "interp_control": {
+      "rmse": 1.851,
+      "rel_bias_pct": 20.5,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.2969,
+     "r2_pred_loo": 0.8766,
+     "r2_in_fit": 0.915,
+     "sv1_fit": 0.9903,
+     "monotone_fit": false,
+     "snr_fit": 4.321,
+     "fit_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ],
+     "test_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "down",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 4.378,
+     "rel_bias_pct": 105.05,
+     "mean_test_level": 4.0,
+     "interp_control": {
+      "rmse": 1.724,
+      "rel_bias_pct": 17.13,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.2969,
+     "r2_pred_loo": 0.8766,
+     "r2_in_fit": 0.915,
+     "sv1_fit": 0.9903,
+     "monotone_fit": false,
+     "snr_fit": 4.321,
+     "fit_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ],
+     "test_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "up",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 10.74,
+     "rel_bias_pct": -57.85,
+     "mean_test_level": 16.667,
+     "interp_control": {
+      "rmse": 2.42,
+      "rel_bias_pct": -5.08,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.7734,
+     "r2_pred_loo": 0.5315,
+     "r2_in_fit": 0.6839,
+     "sv1_fit": 0.9943,
+     "monotone_fit": false,
+     "snr_fit": 8.13,
+     "fit_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ],
+     "test_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "up",
+     "n_fit": 150,
+     "n_test": 150,
+     "groups_fit": 150,
+     "groups_test": 150,
+     "nc": 6,
+     "rmse": 10.246,
+     "rel_bias_pct": -55.45,
+     "mean_test_level": 16.667,
+     "interp_control": {
+      "rmse": 2.486,
+      "rel_bias_pct": -5.23,
+      "n_test": 150
+     },
+     "slope_cv_fit": 0.7734,
+     "r2_pred_loo": 0.5315,
+     "r2_in_fit": 0.6839,
+     "sv1_fit": 0.9943,
+     "monotone_fit": false,
+     "snr_fit": 8.13,
+     "fit_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+     ],
+     "test_levels": [
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0,
+      24.0
+     ]
+    }
+   ],
+   "skips": [],
+   "rows": {
+    "each_level_one_interval": true,
+    "intervals_ordered_by_level": true
+   },
+   "dose_axis": "non_monotone",
+   "usable_in_metrics": [],
+   "aliasing_flag": true
+  },
+  "D8": {
+   "name": "D8",
+   "matrix": "turmeric",
+   "adulterant": "wheat flour",
+   "instrument": "ATR-FTIR",
+   "n": 350,
+   "n_channel": 2522,
+   "n_groups": 350,
+   "levels": [
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    5.0,
+    7.0,
+    9.0
+   ],
+   "spectra_per_level": [
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50
+   ],
+   "preps_per_level": [
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50
+   ],
+   "band_split": {
+    "low": [
+     1.0,
+     2.0,
+     3.0
+    ],
+    "high": [
+     5.0,
+     7.0,
+     9.0
+    ]
+   },
+   "prep_folds": [
+    175,
+    175
+   ],
+   "geometry": {
+    "abs": {
+     "full": {
+      "levels": [
+       1.0,
+       2.0,
+       3.0,
+       5.0,
+       7.0,
+       9.0
+      ],
+      "norms": [
+       0.4952,
+       0.5147,
+       1.7086,
+       0.9901,
+       0.3586,
+       0.4365
+      ],
+      "slope_cv": 0.745,
+      "r2_in": 0.3269,
+      "r2_pred_loo": 0.0919,
+      "sv1_share": 0.9528,
+      "monotone": false,
+      "worst_rel_step": -0.6378,
+      "snr_top": 0.77
+     },
+     "low": {
+      "levels": [
+       1.0,
+       2.0,
+       3.0
+      ],
+      "norms": [
+       0.4952,
+       0.5147,
+       1.7086
+      ],
+      "slope_cv": 0.3021,
+      "r2_in": 0.6754,
+      "r2_pred_loo": 0.1051,
+      "sv1_share": 0.9797,
+      "monotone": true,
+      "worst_rel_step": 0.0395,
+      "snr_top": 20.753
+     },
+     "high": {
+      "levels": [
+       5.0,
+       7.0,
+       9.0
+      ],
+      "norms": [
+       0.9901,
+       0.3586,
+       0.4365
+      ],
+      "slope_cv": 0.7037,
+      "r2_in": 0.5709,
+      "r2_pred_loo": 0.2545,
+      "sv1_share": 0.9258,
+      "monotone": false,
+      "worst_rel_step": -0.6378,
+      "snr_top": 0.77
+     }
+    },
+    "snv": {
+     "full": {
+      "levels": [
+       1.0,
+       2.0,
+       3.0,
+       5.0,
+       7.0,
+       9.0
+      ],
+      "norms": [
+       4.7611,
+       5.2373,
+       14.3097,
+       9.4648,
+       8.1535,
+       7.9904
+      ],
+      "slope_cv": 0.5861,
+      "r2_in": 0.5095,
+      "r2_pred_loo": 0.3141,
+      "sv1_share": 0.7028,
+      "monotone": false,
+      "worst_rel_step": -0.3386,
+      "snr_top": 0.486
+     },
+     "low": {
+      "levels": [
+       1.0,
+       2.0,
+       3.0
+      ],
+      "norms": [
+       4.7611,
+       5.2373,
+       14.3097
+      ],
+      "slope_cv": 0.2499,
+      "r2_in": 0.7022,
+      "r2_pred_loo": -0.0437,
+      "sv1_share": 0.8335,
+      "monotone": true,
+      "worst_rel_step": 0.1,
+      "snr_top": 2.089
+     },
+     "high": {
+      "levels": [
+       5.0,
+       7.0,
+       9.0
+      ],
+      "norms": [
+       9.4648,
+       8.1535,
+       7.9904
+      ],
+      "slope_cv": 0.3223,
+      "r2_in": 0.7832,
+      "r2_pred_loo": 0.5657,
+      "sv1_share": 0.8419,
+      "monotone": false,
+      "worst_rel_step": -0.1386,
+      "snr_top": 0.486
+     }
+    }
+   },
+   "points": [
+    {
+     "metric": "abs",
+     "direction": "down",
+     "n_fit": 75,
+     "n_test": 75,
+     "groups_fit": 75,
+     "groups_test": 75,
+     "nc": 6,
+     "rmse": 4.917,
+     "rel_bias_pct": 230.08,
+     "mean_test_level": 2.0,
+     "interp_control": {
+      "rmse": 0.204,
+      "rel_bias_pct": -0.12,
+      "n_test": 75
+     },
+     "slope_cv_fit": 0.7037,
+     "r2_pred_loo": 0.2545,
+     "r2_in_fit": 0.5709,
+     "sv1_fit": 0.9258,
+     "monotone_fit": false,
+     "snr_fit": 0.77,
+     "fit_levels": [
+      5.0,
+      7.0,
+      9.0
+     ],
+     "test_levels": [
+      1.0,
+      2.0,
+      3.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "down",
+     "n_fit": 75,
+     "n_test": 75,
+     "groups_fit": 75,
+     "groups_test": 75,
+     "nc": 6,
+     "rmse": 4.908,
+     "rel_bias_pct": 228.18,
+     "mean_test_level": 2.0,
+     "interp_control": {
+      "rmse": 0.197,
+      "rel_bias_pct": 0.54,
+      "n_test": 75
+     },
+     "slope_cv_fit": 0.7037,
+     "r2_pred_loo": 0.2545,
+     "r2_in_fit": 0.5709,
+     "sv1_fit": 0.9258,
+     "monotone_fit": false,
+     "snr_fit": 0.77,
+     "fit_levels": [
+      5.0,
+      7.0,
+      9.0
+     ],
+     "test_levels": [
+      1.0,
+      2.0,
+      3.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "up",
+     "n_fit": 75,
+     "n_test": 75,
+     "groups_fit": 75,
+     "groups_test": 75,
+     "nc": 6,
+     "rmse": 5.465,
+     "rel_bias_pct": -74.13,
+     "mean_test_level": 7.0,
+     "interp_control": {
+      "rmse": 0.34,
+      "rel_bias_pct": -0.79,
+      "n_test": 75
+     },
+     "slope_cv_fit": 0.3021,
+     "r2_pred_loo": 0.1051,
+     "r2_in_fit": 0.6754,
+     "sv1_fit": 0.9797,
+     "monotone_fit": true,
+     "snr_fit": 20.753,
+     "fit_levels": [
+      1.0,
+      2.0,
+      3.0
+     ],
+     "test_levels": [
+      5.0,
+      7.0,
+      9.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "up",
+     "n_fit": 75,
+     "n_test": 75,
+     "groups_fit": 75,
+     "groups_test": 75,
+     "nc": 6,
+     "rmse": 5.462,
+     "rel_bias_pct": -74.07,
+     "mean_test_level": 7.0,
+     "interp_control": {
+      "rmse": 0.467,
+      "rel_bias_pct": -0.37,
+      "n_test": 75
+     },
+     "slope_cv_fit": 0.3021,
+     "r2_pred_loo": 0.1051,
+     "r2_in_fit": 0.6754,
+     "sv1_fit": 0.9797,
+     "monotone_fit": true,
+     "snr_fit": 20.753,
+     "fit_levels": [
+      1.0,
+      2.0,
+      3.0
+     ],
+     "test_levels": [
+      5.0,
+      7.0,
+      9.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "down",
+     "n_fit": 75,
+     "n_test": 75,
+     "groups_fit": 75,
+     "groups_test": 75,
+     "nc": 6,
+     "rmse": 4.793,
+     "rel_bias_pct": 180.56,
+     "mean_test_level": 2.0,
+     "interp_control": {
+      "rmse": 0.393,
+      "rel_bias_pct": 2.56,
+      "n_test": 75
+     },
+     "slope_cv_fit": 0.3223,
+     "r2_pred_loo": 0.5657,
+     "r2_in_fit": 0.7832,
+     "sv1_fit": 0.8419,
+     "monotone_fit": false,
+     "snr_fit": 0.486,
+     "fit_levels": [
+      5.0,
+      7.0,
+      9.0
+     ],
+     "test_levels": [
+      1.0,
+      2.0,
+      3.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "down",
+     "n_fit": 75,
+     "n_test": 75,
+     "groups_fit": 75,
+     "groups_test": 75,
+     "nc": 6,
+     "rmse": 4.802,
+     "rel_bias_pct": 182.92,
+     "mean_test_level": 2.0,
+     "interp_control": {
+      "rmse": 0.326,
+      "rel_bias_pct": 6.74,
+      "n_test": 75
+     },
+     "slope_cv_fit": 0.3223,
+     "r2_pred_loo": 0.5657,
+     "r2_in_fit": 0.7832,
+     "sv1_fit": 0.8419,
+     "monotone_fit": false,
+     "snr_fit": 0.486,
+     "fit_levels": [
+      5.0,
+      7.0,
+      9.0
+     ],
+     "test_levels": [
+      1.0,
+      2.0,
+      3.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "up",
+     "n_fit": 75,
+     "n_test": 75,
+     "groups_fit": 75,
+     "groups_test": 75,
+     "nc": 6,
+     "rmse": 5.666,
+     "rel_bias_pct": -76.89,
+     "mean_test_level": 7.0,
+     "interp_control": {
+      "rmse": 0.855,
+      "rel_bias_pct": -3.84,
+      "n_test": 75
+     },
+     "slope_cv_fit": 0.2499,
+     "r2_pred_loo": -0.0437,
+     "r2_in_fit": 0.7022,
+     "sv1_fit": 0.8335,
+     "monotone_fit": true,
+     "snr_fit": 2.089,
+     "fit_levels": [
+      1.0,
+      2.0,
+      3.0
+     ],
+     "test_levels": [
+      5.0,
+      7.0,
+      9.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "up",
+     "n_fit": 75,
+     "n_test": 75,
+     "groups_fit": 75,
+     "groups_test": 75,
+     "nc": 6,
+     "rmse": 5.68,
+     "rel_bias_pct": -77.11,
+     "mean_test_level": 7.0,
+     "interp_control": {
+      "rmse": 0.821,
+      "rel_bias_pct": -0.84,
+      "n_test": 75
+     },
+     "slope_cv_fit": 0.2499,
+     "r2_pred_loo": -0.0437,
+     "r2_in_fit": 0.7022,
+     "sv1_fit": 0.8335,
+     "monotone_fit": true,
+     "snr_fit": 2.089,
+     "fit_levels": [
+      1.0,
+      2.0,
+      3.0
+     ],
+     "test_levels": [
+      5.0,
+      7.0,
+      9.0
+     ]
+    }
+   ],
+   "skips": [],
+   "rows": {
+    "each_level_one_interval": true,
+    "intervals_ordered_by_level": true
+   },
+   "dose_axis": "non_monotone",
+   "usable_in_metrics": [],
+   "aliasing_flag": true
+  },
+  "HONEY": {
+   "name": "HONEY",
+   "matrix": "honey",
+   "adulterant": "sucrose",
+   "instrument": "FTIR transmission (%T -> A)",
+   "n": 65,
+   "n_channel": 3351,
+   "n_groups": 17,
+   "levels": [
+    0.0,
+    10.0,
+    20.0,
+    40.0
+   ],
+   "spectra_per_level": [
+    16,
+    16,
+    16,
+    16
+   ],
+   "preps_per_level": [
+    16,
+    16,
+    16,
+    16
+   ],
+   "band_split": {
+    "low": [
+     10.0,
+     20.0
+    ],
+    "high": [
+     40.0
+    ]
+   },
+   "prep_folds": [
+    9,
+    8
+   ],
+   "geometry": {
+    "abs": {
+     "full": {
+      "levels": [
+       10.0,
+       20.0,
+       40.0
+      ],
+      "norms": [
+       0.3414,
+       0.3614,
+       0.3664
+      ],
+      "slope_cv": 0.5052,
+      "r2_in": 0.7947,
+      "r2_pred_loo": 0.1628,
+      "sv1_share": 0.9946,
+      "monotone": true,
+      "worst_rel_step": 0.0138,
+      "snr_top": 1.424
+     },
+     "low": {
+      "levels": [
+       10.0,
+       20.0
+      ],
+      "norms": [
+       0.3414,
+       0.3614
+      ],
+      "slope_cv": 0.3077,
+      "r2_in": 0.916,
+      "r2_pred_loo": null,
+      "sv1_share": 0.9994,
+      "monotone": true,
+      "worst_rel_step": 0.0588,
+      "snr_top": 1.552
+     },
+     "high": null
+    },
+    "snv": {
+     "full": {
+      "levels": [
+       10.0,
+       20.0,
+       40.0
+      ],
+      "norms": [
+       3.6235,
+       3.7909,
+       3.5379
+      ],
+      "slope_cv": 0.5298,
+      "r2_in": 0.7636,
+      "r2_pred_loo": 0.0242,
+      "sv1_share": 0.9979,
+      "monotone": false,
+      "worst_rel_step": -0.0667,
+      "snr_top": 2.349
+     },
+     "low": {
+      "levels": [
+       10.0,
+       20.0
+      ],
+      "norms": [
+       3.6235,
+       3.7909
+      ],
+      "slope_cv": 0.3131,
+      "r2_in": 0.9128,
+      "r2_pred_loo": null,
+      "sv1_share": 0.9996,
+      "monotone": true,
+      "worst_rel_step": 0.0462,
+      "snr_top": 3.116
+     },
+     "high": null
+    }
+   },
+   "points": [
+    {
+     "metric": "abs",
+     "direction": "up",
+     "n_fit": 16,
+     "n_test": 8,
+     "groups_fit": 8,
+     "groups_test": 8,
+     "nc": 5,
+     "rmse": 18.783,
+     "rel_bias_pct": -43.96,
+     "mean_test_level": 40.0,
+     "interp_control": {
+      "rmse": 12.389,
+      "rel_bias_pct": -25.49,
+      "n_test": 8
+     },
+     "slope_cv_fit": 0.3077,
+     "r2_pred_loo": null,
+     "r2_in_fit": 0.916,
+     "sv1_fit": 0.9994,
+     "monotone_fit": true,
+     "snr_fit": 1.552,
+     "fit_levels": [
+      10.0,
+      20.0
+     ],
+     "test_levels": [
+      40.0
+     ]
+    },
+    {
+     "metric": "abs",
+     "direction": "up",
+     "n_fit": 16,
+     "n_test": 8,
+     "groups_fit": 8,
+     "groups_test": 8,
+     "nc": 5,
+     "rmse": 19.105,
+     "rel_bias_pct": -47.29,
+     "mean_test_level": 40.0,
+     "interp_control": {
+      "rmse": 9.0,
+      "rel_bias_pct": -12.29,
+      "n_test": 8
+     },
+     "slope_cv_fit": 0.3077,
+     "r2_pred_loo": null,
+     "r2_in_fit": 0.916,
+     "sv1_fit": 0.9994,
+     "monotone_fit": true,
+     "snr_fit": 1.552,
+     "fit_levels": [
+      10.0,
+      20.0
+     ],
+     "test_levels": [
+      40.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "up",
+     "n_fit": 16,
+     "n_test": 8,
+     "groups_fit": 8,
+     "groups_test": 8,
+     "nc": 5,
+     "rmse": 18.324,
+     "rel_bias_pct": -26.71,
+     "mean_test_level": 40.0,
+     "interp_control": {
+      "rmse": 15.466,
+      "rel_bias_pct": -31.38,
+      "n_test": 8
+     },
+     "slope_cv_fit": 0.3131,
+     "r2_pred_loo": null,
+     "r2_in_fit": 0.9128,
+     "sv1_fit": 0.9996,
+     "monotone_fit": true,
+     "snr_fit": 3.116,
+     "fit_levels": [
+      10.0,
+      20.0
+     ],
+     "test_levels": [
+      40.0
+     ]
+    },
+    {
+     "metric": "snv",
+     "direction": "up",
+     "n_fit": 16,
+     "n_test": 8,
+     "groups_fit": 8,
+     "groups_test": 8,
+     "nc": 5,
+     "rmse": 17.689,
+     "rel_bias_pct": -42.84,
+     "mean_test_level": 40.0,
+     "interp_control": {
+      "rmse": 8.402,
+      "rel_bias_pct": -6.47,
+      "n_test": 8
+     },
+     "slope_cv_fit": 0.3131,
+     "r2_pred_loo": null,
+     "r2_in_fit": 0.9128,
+     "sv1_fit": 0.9996,
+     "monotone_fit": true,
+     "snr_fit": 3.116,
+     "fit_levels": [
+      10.0,
+      20.0
+     ],
+     "test_levels": [
+      40.0
+     ]
+    }
+   ],
+   "skips": [
+    "abs/down: fit band has <2 levels with preparations, so no fit-band geometry exists",
+    "snv/down: fit band has <2 levels with preparations, so no fit-band geometry exists"
+   ],
+   "rows": {
+    "each_level_one_interval": false,
+    "intervals_ordered_by_level": true
+   },
+   "dose_axis": "usable",
+   "usable_in_metrics": [
+    "abs"
+   ],
+   "aliasing_flag": false,
+   "note": "level 100 is a 1-row pure sucrose endmember, excluded by the >=2-preparations rule; panel is fully paired so disjointness is imposed on preparations"
+  },
+  "COCO_traditional": {
+   "name": "COCO_traditional",
+   "matrix": "coconut milk",
+   "adulterant": "water",
+   "instrument": "FTIR, 2501-4000 cm-1 (NIR region, not ATR fingerprint)",
+   "n": 21,
+   "n_channel": 729,
+   "n_groups": 21,
+   "levels": [
+    0.0,
+    10.0,
+    20.0
+   ],
+   "spectra_per_level": [
+    7,
+    7,
+    7
+   ],
+   "preps_per_level": [
+    7,
+    7,
+    7
+   ],
+   "band_split": {
+    "low": [
+     10.0
+    ],
+    "high": [
+     20.0
+    ]
+   },
+   "prep_folds": [
+    11,
+    10
+   ],
+   "geometry": {
+    "abs": {
+     "full": {
+      "levels": [
+       10.0,
+       20.0
+      ],
+      "norms": [
+       0.0547,
+       0.0547
+      ],
+      "slope_cv": 0.3328,
+      "r2_in": 0.8278,
+      "r2_pred_loo": null,
+      "sv1_share": 0.9093,
+      "monotone": true,
+      "worst_rel_step": 0.0013,
+      "snr_top": 0.186
+     },
+     "low": null,
+     "high": null
+    },
+    "snv": {
+     "full": {
+      "levels": [
+       10.0,
+       20.0
+      ],
+      "norms": [
+       0.3228,
+       0.3237
+      ],
+      "slope_cv": 0.3321,
+      "r2_in": 0.8621,
+      "r2_pred_loo": null,
+      "sv1_share": 0.9516,
+      "monotone": true,
+      "worst_rel_step": 0.0028,
+      "snr_top": 0.544
+     },
+     "low": null,
+     "high": null
+    }
+   },
+   "points": [],
+   "skips": [
+    "abs/down: fit band has <2 levels with preparations, so no fit-band geometry exists",
+    "abs/up: fit band has <2 levels with preparations, so no fit-band geometry exists",
+    "snv/down: fit band has <2 levels with preparations, so no fit-band geometry exists",
+    "snv/up: fit band has <2 levels with preparations, so no fit-band geometry exists"
+   ],
+   "rows": {
+    "each_level_one_interval": false,
+    "intervals_ordered_by_level": true
+   },
+   "dose_axis": "low_snr",
+   "usable_in_metrics": [],
+   "no_point_reason": "abs/down: fit band has <2 levels with preparations, so no fit-band geometry exists | abs/up: fit band has <2 levels with preparations, so no fit-band geometry exists | snv/down: fit band has <2 levels with preparations, so no fit-band geometry exists | snv/up: fit band has <2 levels with preparations, so no fit-band geometry exists",
+   "aliasing_flag": false,
+   "note": "rows carry no sample id: every row is its own preparation"
+  },
+  "COCO_instant": {
+   "name": "COCO_instant",
+   "matrix": "coconut milk",
+   "adulterant": "water",
+   "instrument": "FTIR, 2501-4000 cm-1 (NIR region, not ATR fingerprint)",
+   "n": 21,
+   "n_channel": 729,
+   "n_groups": 21,
+   "levels": [
+    0.0,
+    10.0,
+    20.0
+   ],
+   "spectra_per_level": [
+    7,
+    7,
+    7
+   ],
+   "preps_per_level": [
+    7,
+    7,
+    7
+   ],
+   "band_split": {
+    "low": [
+     10.0
+    ],
+    "high": [
+     20.0
+    ]
+   },
+   "prep_folds": [
+    11,
+    10
+   ],
+   "geometry": {
+    "abs": {
+     "full": {
+      "levels": [
+       10.0,
+       20.0
+      ],
+      "norms": [
+       0.2555,
+       0.392
+      ],
+      "slope_cv": 0.1318,
+      "r2_in": 0.9869,
+      "r2_pred_loo": null,
+      "sv1_share": 0.9998,
+      "monotone": true,
+      "worst_rel_step": 0.5342,
+      "snr_top": 2.637
+     },
+     "low": null,
+     "high": null
+    },
+    "snv": {
+     "full": {
+      "levels": [
+       10.0,
+       20.0
+      ],
+      "norms": [
+       0.9138,
+       1.3082
+      ],
+      "slope_cv": 0.1657,
+      "r2_in": 0.9781,
+      "r2_pred_loo": null,
+      "sv1_share": 0.9992,
+      "monotone": true,
+      "worst_rel_step": 0.4315,
+      "snr_top": 3.31
+     },
+     "low": null,
+     "high": null
+    }
+   },
+   "points": [],
+   "skips": [
+    "abs/down: fit band has <2 levels with preparations, so no fit-band geometry exists",
+    "abs/up: fit band has <2 levels with preparations, so no fit-band geometry exists",
+    "snv/down: fit band has <2 levels with preparations, so no fit-band geometry exists",
+    "snv/up: fit band has <2 levels with preparations, so no fit-band geometry exists"
+   ],
+   "rows": {
+    "each_level_one_interval": false,
+    "intervals_ordered_by_level": true
+   },
+   "dose_axis": "usable",
+   "usable_in_metrics": [
+    "abs",
+    "snv"
+   ],
+   "no_point_reason": "abs/down: fit band has <2 levels with preparations, so no fit-band geometry exists | abs/up: fit band has <2 levels with preparations, so no fit-band geometry exists | snv/down: fit band has <2 levels with preparations, so no fit-band geometry exists | snv/up: fit band has <2 levels with preparations, so no fit-band geometry exists",
+   "aliasing_flag": false,
+   "note": "rows carry no sample id: every row is its own preparation"
+  }
+ },
+ "summary": {
+  "n_points": 60,
+  "n_corpora": 8,
+  "point_level_spearman_absbias": {
+   "slope_cv_fit": 0.1838,
+   "r2_pred_loo": NaN,
+   "r2_in_fit": -0.4181,
+   "sv1_fit": -0.4047,
+   "snr_fit": -0.1536
+  },
+  "point_level_spearman_signed": {
+   "slope_cv_fit": -0.4718,
+   "r2_pred_loo": NaN,
+   "r2_in_fit": 0.3085,
+   "sv1_fit": -0.115,
+   "snr_fit": -0.0718
+  },
+  "corpora": [
+   "D1",
+   "D2",
+   "D3",
+   "D7d",
+   "D7p",
+   "D7w",
+   "D8",
+   "HONEY"
+  ],
+  "corpus_slope_cv": [
+   0.2238,
+   0.0615,
+   0.4123,
+   0.5706,
+   0.1955,
+   0.5494,
+   0.3122,
+   0.3104
+  ],
+  "corpus_abs_bias": [
+   58.45,
+   13.17,
+   84.45,
+   60.25,
+   38.45,
+   180.86,
+   128.84,
+   43.4
+  ],
+  "corpus_r2_pred_loo": [
+   0.9137,
+   0.9826,
+   0.8251,
+   0.5683,
+   0.6594,
+   0.5949,
+   0.1798,
+   null
+  ],
+  "spearman_corpus_level_slope_cv": 0.8095,
+  "spearman_corpus_level_r2_pred_loo": -0.6786,
+  "cluster_bootstrap_rho": {
+   "n": 1999,
+   "median": 0.825,
+   "lo": 0.2099,
+   "hi": 1.0
+  },
+  "loocv_linear": {
+   "pred": [
+    53.85,
+    29.29,
+    94.23,
+    166.82,
+    51.69,
+    87.82,
+    64.35,
+    76.3
+   ],
+   "pearson": 0.2252,
+   "mae": 42.59,
+   "r2": -0.2387
+  },
+  "loocv_threshold": {
+   "cuts": [
+    0.3122,
+    0.3122,
+    0.3104,
+    0.3104,
+    0.3122,
+    0.3104,
+    0.3104,
+    0.3122
+   ],
+   "calls": [
+    true,
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true
+   ],
+   "truth": [
+    false,
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true
+   ],
+   "accuracy": 0.875,
+   "pass_rule": "|bias| <= 50%"
+  },
+  "new_corpora_only": {
+   "HONEY": {
+    "n": 4,
+    "slope_cv_range": [
+     0.3077,
+     0.3131
+    ],
+    "abs_bias_range": [
+     26.71,
+     47.29
+    ]
+   }
+  }
+ }
+}

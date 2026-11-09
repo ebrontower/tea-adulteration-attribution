@@ -1,0 +1,789 @@
+{
+ "Fig1_workflow": [
+  {
+   "label": "window channels",
+   "value": 933
+  },
+  {
+   "label": "gram coherence raw",
+   "value": 0.9866
+  },
+  {
+   "label": "gram coherence whitened",
+   "value": 0.581
+  }
+ ],
+ "Fig2_discrimination": [
+  {
+   "label": "tea raw/Linear discriminant analysis (invariant control)",
+   "value": 0.996
+  },
+  {
+   "label": "tea whitened/Linear discriminant analysis (invariant control)",
+   "value": 0.996
+  },
+  {
+   "label": "tea Δ/Linear discriminant analysis (invariant control)",
+   "value": 0.0
+  },
+  {
+   "label": "cinnamon raw/Linear discriminant analysis (invariant control)",
+   "value": 0.911
+  },
+  {
+   "label": "cinnamon whitened/Linear discriminant analysis (invariant control)",
+   "value": 0.911
+  },
+  {
+   "label": "cinnamon Δ/Linear discriminant analysis (invariant control)",
+   "value": 0.0
+  },
+  {
+   "label": "tea raw/Logistic regression",
+   "value": 0.971
+  },
+  {
+   "label": "tea whitened/Logistic regression",
+   "value": 0.996
+  },
+  {
+   "label": "tea Δ/Logistic regression",
+   "value": 0.025
+  },
+  {
+   "label": "cinnamon raw/Logistic regression",
+   "value": 0.963
+  },
+  {
+   "label": "cinnamon whitened/Logistic regression",
+   "value": 0.905
+  },
+  {
+   "label": "cinnamon Δ/Logistic regression",
+   "value": -0.058
+  },
+  {
+   "label": "tea raw/PLS-DA",
+   "value": 0.904
+  },
+  {
+   "label": "tea whitened/PLS-DA",
+   "value": 0.993
+  },
+  {
+   "label": "tea Δ/PLS-DA",
+   "value": 0.089
+  },
+  {
+   "label": "cinnamon raw/PLS-DA",
+   "value": 0.9
+  },
+  {
+   "label": "cinnamon whitened/PLS-DA",
+   "value": 0.911
+  },
+  {
+   "label": "cinnamon Δ/PLS-DA",
+   "value": 0.011
+  },
+  {
+   "label": "tea raw/PCA–LDA",
+   "value": 0.909
+  },
+  {
+   "label": "tea whitened/PCA–LDA",
+   "value": 0.996
+  },
+  {
+   "label": "tea Δ/PCA–LDA",
+   "value": 0.087
+  },
+  {
+   "label": "cinnamon raw/PCA–LDA",
+   "value": 0.811
+  },
+  {
+   "label": "cinnamon whitened/PCA–LDA",
+   "value": 0.903
+  },
+  {
+   "label": "cinnamon Δ/PCA–LDA",
+   "value": 0.092
+  },
+  {
+   "label": "tea raw/k-nearest neighbours",
+   "value": 0.893
+  },
+  {
+   "label": "tea whitened/k-nearest neighbours",
+   "value": 0.996
+  },
+  {
+   "label": "tea Δ/k-nearest neighbours",
+   "value": 0.103
+  },
+  {
+   "label": "cinnamon raw/k-nearest neighbours",
+   "value": 0.956
+  },
+  {
+   "label": "cinnamon whitened/k-nearest neighbours",
+   "value": 0.256
+  },
+  {
+   "label": "cinnamon Δ/k-nearest neighbours",
+   "value": -0.7
+  },
+  {
+   "label": "tea raw/Support vector machine, radial basis",
+   "value": 0.956
+  },
+  {
+   "label": "tea whitened/Support vector machine, radial basis",
+   "value": 0.993
+  },
+  {
+   "label": "tea Δ/Support vector machine, radial basis",
+   "value": 0.037
+  },
+  {
+   "label": "cinnamon raw/Support vector machine, radial basis",
+   "value": 0.986
+  },
+  {
+   "label": "cinnamon whitened/Support vector machine, radial basis",
+   "value": 0.908
+  },
+  {
+   "label": "cinnamon Δ/Support vector machine, radial basis",
+   "value": -0.078
+  },
+  {
+   "label": "tea raw/Random forest",
+   "value": 0.876
+  },
+  {
+   "label": "tea whitened/Random forest",
+   "value": 0.989
+  },
+  {
+   "label": "tea Δ/Random forest",
+   "value": 0.113
+  },
+  {
+   "label": "cinnamon raw/Random forest",
+   "value": 0.92
+  },
+  {
+   "label": "cinnamon whitened/Random forest",
+   "value": 0.95
+  },
+  {
+   "label": "cinnamon Δ/Random forest",
+   "value": 0.03
+  },
+  {
+   "label": "tea raw/Gradient boosting",
+   "value": 0.882
+  },
+  {
+   "label": "tea whitened/Gradient boosting",
+   "value": 0.918
+  },
+  {
+   "label": "tea Δ/Gradient boosting",
+   "value": 0.036
+  },
+  {
+   "label": "cinnamon raw/Gradient boosting",
+   "value": 0.949
+  },
+  {
+   "label": "cinnamon whitened/Gradient boosting",
+   "value": 0.998
+  },
+  {
+   "label": "cinnamon Δ/Gradient boosting",
+   "value": 0.049
+  },
+  {
+   "label": "tea raw/Multilayer perceptron",
+   "value": 0.964
+  },
+  {
+   "label": "tea whitened/Multilayer perceptron",
+   "value": 0.991
+  },
+  {
+   "label": "tea Δ/Multilayer perceptron",
+   "value": 0.027
+  },
+  {
+   "label": "cinnamon raw/Multilayer perceptron",
+   "value": 0.966
+  },
+  {
+   "label": "cinnamon whitened/Multilayer perceptron",
+   "value": 0.901
+  },
+  {
+   "label": "cinnamon Δ/Multilayer perceptron",
+   "value": -0.065
+  },
+  {
+   "label": "tea raw/One-dimensional CNN, fixed budget",
+   "value": 0.369
+  },
+  {
+   "label": "tea whitened/One-dimensional CNN, fixed budget",
+   "value": 0.898
+  },
+  {
+   "label": "tea Δ/One-dimensional CNN, fixed budget",
+   "value": 0.529
+  },
+  {
+   "label": "cinnamon raw/One-dimensional CNN, fixed budget",
+   "value": 0.789
+  },
+  {
+   "label": "cinnamon whitened/One-dimensional CNN, fixed budget",
+   "value": 0.703
+  },
+  {
+   "label": "cinnamon Δ/One-dimensional CNN, fixed budget",
+   "value": -0.086
+  },
+  {
+   "label": "tea raw/One-dimensional CNN, budget searched",
+   "value": 0.393
+  },
+  {
+   "label": "tea whitened/One-dimensional CNN, budget searched",
+   "value": 0.944
+  },
+  {
+   "label": "tea Δ/One-dimensional CNN, budget searched",
+   "value": 0.551
+  },
+  {
+   "label": "cinnamon raw/One-dimensional CNN, budget searched",
+   "value": 0.913
+  },
+  {
+   "label": "cinnamon whitened/One-dimensional CNN, budget searched",
+   "value": 0.762
+  },
+  {
+   "label": "cinnamon Δ/One-dimensional CNN, budget searched",
+   "value": -0.151
+  },
+  {
+   "label": "tea raw/Mean Δ over the nine non-invariant arms",
+   "value": null
+  },
+  {
+   "label": "tea whitened/Mean Δ over the nine non-invariant arms",
+   "value": null
+  },
+  {
+   "label": "tea Δ/Mean Δ over the nine non-invariant arms",
+   "value": 0.116
+  },
+  {
+   "label": "cinnamon raw/Mean Δ over the nine non-invariant arms",
+   "value": null
+  },
+  {
+   "label": "cinnamon whitened/Mean Δ over the nine non-invariant arms",
+   "value": null
+  },
+  {
+   "label": "cinnamon Δ/Mean Δ over the nine non-invariant arms",
+   "value": -0.089
+  }
+ ],
+ "Fig6_cinnamon_transfer": [
+  {
+   "label": "a raw/Coverage",
+   "value": 0.895
+  },
+  {
+   "label": "a whitened/Coverage",
+   "value": 0.899
+  },
+  {
+   "label": "a interval whitened/Coverage",
+   "value": [
+    0.875,
+    0.922
+   ]
+  },
+  {
+   "label": "a interval raw/Coverage",
+   "value": null
+  },
+  {
+   "label": "a raw/Top-1",
+   "value": 0.513
+  },
+  {
+   "label": "a whitened/Top-1",
+   "value": 0.964
+  },
+  {
+   "label": "a interval whitened/Top-1",
+   "value": [
+    0.947,
+    0.979
+   ]
+  },
+  {
+   "label": "a interval raw/Top-1",
+   "value": [
+    0.462,
+    0.568
+   ]
+  },
+  {
+   "label": "a raw/Mean set\n(of 8)",
+   "value": 3.41
+  },
+  {
+   "label": "a whitened/Mean set\n(of 8)",
+   "value": 3.91
+  },
+  {
+   "label": "a interval whitened/Mean set\n(of 8)",
+   "value": [
+    3.67,
+    4.14
+   ]
+  },
+  {
+   "label": "a interval raw/Mean set\n(of 8)",
+   "value": null
+  },
+  {
+   "label": "a raw/Empty sets",
+   "value": 0.0
+  },
+  {
+   "label": "a whitened/Empty sets",
+   "value": 0.101
+  },
+  {
+   "label": "a interval whitened/Empty sets",
+   "value": [
+    0.078,
+    0.125
+   ]
+  },
+  {
+   "label": "a interval raw/Empty sets",
+   "value": null
+  },
+  {
+   "label": "b coverage/Walnut shell",
+   "value": [
+    0.908,
+    0.995
+   ]
+  },
+  {
+   "label": "b top-1/Walnut shell",
+   "value": [
+    0.667,
+    1.0
+   ]
+  },
+  {
+   "label": "b set/Walnut shell",
+   "value": [
+    2.58,
+    3.6
+   ]
+  },
+  {
+   "label": "b acceptance/Walnut shell",
+   "value": [
+    0.71,
+    0.86
+   ]
+  },
+  {
+   "label": "b coverage/Peanut",
+   "value": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "label": "b top-1/Peanut",
+   "value": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "label": "b set/Peanut",
+   "value": [
+    4.08,
+    6.81
+   ]
+  },
+  {
+   "label": "b acceptance/Peanut",
+   "value": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "label": "b coverage/Wood dust",
+   "value": [
+    0.917,
+    0.678
+   ]
+  },
+  {
+   "label": "b top-1/Wood dust",
+   "value": [
+    0.0,
+    0.967
+   ]
+  },
+  {
+   "label": "b set/Wood dust",
+   "value": [
+    3.86,
+    1.28
+   ]
+  },
+  {
+   "label": "b acceptance/Wood dust",
+   "value": [
+    1.0,
+    0.86
+   ]
+  },
+  {
+   "label": "b coverage/Authentic cinnamon",
+   "value": [
+    0.333,
+    1.0
+   ]
+  },
+  {
+   "label": "b top-1/Authentic cinnamon",
+   "value": [
+    0.0,
+    0.667
+   ]
+  },
+  {
+   "label": "b set/Authentic cinnamon",
+   "value": [
+    2.33,
+    4.09
+   ]
+  },
+  {
+   "label": "b acceptance/Authentic cinnamon",
+   "value": [
+    0.67,
+    0.46
+   ]
+  },
+  {
+   "label": "b coverage/Loading 1–4%",
+   "value": [
+    0.908,
+    0.798
+   ]
+  },
+  {
+   "label": "b top-1/Loading 1–4%",
+   "value": [
+    0.333,
+    1.0
+   ]
+  },
+  {
+   "label": "b set/Loading 1–4%",
+   "value": [
+    4.24,
+    3.12
+   ]
+  },
+  {
+   "label": "b acceptance/Loading 1–4%",
+   "value": [
+    1.0,
+    0.83
+   ]
+  },
+  {
+   "label": "b coverage/Loading 6–12%",
+   "value": [
+    1.0,
+    0.997
+   ]
+  },
+  {
+   "label": "b top-1/Loading 6–12%",
+   "value": [
+    0.667,
+    1.0
+   ]
+  },
+  {
+   "label": "b set/Loading 6–12%",
+   "value": [
+    3.02,
+    4.53
+   ]
+  },
+  {
+   "label": "b acceptance/Loading 6–12%",
+   "value": [
+    0.71,
+    0.97
+   ]
+  },
+  {
+   "label": "b coverage/Loading 15–24%",
+   "value": [
+    0.917,
+    0.878
+   ]
+  },
+  {
+   "label": "b top-1/Loading 15–24%",
+   "value": [
+    0.667,
+    0.967
+   ]
+  },
+  {
+   "label": "b set/Loading 15–24%",
+   "value": [
+    3.25,
+    4.04
+   ]
+  },
+  {
+   "label": "b acceptance/Loading 15–24%",
+   "value": [
+    1.0,
+    0.91
+   ]
+  },
+  {
+   "label": "b coverage/All spectra",
+   "value": [
+    0.895,
+    0.899
+   ]
+  },
+  {
+   "label": "b top-1/All spectra",
+   "value": [
+    0.513,
+    0.964
+   ]
+  },
+  {
+   "label": "b set/All spectra",
+   "value": [
+    3.41,
+    3.91
+   ]
+  },
+  {
+   "label": "b acceptance/All spectra",
+   "value": [
+    0.884,
+    0.87
+   ]
+  },
+  {
+   "label": "b caveat/Wood dust",
+   "value": 0.322
+  },
+  {
+   "label": "b caveat/Authentic cinnamon",
+   "value": 0.275
+  }
+ ],
+ "Fig7_information_budget": [
+  {
+   "label": "orphan/Dictionary residual without the local scale (5)",
+   "value": 0.963
+  },
+  {
+   "label": "comp_singles/Dictionary residual without the local scale (5)",
+   "value": 0.871
+  },
+  {
+   "label": "comp_pub/Dictionary residual without the local scale (5)",
+   "value": null
+  },
+  {
+   "label": "rung/Dictionary residual without the local scale (5)",
+   "value": "5"
+  },
+  {
+   "label": "orphan/Gate of Algorithm 1 (6)",
+   "value": 0.949
+  },
+  {
+   "label": "comp_singles/Gate of Algorithm 1 (6)",
+   "value": 0.891
+  },
+  {
+   "label": "comp_pub/Gate of Algorithm 1 (6)",
+   "value": 1.0
+  },
+  {
+   "label": "rung/Gate of Algorithm 1 (6)",
+   "value": "6"
+  },
+  {
+   "label": "orphan/Nearest neighbour, all fit rows, whitened (2)",
+   "value": 0.947
+  },
+  {
+   "label": "comp_singles/Nearest neighbour, all fit rows, whitened (2)",
+   "value": 0.868
+  },
+  {
+   "label": "comp_pub/Nearest neighbour, all fit rows, whitened (2)",
+   "value": 0.378
+  },
+  {
+   "label": "rung/Nearest neighbour, all fit rows, whitened (2)",
+   "value": "2"
+  },
+  {
+   "label": "orphan/Mahalanobis in whitened coordinates (2)",
+   "value": 0.836
+  },
+  {
+   "label": "comp_singles/Mahalanobis in whitened coordinates (2)",
+   "value": 0.888
+  },
+  {
+   "label": "comp_pub/Mahalanobis in whitened coordinates (2)",
+   "value": 0.794
+  },
+  {
+   "label": "rung/Mahalanobis in whitened coordinates (2)",
+   "value": "2"
+  },
+  {
+   "label": "orphan/SPE(Q) (1)",
+   "value": 0.77
+  },
+  {
+   "label": "comp_singles/SPE(Q) (1)",
+   "value": 0.819
+  },
+  {
+   "label": "comp_pub/SPE(Q) (1)",
+   "value": 0.343
+  },
+  {
+   "label": "rung/SPE(Q) (1)",
+   "value": "1"
+  },
+  {
+   "label": "orphan/Nearest neighbour, all fit rows, raw (1)",
+   "value": 0.655
+  },
+  {
+   "label": "comp_singles/Nearest neighbour, all fit rows, raw (1)",
+   "value": 0.781
+  },
+  {
+   "label": "comp_pub/Nearest neighbour, all fit rows, raw (1)",
+   "value": null
+  },
+  {
+   "label": "rung/Nearest neighbour, all fit rows, raw (1)",
+   "value": "1"
+  },
+  {
+   "label": "orphan/Hotelling T² (1)",
+   "value": 0.646
+  },
+  {
+   "label": "comp_singles/Hotelling T² (1)",
+   "value": 0.867
+  },
+  {
+   "label": "comp_pub/Hotelling T² (1)",
+   "value": 0.52
+  },
+  {
+   "label": "rung/Hotelling T² (1)",
+   "value": "1"
+  },
+  {
+   "label": "orphan/Autoencoder residual (1)",
+   "value": 0.56
+  },
+  {
+   "label": "comp_singles/Autoencoder residual (1)",
+   "value": 0.922
+  },
+  {
+   "label": "comp_pub/Autoencoder residual (1)",
+   "value": 0.806
+  },
+  {
+   "label": "rung/Autoencoder residual (1)",
+   "value": "1"
+  },
+  {
+   "label": "orphan/Nearest neighbour to pure tea, raw (0)",
+   "value": 0.501
+  },
+  {
+   "label": "comp_singles/Nearest neighbour to pure tea, raw (0)",
+   "value": 0.727
+  },
+  {
+   "label": "comp_pub/Nearest neighbour to pure tea, raw (0)",
+   "value": null
+  },
+  {
+   "label": "rung/Nearest neighbour to pure tea, raw (0)",
+   "value": "0"
+  },
+  {
+   "label": "orphan/Distance to the authentic mean (0)",
+   "value": 0.499
+  },
+  {
+   "label": "comp_singles/Distance to the authentic mean (0)",
+   "value": 0.539
+  },
+  {
+   "label": "comp_pub/Distance to the authentic mean (0)",
+   "value": 0.539
+  },
+  {
+   "label": "rung/Distance to the authentic mean (0)",
+   "value": "0"
+  },
+  {
+   "label": "orphan/One-class SVM (1)",
+   "value": null
+  },
+  {
+   "label": "rung/One-class SVM (1)",
+   "value": "1"
+  }
+ ]
+}

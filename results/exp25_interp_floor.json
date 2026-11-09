@@ -1,0 +1,22 @@
+{
+ "TEA": {
+  "n": 450,
+  "n_channel": 4253,
+  "n_class": 9,
+  "pc1_share": 0.5095712499782163,
+  "lin_r2_pc5": 0.8868,
+  "lin_r2_pc10": 0.9167,
+  "lin_r2_pc20": 0.9408,
+  "lin_r2_pc50": 0.9535,
+  "lin_r2_pc100": 0.9605,
+  "r2_pc20_from_mae": 0.2924,
+  "probe_mae": 0.722,
+  "probe_pc5": 0.856,
+  "probe_pc10": 0.962,
+  "probe_pc20": 0.996,
+  "probe_pc50": 1.0,
+  "mae_over_pca5": 0.207,
+  "mae_over_pca10": 1.147,
+  "mae_over_pca20": 5.057
+ }
+}

@@ -1,0 +1,1850 @@
+{
+ "alpha": 0.1,
+ "k_local": 5,
+ "window": [
+  900.0,
+  1800.0
+ ],
+ "seed": 0,
+ "n_spectra": 450,
+ "n_channels": 933,
+ "protocol": "blocked 5-fold: fit blocks<5, cal blocks>=5, test blocks%5==k; identical folds for every representation and every model",
+ "train_rule": "Part A keeps the manuscript's three-way split (dictionary from fit, thresholds from calibration). Part B baselines train on fit + calibration indices, i.e. on more labelled spectra than the paper's own engine consumes - the no-straw-man rule.",
+ "reps": [
+  "raw",
+  "snv",
+  "white",
+  "whitek"
+ ],
+ "models_T1": [
+  "lda",
+  "logit",
+  "plsda",
+  "pcalda",
+  "knn",
+  "svmrbf",
+  "rf",
+  "gbdt",
+  "mlp",
+  "cnn"
+ ],
+ "models_T2": [
+  "logit",
+  "knn",
+  "svmrbf",
+  "rf",
+  "gbdt",
+  "pls2",
+  "mlp6",
+  "cnn6",
+  "nls",
+  "nls_cal",
+  "dictargmin"
+ ],
+ "scaled_models": [
+  "knn",
+  "logit",
+  "mlp",
+  "mlp6",
+  "pcalda",
+  "svmrbf"
+ ],
+ "scaling_rule": "per-channel StandardScaler fitted on each arm's own training rows for the scale-sensitive learners above, in EVERY representation; LDA(svd), the trees, the torch arms (which standardise internally) and the dictionary arms are left unscaled because their invariance or their metric semantics is exactly what is under test",
+ "nls_ladder": [
+  "abs0.02",
+  "abs0.05",
+  "abs0.1",
+  "rel0.1",
+  "rel0.2",
+  "rel0.35"
+ ],
+ "nls_row": "ORACLE: best exact-set over the whole ladder, threshold read off the test composites - an upper bound, not a claim",
+ "nls_cal_row": "quotable NLS arm: dictionary from fit singles, relative cut from [0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.45] chosen as the smallest whose singleton-support accuracy on calibration singles is >= 0.9",
+ "torch_device": "cuda",
+ "decision_rules": {
+  "A1": "prior-free detector within 0.02 AUROC of the gate => gate is not the contribution; justify by joint refuse+cover behaviour",
+  "B1": "exact-set > 0.10 on held-out composites for any model/rep => rewrite 'not an artefact of one model family' as 'one linear model family'",
+  "B2": "LDA(svd) balanced accuracy must not move between raw and white (invertible linear map); > 0.02 means the feature map is broken and Part B is void. Penalised learners are scale-sensitive and standardised in both arms, so their raw-vs-white gap is a result, not a bug signal",
+  "B3": "'prior helps across model classes' requires a gain averaged over the non-invariant classes on tea AND the same direction on cinnamon",
+  "C1": "if a self-supervised representation reaches exact-set > 0.10 on held-out composites for any model class, Section 3.10's 'the representation is not the bottleneck' is confined to discrimination and may not be quoted for attribution; if SSL matches the analytic representations on T1 but stays at or below them on T2, Sections 3.10 and 3.3 collapse into one statement - learned representations buy no attribution either"
+ },
+ "run_log": [
+  {
+   "ts": "2026-11-02 01:12:11",
+   "stages": {
+    "partA": false,
+    "tea": false,
+    "ssl": true,
+    "cinnamon": false,
+    "cnn": true
+   },
+   "torch_device": "cuda",
+   "torch_version": "2.15.0+cu132"
+  }
+ ],
+ "t2_diag": {
+  "ssl_vicreg": {
+   "logit": [
+    {
+     "n": 20,
+     "mean_size": 0.8,
+     "empty": 0.3,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.1,
+     "empty": 0.05,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.8,
+     "empty": 0.2,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.75,
+     "empty": 0.25,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.4,
+     "empty": 0.6,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "knn": [
+    {
+     "n": 20,
+     "mean_size": 0.85,
+     "empty": 0.15,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.95,
+     "empty": 0.05,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.9,
+     "empty": 0.1,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.8,
+     "empty": 0.2,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.9,
+     "empty": 0.1,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "svmrbf": [
+    {
+     "n": 20,
+     "mean_size": 0.85,
+     "empty": 0.25,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.05,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.05,
+     "empty": 0.0,
+     "binary": 0.1,
+     "ternary": 0.0,
+     "exact": 0.05
+    },
+    {
+     "n": 20,
+     "mean_size": 0.9,
+     "empty": 0.2,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.7,
+     "empty": 0.3,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "rf": [
+    {
+     "n": 20,
+     "mean_size": 0.8,
+     "empty": 0.3,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.0,
+     "empty": 0.05,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.95,
+     "empty": 0.05,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.85,
+     "empty": 0.2,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.25,
+     "empty": 0.75,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "gbdt": [
+    {
+     "n": 20,
+     "mean_size": 0.9,
+     "empty": 0.2,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.0,
+     "empty": 0.05,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.75,
+     "empty": 0.3,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.75,
+     "empty": 0.25,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.8,
+     "empty": 0.2,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "pls2": [
+    {
+     "n": 20,
+     "mean_size": 0.55,
+     "empty": 0.55,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.7,
+     "empty": 0.3,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.75,
+     "empty": 0.3,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.7,
+     "empty": 0.3,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.45,
+     "empty": 0.55,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "mlp6": [
+    {
+     "n": 20,
+     "mean_size": 0.85,
+     "empty": 0.25,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.1,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.9,
+     "empty": 0.15,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.85,
+     "empty": 0.2,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.4,
+     "empty": 0.6,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "cnn6": [
+    {
+     "n": 20,
+     "mean_size": 0.35,
+     "empty": 0.65,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.6,
+     "empty": 0.4,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.5,
+     "empty": 0.5,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.55,
+     "empty": 0.45,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.55,
+     "empty": 0.45,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "nls": [
+    {
+     "n": 20,
+     "mean_size": 2.95,
+     "empty": 0.0,
+     "binary": 0.3,
+     "ternary": 0.1,
+     "exact": 0.2
+    },
+    {
+     "n": 20,
+     "mean_size": 2.7,
+     "empty": 0.0,
+     "binary": 0.3,
+     "ternary": 0.0,
+     "exact": 0.15
+    },
+    {
+     "n": 20,
+     "mean_size": 1.85,
+     "empty": 0.0,
+     "binary": 0.3,
+     "ternary": 0.0,
+     "exact": 0.15
+    },
+    {
+     "n": 20,
+     "mean_size": 2.45,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.3,
+     "exact": 0.15
+    },
+    {
+     "n": 20,
+     "mean_size": 2.65,
+     "empty": 0.0,
+     "binary": 0.1,
+     "ternary": 0.1,
+     "exact": 0.1
+    }
+   ],
+   "nls_cal": [
+    {
+     "n": 20,
+     "mean_size": 1.75,
+     "empty": 0.0,
+     "binary": 0.5,
+     "ternary": 0.0,
+     "exact": 0.25
+    },
+    {
+     "n": 20,
+     "mean_size": 1.4,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.65,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.8,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.2,
+     "empty": 0.0,
+     "binary": 0.1,
+     "ternary": 0.0,
+     "exact": 0.05
+    }
+   ],
+   "dictargmin": [
+    {
+     "n": 20,
+     "mean_size": 1.3,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.2,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.15,
+     "empty": 0.05,
+     "binary": 0.2,
+     "ternary": 0.0,
+     "exact": 0.1
+    },
+    {
+     "n": 20,
+     "mean_size": 1.2,
+     "empty": 0.2,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.1,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ]
+  },
+  "ssl_barlow": {
+   "logit": [
+    {
+     "n": 20,
+     "mean_size": 0.2,
+     "empty": 0.8,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.75,
+     "empty": 0.5,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.65,
+     "empty": 0.35,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.5,
+     "empty": 0.6,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.1,
+     "empty": 0.9,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "knn": [
+    {
+     "n": 20,
+     "mean_size": 0.5,
+     "empty": 0.5,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.3,
+     "empty": 0.7,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.7,
+     "empty": 0.3,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.7,
+     "empty": 0.3,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.15,
+     "empty": 0.85,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "svmrbf": [
+    {
+     "n": 20,
+     "mean_size": 0.1,
+     "empty": 0.9,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.2,
+     "empty": 0.8,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.8,
+     "empty": 0.2,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.25,
+     "empty": 0.75,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.05,
+     "empty": 0.95,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "rf": [
+    {
+     "n": 20,
+     "mean_size": 0.1,
+     "empty": 0.9,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.5,
+     "empty": 0.5,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.55,
+     "empty": 0.45,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.6,
+     "empty": 0.4,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.05,
+     "empty": 0.95,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "gbdt": [
+    {
+     "n": 20,
+     "mean_size": 0.2,
+     "empty": 0.8,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.5,
+     "empty": 0.5,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.75,
+     "empty": 0.3,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.55,
+     "empty": 0.45,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.05,
+     "empty": 0.95,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "pls2": [
+    {
+     "n": 20,
+     "mean_size": 0.2,
+     "empty": 0.8,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.4,
+     "empty": 0.6,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.65,
+     "empty": 0.35,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.25,
+     "empty": 0.75,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.15,
+     "empty": 0.85,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "mlp6": [
+    {
+     "n": 20,
+     "mean_size": 0.4,
+     "empty": 0.6,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.6,
+     "empty": 0.45,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.85,
+     "empty": 0.15,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.85,
+     "empty": 0.25,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.25,
+     "empty": 0.8,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "cnn6": [
+    {
+     "n": 20,
+     "mean_size": 0.25,
+     "empty": 0.75,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.0,
+     "empty": 1.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.0,
+     "empty": 1.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.25,
+     "empty": 0.75,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.05,
+     "empty": 0.95,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "nls": [
+    {
+     "n": 20,
+     "mean_size": 2.3,
+     "empty": 0.0,
+     "binary": 0.5,
+     "ternary": 0.0,
+     "exact": 0.25
+    },
+    {
+     "n": 20,
+     "mean_size": 2.2,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 2.65,
+     "empty": 0.0,
+     "binary": 0.1,
+     "ternary": 0.0,
+     "exact": 0.05
+    },
+    {
+     "n": 20,
+     "mean_size": 2.05,
+     "empty": 0.0,
+     "binary": 0.5,
+     "ternary": 0.0,
+     "exact": 0.25
+    },
+    {
+     "n": 20,
+     "mean_size": 1.45,
+     "empty": 0.0,
+     "binary": 0.1,
+     "ternary": 0.0,
+     "exact": 0.05
+    }
+   ],
+   "nls_cal": [
+    {
+     "n": 20,
+     "mean_size": 1.55,
+     "empty": 0.0,
+     "binary": 0.5,
+     "ternary": 0.0,
+     "exact": 0.25
+    },
+    {
+     "n": 20,
+     "mean_size": 1.3,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.2,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.3,
+     "empty": 0.0,
+     "binary": 0.1,
+     "ternary": 0.0,
+     "exact": 0.05
+    },
+    {
+     "n": 20,
+     "mean_size": 1.6,
+     "empty": 0.0,
+     "binary": 0.1,
+     "ternary": 0.0,
+     "exact": 0.05
+    }
+   ],
+   "dictargmin": [
+    {
+     "n": 20,
+     "mean_size": 1.85,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.15,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.75,
+     "empty": 0.0,
+     "binary": 0.1,
+     "ternary": 0.0,
+     "exact": 0.05
+    },
+    {
+     "n": 20,
+     "mean_size": 1.05,
+     "empty": 0.2,
+     "binary": 0.1,
+     "ternary": 0.0,
+     "exact": 0.05
+    },
+    {
+     "n": 20,
+     "mean_size": 1.35,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ]
+  },
+  "ssl_randinit": {
+   "logit": [
+    {
+     "n": 20,
+     "mean_size": 0.25,
+     "empty": 0.75,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.25,
+     "empty": 0.75,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.7,
+     "empty": 0.3,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.25,
+     "empty": 0.75,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.05,
+     "empty": 0.95,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "knn": [
+    {
+     "n": 20,
+     "mean_size": 0.75,
+     "empty": 0.25,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.7,
+     "empty": 0.3,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.95,
+     "empty": 0.05,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.5,
+     "empty": 0.5,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.45,
+     "empty": 0.55,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "svmrbf": [
+    {
+     "n": 20,
+     "mean_size": 0.15,
+     "empty": 0.85,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.0,
+     "empty": 1.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.0,
+     "empty": 1.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.1,
+     "empty": 0.9,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.05,
+     "empty": 0.95,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "rf": [
+    {
+     "n": 20,
+     "mean_size": 0.45,
+     "empty": 0.55,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.45,
+     "empty": 0.55,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.85,
+     "empty": 0.2,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.35,
+     "empty": 0.65,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.05,
+     "empty": 0.95,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "gbdt": [
+    {
+     "n": 20,
+     "mean_size": 1.0,
+     "empty": 0.2,
+     "binary": 0.2,
+     "ternary": 0.0,
+     "exact": 0.1
+    },
+    {
+     "n": 20,
+     "mean_size": 0.6,
+     "empty": 0.45,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.7,
+     "empty": 0.3,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.5,
+     "empty": 0.5,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.35,
+     "empty": 0.65,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "pls2": [
+    {
+     "n": 20,
+     "mean_size": 0.4,
+     "empty": 0.6,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.3,
+     "empty": 0.7,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.5,
+     "empty": 0.5,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.55,
+     "empty": 0.45,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.65,
+     "empty": 0.35,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "mlp6": [
+    {
+     "n": 20,
+     "mean_size": 0.6,
+     "empty": 0.4,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.45,
+     "empty": 0.55,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.65,
+     "empty": 0.35,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.4,
+     "empty": 0.65,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.1,
+     "empty": 0.9,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "cnn6": [
+    {
+     "n": 20,
+     "mean_size": 0.1,
+     "empty": 0.9,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.0,
+     "empty": 1.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.0,
+     "empty": 1.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.05,
+     "empty": 0.95,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.05,
+     "empty": 0.95,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "nls": [
+    {
+     "n": 20,
+     "mean_size": 1.85,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 2.45,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 2.55,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 2.6,
+     "empty": 0.05,
+     "binary": 0.1,
+     "ternary": 0.0,
+     "exact": 0.05
+    },
+    {
+     "n": 20,
+     "mean_size": 1.5,
+     "empty": 0.25,
+     "binary": 0.0,
+     "ternary": 0.2,
+     "exact": 0.1
+    }
+   ],
+   "nls_cal": [
+    {
+     "n": 20,
+     "mean_size": 1.25,
+     "empty": 0.1,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.25,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.55,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.4,
+     "empty": 0.15,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.35,
+     "empty": 0.1,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ],
+   "dictargmin": [
+    {
+     "n": 20,
+     "mean_size": 1.05,
+     "empty": 0.2,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.9,
+     "empty": 0.2,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 1.05,
+     "empty": 0.0,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.9,
+     "empty": 0.2,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    },
+    {
+     "n": 20,
+     "mean_size": 0.6,
+     "empty": 0.4,
+     "binary": 0.0,
+     "ternary": 0.0,
+     "exact": 0.0
+    }
+   ]
+  }
+ },
+ "nls_threshold_detail": {
+  "ssl_vicreg": [
+   {
+    "abs0.02": 0.2,
+    "abs0.05": 0.1,
+    "abs0.1": 0.05,
+    "rel0.1": 0.05,
+    "rel0.2": 0.0,
+    "rel0.35": 0.0
+   },
+   {
+    "abs0.02": 0.15,
+    "abs0.05": 0.15,
+    "abs0.1": 0.0,
+    "rel0.1": 0.0,
+    "rel0.2": 0.0,
+    "rel0.35": 0.0
+   },
+   {
+    "abs0.02": 0.05,
+    "abs0.05": 0.05,
+    "abs0.1": 0.05,
+    "rel0.1": 0.05,
+    "rel0.2": 0.1,
+    "rel0.35": 0.15
+   },
+   {
+    "abs0.02": 0.1,
+    "abs0.05": 0.1,
+    "abs0.1": 0.15,
+    "rel0.1": 0.1,
+    "rel0.2": 0.1,
+    "rel0.35": 0.0
+   },
+   {
+    "abs0.02": 0.1,
+    "abs0.05": 0.05,
+    "abs0.1": 0.05,
+    "rel0.1": 0.05,
+    "rel0.2": 0.05,
+    "rel0.35": 0.0
+   }
+  ],
+  "ssl_barlow": [
+   {
+    "abs0.02": 0.25,
+    "abs0.05": 0.25,
+    "abs0.1": 0.25,
+    "rel0.1": 0.25,
+    "rel0.2": 0.25,
+    "rel0.35": 0.25
+   },
+   {
+    "abs0.02": 0.0,
+    "abs0.05": 0.0,
+    "abs0.1": 0.0,
+    "rel0.1": 0.0,
+    "rel0.2": 0.0,
+    "rel0.35": 0.0
+   },
+   {
+    "abs0.02": 0.05,
+    "abs0.05": 0.05,
+    "abs0.1": 0.05,
+    "rel0.1": 0.05,
+    "rel0.2": 0.05,
+    "rel0.35": 0.0
+   },
+   {
+    "abs0.02": 0.25,
+    "abs0.05": 0.25,
+    "abs0.1": 0.15,
+    "rel0.1": 0.05,
+    "rel0.2": 0.05,
+    "rel0.35": 0.1
+   },
+   {
+    "abs0.02": 0.05,
+    "abs0.05": 0.05,
+    "abs0.1": 0.05,
+    "rel0.1": 0.05,
+    "rel0.2": 0.05,
+    "rel0.35": 0.05
+   }
+  ],
+  "ssl_randinit": [
+   {
+    "abs0.02": 0.0,
+    "abs0.05": 0.0,
+    "abs0.1": 0.0,
+    "rel0.1": 0.0,
+    "rel0.2": 0.0,
+    "rel0.35": 0.0
+   },
+   {
+    "abs0.02": 0.0,
+    "abs0.05": 0.0,
+    "abs0.1": 0.0,
+    "rel0.1": 0.0,
+    "rel0.2": 0.0,
+    "rel0.35": 0.0
+   },
+   {
+    "abs0.02": 0.0,
+    "abs0.05": 0.0,
+    "abs0.1": 0.0,
+    "rel0.1": 0.0,
+    "rel0.2": 0.0,
+    "rel0.35": 0.0
+   },
+   {
+    "abs0.02": 0.05,
+    "abs0.05": 0.0,
+    "abs0.1": 0.0,
+    "rel0.1": 0.0,
+    "rel0.2": 0.0,
+    "rel0.35": 0.0
+   },
+   {
+    "abs0.02": 0.1,
+    "abs0.05": 0.0,
+    "abs0.1": 0.0,
+    "rel0.1": 0.0,
+    "rel0.2": 0.0,
+    "rel0.35": 0.0
+   }
+  ]
+ },
+ "nls_cal_detail": {
+  "ssl_vicreg": [
+   {
+    "cut": 0.45,
+    "n_cal": 140,
+    "n_fit": 140
+   },
+   {
+    "cut": 0.45,
+    "n_cal": 140,
+    "n_fit": 140
+   },
+   {
+    "cut": 0.45,
+    "n_cal": 140,
+    "n_fit": 140
+   },
+   {
+    "cut": 0.45,
+    "n_cal": 140,
+    "n_fit": 140
+   },
+   {
+    "cut": 0.45,
+    "n_cal": 140,
+    "n_fit": 140
+   }
+  ],
+  "ssl_barlow": [
+   {
+    "cut": 0.45,
+    "n_cal": 140,
+    "n_fit": 140
+   },
+   {
+    "cut": 0.45,
+    "n_cal": 140,
+    "n_fit": 140
+   },
+   {
+    "cut": 0.45,
+    "n_cal": 140,
+    "n_fit": 140
+   },
+   {
+    "cut": 0.45,
+    "n_cal": 140,
+    "n_fit": 140
+   },
+   {
+    "cut": 0.45,
+    "n_cal": 140,
+    "n_fit": 140
+   }
+  ],
+  "ssl_randinit": [
+   {
+    "cut": 0.45,
+    "n_cal": 140,
+    "n_fit": 140
+   },
+   {
+    "cut": 0.45,
+    "n_cal": 140,
+    "n_fit": 140
+   },
+   {
+    "cut": 0.45,
+    "n_cal": 140,
+    "n_fit": 140
+   },
+   {
+    "cut": 0.45,
+    "n_cal": 140,
+    "n_fit": 140
+   },
+   {
+    "cut": 0.45,
+    "n_cal": 140,
+    "n_fit": 140
+   }
+  ]
+ },
+ "t2_oracle_constant": {
+  "ssl_vicreg": {
+   "set": [
+    1,
+    3,
+    5
+   ],
+   "exact": 0.5,
+   "binary": 0.0,
+   "ternary": 1.0,
+   "n": 100,
+   "note": "oracle: constant set selected on the test composites themselves"
+  },
+  "ssl_barlow": {
+   "set": [
+    1,
+    3,
+    5
+   ],
+   "exact": 0.5,
+   "binary": 0.0,
+   "ternary": 1.0,
+   "n": 100,
+   "note": "oracle: constant set selected on the test composites themselves"
+  },
+  "ssl_randinit": {
+   "set": [
+    1,
+    3,
+    5
+   ],
+   "exact": 0.5,
+   "binary": 0.0,
+   "ternary": 1.0,
+   "n": 100,
+   "note": "oracle: constant set selected on the test composites themselves"
+  }
+ },
+ "partC_tea": {
+  "ssl_vicreg": {
+   "T1_balanced_acc": {
+    "lda": 0.862,
+    "logit": 0.791,
+    "plsda": 0.611,
+    "pcalda": 0.582,
+    "knn": 0.753,
+    "svmrbf": 0.816,
+    "rf": 0.789,
+    "gbdt": 0.811,
+    "mlp": 0.836,
+    "cnn": 0.693
+   },
+   "T2_exact_set": {
+    "logit": 0.0,
+    "knn": 0.0,
+    "svmrbf": 0.01,
+    "rf": 0.0,
+    "gbdt": 0.0,
+    "pls2": 0.0,
+    "mlp6": 0.0,
+    "cnn6": 0.0,
+    "nls": 0.15,
+    "nls_cal": 0.06,
+    "dictargmin": 0.02
+   },
+   "T2_micro_f1": {
+    "logit": 0.445,
+    "knn": 0.444,
+    "svmrbf": 0.458,
+    "rf": 0.434,
+    "gbdt": 0.435,
+    "pls2": 0.381,
+    "mlp6": 0.442,
+    "cnn6": 0.298,
+    "nls": 0.659,
+    "nls_cal": 0.459,
+    "dictargmin": 0.396
+   }
+  },
+  "ssl_barlow": {
+   "T1_balanced_acc": {
+    "lda": 0.802,
+    "logit": 0.489,
+    "plsda": 0.396,
+    "pcalda": 0.396,
+    "knn": 0.544,
+    "svmrbf": 0.509,
+    "rf": 0.624,
+    "gbdt": 0.647,
+    "mlp": 0.653,
+    "cnn": 0.416
+   },
+   "T2_exact_set": {
+    "logit": 0.0,
+    "knn": 0.0,
+    "svmrbf": 0.0,
+    "rf": 0.0,
+    "gbdt": 0.0,
+    "pls2": 0.0,
+    "mlp6": 0.0,
+    "cnn6": 0.0,
+    "nls": 0.12,
+    "nls_cal": 0.07,
+    "dictargmin": 0.02
+   },
+   "T2_micro_f1": {
+    "logit": 0.192,
+    "knn": 0.216,
+    "svmrbf": 0.115,
+    "rf": 0.185,
+    "gbdt": 0.184,
+    "pls2": 0.173,
+    "mlp6": 0.228,
+    "cnn6": 0.081,
+    "nls": 0.426,
+    "nls_cal": 0.305,
+    "dictargmin": 0.298
+   }
+  },
+  "ssl_randinit": {
+   "T1_balanced_acc": {
+    "lda": 0.869,
+    "logit": 0.564,
+    "plsda": 0.476,
+    "pcalda": 0.433,
+    "knn": 0.447,
+    "svmrbf": 0.456,
+    "rf": 0.549,
+    "gbdt": 0.64,
+    "mlp": 0.591,
+    "cnn": 0.353
+   },
+   "T2_exact_set": {
+    "logit": 0.0,
+    "knn": 0.0,
+    "svmrbf": 0.0,
+    "rf": 0.0,
+    "gbdt": 0.02,
+    "pls2": 0.0,
+    "mlp6": 0.0,
+    "cnn6": 0.0,
+    "nls": 0.03,
+    "nls_cal": 0.0,
+    "dictargmin": 0.0
+   },
+   "T2_micro_f1": {
+    "logit": 0.117,
+    "knn": 0.207,
+    "svmrbf": 0.038,
+    "rf": 0.131,
+    "gbdt": 0.204,
+    "pls2": 0.16,
+    "mlp6": 0.174,
+    "cnn6": 0.031,
+    "nls": 0.555,
+    "nls_cal": 0.377,
+    "dictargmin": 0.29
+   }
+  }
+ }
+}

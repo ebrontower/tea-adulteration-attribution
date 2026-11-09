@@ -1,0 +1,35 @@
+{
+ "sigma": 0.10241116197157296,
+ "per_component": {
+  "白糖": {
+   "A2": 0.273,
+   "unique_var_frac": 0.0981,
+   "resid_rms": 0.0279
+  },
+  "滑石粉": {
+   "A2": 0.114,
+   "unique_var_frac": 0.0053,
+   "resid_rms": 0.0116
+  },
+  "硫磺": {
+   "A2": 0.092,
+   "unique_var_frac": 0.0138,
+   "resid_rms": 0.0094
+  },
+  "石蜡": {
+   "A2": 0.144,
+   "unique_var_frac": 0.003,
+   "resid_rms": 0.0148
+  },
+  "色素": {
+   "A2": 0.114,
+   "unique_var_frac": 0.0043,
+   "resid_rms": 0.0117
+  },
+  "香精": {
+   "A2": 0.159,
+   "unique_var_frac": 0.011,
+   "resid_rms": 0.0163
+  }
+ }
+}

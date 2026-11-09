@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.uv/
+.mypy_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local scratch and downloaded inputs
+tmp/
+scratch/
+*.tmp
+*.log
+*.bak
+
+# Public depositions are not redistributed - if you keep them inside the checkout,
+# point P5_PUBLIC_DATA at them instead of committing them.
+data/public/
+data/kan/
+data/cinnamon/
+data/turmeric/
+data/qib/
+data/honey_ftir_extract/
+data/coconut/
+data/oilblend/
+data/quadram/
+
+# Intermediate figure scratch - shipped figures live under figures/ and are tracked
+figs_cea/
+*.aux
+*.synctex.gz
+
+# Word / WPS lock files that can appear if the checkout is opened next to a manuscript
+~$*
+*.tmp.docx
+
+# Figures are not published in this repository
+figures/
+
+# Self-acquired tea FTIR spectra are not open-sourced
+data/tea_batch_sulfur/
+data/tea_batch_clean/
+*.xlsx

@@ -1,0 +1,28 @@
+{
+ "holdout_7_thr0.02": {
+  "exact": 0.04,
+  "mean_w_true": null
+ },
+ "holdout_7_thr0.05": {
+  "exact": 0.02,
+  "mean_w_true": null
+ },
+ "holdout_7_thr0.1": {
+  "exact": 0.0,
+  "mean_w_true": null
+ },
+ "holdout_8_thr0.02": {
+  "exact": 0.0,
+  "mean_w_true": null
+ },
+ "holdout_8_thr0.05": {
+  "exact": 0.0,
+  "mean_w_true": null
+ },
+ "holdout_8_thr0.1": {
+  "exact": 0.0,
+  "mean_w_true": null
+ },
+ "insample_all9_thr0.05_exact": 0.33555555555555555,
+ "mean_weights_example_holdout7": null
+}

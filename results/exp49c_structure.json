@@ -1,0 +1,930 @@
+{
+ "group_structure": {
+  "walnut shell": {
+   "n_rows": 650,
+   "n_channels_window": 631,
+   "dnu": 1.4266999999999825,
+   "levels": [
+    {
+     "level": 0.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CW0S01",
+      "CW0S02",
+      "CW0S03"
+     ]
+    },
+    {
+     "level": 1.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CW1S01",
+      "CW1S02",
+      "CW1S03"
+     ]
+    },
+    {
+     "level": 2.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CW2S01",
+      "CW2S02",
+      "CW2S03"
+     ]
+    },
+    {
+     "level": 3.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CW3S01",
+      "CW3S02",
+      "CW3S03"
+     ]
+    },
+    {
+     "level": 4.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CW4S01",
+      "CW4S02",
+      "CW4S03"
+     ]
+    },
+    {
+     "level": 6.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CW6S01",
+      "CW6S02",
+      "CW6S03"
+     ]
+    },
+    {
+     "level": 8.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CW8S01",
+      "CW8S02",
+      "CW8S03"
+     ]
+    },
+    {
+     "level": 10.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CW10S01",
+      "CW10S02",
+      "CW10S03"
+     ]
+    },
+    {
+     "level": 12.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CW12S01",
+      "CW12S02",
+      "CW12S03"
+     ]
+    },
+    {
+     "level": 15.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CW15S01",
+      "CW15S02",
+      "CW15S03"
+     ]
+    },
+    {
+     "level": 18.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CW18S01",
+      "CW18S02",
+      "CW18S03"
+     ]
+    },
+    {
+     "level": 21.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CW21S01",
+      "CW21S02",
+      "CW21S03"
+     ]
+    },
+    {
+     "level": 24.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CW24S01",
+      "CW24S02",
+      "CW24S03"
+     ]
+    }
+   ],
+   "names_all_unique": true
+  },
+  "peanut": {
+   "n_rows": 650,
+   "n_channels_window": 631,
+   "dnu": 1.4266999999999825,
+   "levels": [
+    {
+     "level": 0.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CP0S01",
+      "CP0S02",
+      "CP0S03"
+     ]
+    },
+    {
+     "level": 1.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CP1S01",
+      "CP1S02",
+      "CP1S03"
+     ]
+    },
+    {
+     "level": 2.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CP2S01",
+      "CP2S02",
+      "CP2S03"
+     ]
+    },
+    {
+     "level": 3.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CP3S01",
+      "CP3S02",
+      "CP3S03"
+     ]
+    },
+    {
+     "level": 4.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CP4S01",
+      "CP4S02",
+      "CP4S03"
+     ]
+    },
+    {
+     "level": 6.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CP6S01",
+      "CP6S02",
+      "CP6S03"
+     ]
+    },
+    {
+     "level": 8.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CP8S01",
+      "CP8S02",
+      "CP8S03"
+     ]
+    },
+    {
+     "level": 10.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CP10S01",
+      "CP10S02",
+      "CP10S03"
+     ]
+    },
+    {
+     "level": 12.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CP12S01",
+      "CP12S02",
+      "CP12S03"
+     ]
+    },
+    {
+     "level": 15.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CP15S01",
+      "CP15S02",
+      "CP15S03"
+     ]
+    },
+    {
+     "level": 18.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CP18S01",
+      "CP18S02",
+      "CP18S03"
+     ]
+    },
+    {
+     "level": 21.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CP21S01",
+      "CP21S02",
+      "CP21S03"
+     ]
+    },
+    {
+     "level": 24.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CP24S01",
+      "CP24S02",
+      "CP24S03"
+     ]
+    }
+   ],
+   "names_all_unique": true
+  },
+  "wood dust": {
+   "n_rows": 650,
+   "n_channels_window": 631,
+   "dnu": 1.4266999999999825,
+   "levels": [
+    {
+     "level": 0.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CD0S01",
+      "CD0S02",
+      "CD0S03"
+     ]
+    },
+    {
+     "level": 1.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CD1S01",
+      "CD1S02",
+      "CD1S03"
+     ]
+    },
+    {
+     "level": 2.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CD2S01",
+      "CD2S02",
+      "CD2S03"
+     ]
+    },
+    {
+     "level": 3.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CD3S01",
+      "CD3S02",
+      "CD3S03"
+     ]
+    },
+    {
+     "level": 4.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CD4S01",
+      "CD4S02",
+      "CD4S03"
+     ]
+    },
+    {
+     "level": 6.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CD6S01",
+      "CD6S02",
+      "CD6S03"
+     ]
+    },
+    {
+     "level": 8.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CD8S01",
+      "CD8S02",
+      "CD8S03"
+     ]
+    },
+    {
+     "level": 10.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CD10S01",
+      "CD10S02",
+      "CD10S03"
+     ]
+    },
+    {
+     "level": 12.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CD12S01",
+      "CD12S02",
+      "CD12S03"
+     ]
+    },
+    {
+     "level": 15.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CD15S01",
+      "CD15S02",
+      "CD15S03"
+     ]
+    },
+    {
+     "level": 18.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CD18S01",
+      "CD18S02",
+      "CD18S03"
+     ]
+    },
+    {
+     "level": 21.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CD21S01",
+      "CD21S02",
+      "CD21S03"
+     ]
+    },
+    {
+     "level": 24.0,
+     "n_rows": 50,
+     "n_unique_names": 50,
+     "example": [
+      "CD24S01",
+      "CD24S02",
+      "CD24S03"
+     ]
+    }
+   ],
+   "names_all_unique": true
+  }
+ },
+ "best_set_by_cell": {
+  "euclid": {
+   "walnut shell @ 1%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell+wood dust": 50
+    }
+   },
+   "walnut shell @ 2%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell+wood dust": 50
+    }
+   },
+   "walnut shell @ 3%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell+wood dust": 50
+    }
+   },
+   "walnut shell @ 4%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell+wood dust": 50
+    }
+   },
+   "walnut shell @ 6%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 8%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 10%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 12%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 15%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 18%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 21%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 24%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "peanut @ 1%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 2%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 3%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 4%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 6%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 8%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 10%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 12%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 15%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 18%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 21%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 24%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "wood dust @ 1%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "wood dust @ 2%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "wood dust @ 3%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "wood dust @ 4%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "wood dust @ 6%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "walnut shell+wood dust": 50
+    }
+   },
+   "wood dust @ 8%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "walnut shell+wood dust": 50
+    }
+   },
+   "wood dust @ 10%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "walnut shell+wood dust": 50
+    }
+   },
+   "wood dust @ 12%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "walnut shell+wood dust": 50
+    }
+   },
+   "wood dust @ 15%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "wood dust @ 18%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "wood dust @ 21%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "wood dust @ 24%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   }
+  },
+  "white_a": {
+   "walnut shell @ 1%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 2%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 3%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 4%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 6%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 8%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 10%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 12%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 15%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 18%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 21%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "walnut shell @ 24%": {
+    "truth": "walnut shell",
+    "n": 50,
+    "returned": {
+     "walnut shell": 50
+    }
+   },
+   "peanut @ 1%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 2%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 3%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 4%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 6%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 8%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 10%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 12%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 15%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 18%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 21%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "peanut @ 24%": {
+    "truth": "peanut",
+    "n": 50,
+    "returned": {
+     "peanut": 50
+    }
+   },
+   "wood dust @ 1%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "wood dust": 50
+    }
+   },
+   "wood dust @ 2%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "wood dust": 50
+    }
+   },
+   "wood dust @ 3%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "wood dust": 50
+    }
+   },
+   "wood dust @ 4%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "wood dust": 50
+    }
+   },
+   "wood dust @ 6%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "wood dust": 50
+    }
+   },
+   "wood dust @ 8%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "wood dust": 50
+    }
+   },
+   "wood dust @ 10%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "wood dust": 50
+    }
+   },
+   "wood dust @ 12%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "wood dust": 50
+    }
+   },
+   "wood dust @ 15%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "wood dust": 50
+    }
+   },
+   "wood dust @ 18%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "wood dust": 50
+    }
+   },
+   "wood dust @ 21%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "wood dust": 50
+    }
+   },
+   "wood dust @ 24%": {
+    "truth": "wood dust",
+    "n": 50,
+    "returned": {
+     "wood dust": 30,
+     "walnut shell": 19,
+     "walnut shell+wood dust": 1
+    }
+   }
+  }
+ }
+}

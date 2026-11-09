@@ -1,0 +1,707 @@
+{
+ "rule": {
+  "coverage_min": 0.99,
+  "resid_lift_max": 0.02,
+  "headroom_full_max": 0.02
+ },
+ "calibration_from_exp28": {
+  "D1": {
+   "coverage_pc20": 0.9996,
+   "headroom_full": 0.078,
+   "resid_lift": -0.1,
+   "pc20_lin": {
+    "10": 0.806,
+    "20": 0.861
+   },
+   "pc20_svm": {
+    "10": 0.842,
+    "20": 0.836
+   },
+   "full_svm": {
+    "10": 0.927,
+    "20": 0.939
+   },
+   "resid_svm": {
+    "10": 0.424,
+    "20": 0.4
+   },
+   "n": 352,
+   "n_class": 2
+  },
+  "D2": {
+   "coverage_pc20": 1.0,
+   "headroom_full": 0.03,
+   "resid_lift": 0.179,
+   "pc20_lin": {
+    "10": 0.745,
+    "20": 0.879
+   },
+   "pc20_svm": {
+    "10": 0.77,
+    "20": 0.873
+   },
+   "full_svm": {
+    "10": 0.909,
+    "20": 0.909
+   },
+   "resid_svm": {
+    "10": 0.552,
+    "20": 0.679
+   },
+   "n": 405,
+   "n_class": 2
+  },
+  "D3": {
+   "coverage_pc20": 0.9999,
+   "headroom_full": 0.006,
+   "resid_lift": 0.009,
+   "pc20_lin": {
+    "10": 0.891,
+    "20": 0.958
+   },
+   "pc20_svm": {
+    "10": 0.873,
+    "20": 0.909
+   },
+   "full_svm": {
+    "10": 0.964,
+    "20": 0.964
+   },
+   "resid_svm": {
+    "10": 0.424,
+    "20": 0.509
+   },
+   "n": 413,
+   "n_class": 2
+  },
+  "D7w": {
+   "coverage_pc20": 0.9999,
+   "headroom_full": 0.0,
+   "resid_lift": 0.054,
+   "pc20_lin": {
+    "10": 0.96,
+    "20": 1.0
+   },
+   "pc20_svm": {
+    "10": 0.944,
+    "20": 0.999
+   },
+   "full_svm": {
+    "10": 1.0,
+    "20": 1.0
+   },
+   "resid_svm": {
+    "10": 0.501,
+    "20": 0.554
+   },
+   "n": 650,
+   "n_class": 2
+  },
+  "D7p": {
+   "coverage_pc20": 0.9966,
+   "headroom_full": 0.187,
+   "resid_lift": 0.033,
+   "pc20_lin": {
+    "10": 0.686,
+    "20": 0.782
+   },
+   "pc20_svm": {
+    "10": 0.726,
+    "20": 0.767
+   },
+   "full_svm": {
+    "10": 0.949,
+    "20": 0.969
+   },
+   "resid_svm": {
+    "10": 0.497,
+    "20": 0.533
+   },
+   "n": 650,
+   "n_class": 2
+  },
+  "D7d": {
+   "coverage_pc20": 0.9998,
+   "headroom_full": -0.01,
+   "resid_lift": 0.429,
+   "pc20_lin": {
+    "10": 0.994,
+    "20": 0.999
+   },
+   "pc20_svm": {
+    "10": 0.992,
+    "20": 0.999
+   },
+   "full_svm": {
+    "10": 0.989,
+    "20": 0.989
+   },
+   "resid_svm": {
+    "10": 0.911,
+    "20": 0.929
+   },
+   "n": 650,
+   "n_class": 2
+  },
+  "D8": {
+   "coverage_pc20": 0.9953,
+   "headroom_full": 0.005,
+   "resid_lift": 0.006,
+   "pc20_lin": {
+    "10": 0.946,
+    "20": 0.989
+   },
+   "pc20_svm": {
+    "10": 0.965,
+    "20": 0.989
+   },
+   "full_svm": {
+    "10": 0.997,
+    "20": 0.994
+   },
+   "resid_svm": {
+    "10": 0.367,
+    "20": 0.506
+   },
+   "n": 350,
+   "n_class": 2
+  },
+  "TEA": {
+   "coverage_pc20": 0.9999,
+   "headroom_full": -0.019,
+   "resid_lift": 0.63,
+   "pc20_lin": {
+    "10": 0.981,
+    "20": 0.985
+   },
+   "pc20_svm": {
+    "10": 0.967,
+    "20": 0.993
+   },
+   "full_svm": {
+    "10": 0.944,
+    "20": 0.974
+   },
+   "resid_svm": {
+    "10": 0.57,
+    "20": 0.741
+   },
+   "n": 450,
+   "n_class": 9
+  }
+ },
+ "new": {
+  "HONEY_level": {
+   "random": {
+    "n": 65,
+    "n_channel": 3351,
+    "n_class": 5,
+    "n_train": 48,
+    "n_test": 17,
+    "k": 20,
+    "chance": 0.2,
+    "coverage_pc20": 0.9984,
+    "pc20_lin": {
+     "10": 0.233,
+     "20": 0.35
+    },
+    "pc20_svm": {
+     "10": 0.233,
+     "20": 0.2
+    },
+    "full_svm": {
+     "10": 0.367,
+     "20": 0.45
+    },
+    "resid_svm": {
+     "10": 0.183,
+     "20": 0.2
+    },
+    "pc20_full": 0.6,
+    "resid_full": 0.2,
+    "full_full": 0.45,
+    "headroom_full": 0.1,
+    "resid_lift": 0.0,
+    "verdict": "headroom_present"
+   },
+   "phys": {
+    "n": 65,
+    "n_channel": 3351,
+    "n_class": 5,
+    "n_train": 53,
+    "n_test": 12,
+    "k": 20,
+    "chance": 0.2,
+    "coverage_pc20": 0.9996,
+    "pc20_lin": {
+     "10": 0.417,
+     "20": 0.417
+    },
+    "pc20_svm": {
+     "10": 0.5,
+     "20": 0.583
+    },
+    "full_svm": {
+     "10": 0.556,
+     "20": 0.5
+    },
+    "resid_svm": {
+     "10": 0.25,
+     "20": 0.167
+    },
+    "pc20_full": 0.333,
+    "resid_full": 0.167,
+    "full_full": 0.5,
+    "headroom_full": -0.083,
+    "resid_lift": -0.033,
+    "verdict": "no_headroom"
+   }
+  },
+  "COCO_traditional": {
+   "random": {
+    "n": 21,
+    "n_channel": 729,
+    "n_class": 3,
+    "n_train": 15,
+    "n_test": 6,
+    "k": 11,
+    "chance": 0.333,
+    "coverage_pc20": 1.0,
+    "pc20_lin": {
+     "10": 0.667,
+     "20": 0.667
+    },
+    "pc20_svm": {
+     "10": 0.833,
+     "20": 0.833
+    },
+    "full_svm": {
+     "10": 0.333,
+     "20": 0.333
+    },
+    "resid_svm": {
+     "10": 0.333,
+     "20": 0.333
+    },
+    "pc20_full": 0.833,
+    "resid_full": 0.333,
+    "full_full": 0.333,
+    "headroom_full": -0.5,
+    "resid_lift": 0.0,
+    "verdict": "no_headroom"
+   },
+   "phys": {
+    "n": 21,
+    "n_channel": 729,
+    "n_class": 3,
+    "n_train": 17,
+    "n_test": 4,
+    "k": 13,
+    "chance": 0.333,
+    "coverage_pc20": 0.9999,
+    "pc20_lin": {
+     "10": 0.833,
+     "20": 0.833
+    },
+    "pc20_svm": {
+     "10": 0.167,
+     "20": 0.167
+    },
+    "full_svm": {
+     "10": 0.0,
+     "20": 0.0
+    },
+    "resid_svm": {
+     "10": 0.5,
+     "20": 0.5
+    },
+    "pc20_full": 0.333,
+    "resid_full": 0.5,
+    "full_full": 0.0,
+    "headroom_full": -0.833,
+    "resid_lift": 0.167,
+    "verdict": "headroom_present"
+   }
+  },
+  "COCO_instant": {
+   "random": {
+    "n": 21,
+    "n_channel": 729,
+    "n_class": 3,
+    "n_train": 15,
+    "n_test": 6,
+    "k": 11,
+    "chance": 0.333,
+    "coverage_pc20": 0.9999,
+    "pc20_lin": {
+     "10": 0.5,
+     "20": 0.5
+    },
+    "pc20_svm": {
+     "10": 0.333,
+     "20": 0.333
+    },
+    "full_svm": {
+     "10": 0.5,
+     "20": 0.5
+    },
+    "resid_svm": {
+     "10": 0.333,
+     "20": 0.333
+    },
+    "pc20_full": 1.0,
+    "resid_full": 0.333,
+    "full_full": 0.5,
+    "headroom_full": 0.0,
+    "resid_lift": 0.0,
+    "verdict": "no_headroom"
+   },
+   "phys": {
+    "n": 21,
+    "n_channel": 729,
+    "n_class": 3,
+    "n_train": 17,
+    "n_test": 4,
+    "k": 13,
+    "chance": 0.333,
+    "coverage_pc20": 1.0,
+    "pc20_lin": {
+     "10": 0.5,
+     "20": 0.5
+    },
+    "pc20_svm": {
+     "10": 0.0,
+     "20": 0.0
+    },
+    "full_svm": {
+     "10": 0.25,
+     "20": 0.25
+    },
+    "resid_svm": {
+     "10": 0.0,
+     "20": 0.0
+    },
+    "pc20_full": 1.0,
+    "resid_full": 0.0,
+    "full_full": 0.25,
+    "headroom_full": -0.25,
+    "resid_lift": -0.333,
+    "verdict": "no_headroom"
+   }
+  },
+  "QIB_meats": {
+   "random": {
+    "n": 120,
+    "n_channel": 448,
+    "n_class": 3,
+    "n_train": 96,
+    "n_test": 24,
+    "k": 20,
+    "chance": 0.333,
+    "coverage_pc20": 1.0,
+    "pc20_lin": {
+     "10": 0.986,
+     "20": 1.0
+    },
+    "pc20_svm": {
+     "10": 0.917,
+     "20": 0.972
+    },
+    "full_svm": {
+     "10": 0.903,
+     "20": 0.944
+    },
+    "resid_svm": {
+     "10": 0.347,
+     "20": 0.292
+    },
+    "pc20_full": 1.0,
+    "resid_full": 0.333,
+    "full_full": 0.958,
+    "headroom_full": -0.056,
+    "resid_lift": -0.041,
+    "verdict": "no_headroom"
+   },
+   "phys": {
+    "n": 120,
+    "n_channel": 448,
+    "n_class": 3,
+    "n_train": 96,
+    "n_test": 24,
+    "k": 20,
+    "chance": 0.333,
+    "coverage_pc20": 1.0,
+    "pc20_lin": {
+     "10": 0.926,
+     "20": 1.0
+    },
+    "pc20_svm": {
+     "10": 0.944,
+     "20": 0.935
+    },
+    "full_svm": {
+     "10": 1.0,
+     "20": 1.0
+    },
+    "resid_svm": {
+     "10": 0.38,
+     "20": 0.407
+    },
+    "pc20_full": 1.0,
+    "resid_full": 0.333,
+    "full_full": 1.0,
+    "headroom_full": 0.0,
+    "resid_lift": 0.074,
+    "verdict": "headroom_present"
+   }
+  },
+  "QIB_olive": {
+   "random": {
+    "n": 120,
+    "n_channel": 570,
+    "n_class": 4,
+    "n_train": 95,
+    "n_test": 25,
+    "k": 20,
+    "chance": 0.25,
+    "coverage_pc20": 0.9998,
+    "pc20_lin": {
+     "10": 0.96,
+     "20": 0.956
+    },
+    "pc20_svm": {
+     "10": 0.915,
+     "20": 0.968
+    },
+    "full_svm": {
+     "10": 0.939,
+     "20": 0.939
+    },
+    "resid_svm": {
+     "10": 0.276,
+     "20": 0.277
+    },
+    "pc20_full": 0.964,
+    "resid_full": 0.332,
+    "full_full": 0.939,
+    "headroom_full": -0.029,
+    "resid_lift": 0.027,
+    "verdict": "borderline"
+   },
+   "phys": {
+    "n": 120,
+    "n_channel": 570,
+    "n_class": 4,
+    "n_train": 96,
+    "n_test": 24,
+    "k": 20,
+    "chance": 0.25,
+    "coverage_pc20": 0.9998,
+    "pc20_lin": {
+     "10": 0.847,
+     "20": 0.847
+    },
+    "pc20_svm": {
+     "10": 0.889,
+     "20": 0.833
+    },
+    "full_svm": {
+     "10": 0.944,
+     "20": 0.903
+    },
+    "resid_svm": {
+     "10": 0.132,
+     "20": 0.188
+    },
+    "pc20_full": 0.833,
+    "resid_full": 0.229,
+    "full_full": 0.917,
+    "headroom_full": 0.056,
+    "resid_lift": -0.062,
+    "verdict": "headroom_present"
+   }
+  },
+  "QIB_coffee": {
+   "random": {
+    "n": 56,
+    "n_channel": 286,
+    "n_class": 2,
+    "n_train": 44,
+    "n_test": 12,
+    "k": 20,
+    "chance": 0.5,
+    "coverage_pc20": 1.0,
+    "pc20_lin": {
+     "10": 0.944,
+     "20": 1.0
+    },
+    "pc20_svm": {
+     "10": 0.889,
+     "20": 1.0
+    },
+    "full_svm": {
+     "10": 0.889,
+     "20": 0.917
+    },
+    "resid_svm": {
+     "10": 0.528,
+     "20": 0.5
+    },
+    "pc20_full": 1.0,
+    "resid_full": 0.583,
+    "full_full": 1.0,
+    "headroom_full": -0.083,
+    "resid_lift": 0.0,
+    "verdict": "no_headroom"
+   },
+   "phys": {
+    "n": 56,
+    "n_channel": 286,
+    "n_class": 2,
+    "n_train": 45,
+    "n_test": 11,
+    "k": 20,
+    "chance": 0.5,
+    "coverage_pc20": 1.0,
+    "pc20_lin": {
+     "10": 0.976,
+     "20": 1.0
+    },
+    "pc20_svm": {
+     "10": 0.851,
+     "20": 1.0
+    },
+    "full_svm": {
+     "10": 0.762,
+     "20": 0.952
+    },
+    "resid_svm": {
+     "10": 0.565,
+     "20": 0.5
+    },
+    "pc20_full": 1.0,
+    "resid_full": 0.625,
+    "full_full": 0.929,
+    "headroom_full": -0.048,
+    "resid_lift": 0.0,
+    "verdict": "no_headroom"
+   }
+  },
+  "QIB_purees": {
+   "random": {
+    "n": 983,
+    "n_channel": 235,
+    "n_class": 2,
+    "n_train": 785,
+    "n_test": 198,
+    "k": 20,
+    "chance": 0.5,
+    "coverage_pc20": 0.9998,
+    "pc20_lin": {
+     "10": 0.829,
+     "20": 0.865
+    },
+    "pc20_svm": {
+     "10": 0.884,
+     "20": 0.906
+    },
+    "full_svm": {
+     "10": 0.845,
+     "20": 0.886
+    },
+    "resid_svm": {
+     "10": 0.593,
+     "20": 0.669
+    },
+    "pc20_full": 0.934,
+    "resid_full": 0.888,
+    "full_full": 0.969,
+    "headroom_full": -0.02,
+    "resid_lift": 0.169,
+    "verdict": "headroom_present"
+   },
+   "phys": {
+    "n": 983,
+    "n_channel": 235,
+    "n_class": 2,
+    "n_train": 786,
+    "n_test": 197,
+    "k": 20,
+    "chance": 0.5,
+    "coverage_pc20": 0.9997,
+    "pc20_lin": {
+     "10": 0.828,
+     "20": 0.899
+    },
+    "pc20_svm": {
+     "10": 0.861,
+     "20": 0.936
+    },
+    "full_svm": {
+     "10": 0.804,
+     "20": 0.9
+    },
+    "resid_svm": {
+     "10": 0.606,
+     "20": 0.66
+    },
+    "pc20_full": 0.935,
+    "resid_full": 0.903,
+    "full_full": 0.981,
+    "headroom_full": -0.036,
+    "resid_lift": 0.16,
+    "verdict": "headroom_present"
+   }
+  }
+ },
+ "meta": {
+  "HONEY_level": {
+   "matrix": "honey",
+   "adulterant": "sucrose",
+   "task": "declared level as class",
+   "instrument": "FTIR transmission (%T -> A)",
+   "unit": "absorbance"
+  },
+  "COCO_traditional": {
+   "matrix": "coconut milk",
+   "adulterant": "water",
+   "task": "water level as class",
+   "instrument": "FTIR, 2501-4000 cm-1 (NIR region, not ATR fingerprint)",
+   "unit": "as delivered"
+  },
+  "COCO_instant": {
+   "matrix": "coconut milk",
+   "adulterant": "water",
+   "task": "water level as class",
+   "instrument": "FTIR, 2501-4000 cm-1 (NIR region, not ATR fingerprint)",
+   "unit": "as delivered"
+  },
+  "QIB_meats": {
+   "matrix": "fresh meat",
+   "task": "species",
+   "instrument": "MIR ATR",
+   "unit": "absorbance",
+   "note": "60 preparations x 2 runs"
+  },
+  "QIB_olive": {
+   "matrix": "olive oil",
+   "task": "country of origin",
+   "instrument": "MIR ATR",
+   "unit": "absorbance",
+   "note": "60 oils x 2 sessions"
+  },
+  "QIB_coffee": {
+   "matrix": "instant coffee",
+   "task": "species",
+   "instrument": "DRIFT (not ATR)",
+   "unit": "suspected %T, un-converted - see memo",
+   "note": "56 samples, one spectrum each"
+  },
+  "QIB_purees": {
+   "matrix": "fruit puree",
+   "task": "strawberry / not",
+   "instrument": "MIR",
+   "unit": "values ~4e-3 with negatives: already preprocessed, not raw absorbance"
+  }
+ }
+}

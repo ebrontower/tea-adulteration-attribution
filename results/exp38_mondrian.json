@@ -1,0 +1,744 @@
+{
+ "alpha": 0.1,
+ "alphas": [
+  0.05,
+  0.1,
+  0.15,
+  0.2
+ ],
+ "window": [
+  900.0,
+  1800.0
+ ],
+ "arms": {
+  "0.05": {
+   "marginal": {
+    "coverage": 0.976,
+    "size": 27.81,
+    "empty": 0.011,
+    "cond_coverage": 0.987,
+    "groups": {
+     "single": {
+      "coverage": 0.986,
+      "size": 27.08,
+      "empty": 0.014,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 1.0,
+      "size": 28.72,
+      "empty": 0.0,
+      "cond_coverage": 1.0
+     },
+     "ternary": {
+      "coverage": 0.88,
+      "size": 32.0,
+      "empty": 0.0,
+      "cond_coverage": 0.88
+     }
+    }
+   },
+   "mondrian_true": {
+    "coverage": 0.953,
+    "size": 14.41,
+    "empty": 0.018,
+    "cond_coverage": 0.971,
+    "groups": {
+     "single": {
+      "coverage": 0.977,
+      "size": 12.73,
+      "empty": 0.023,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 0.8,
+      "size": 7.62,
+      "empty": 0.0,
+      "cond_coverage": 0.8
+     },
+     "ternary": {
+      "coverage": 0.94,
+      "size": 32.96,
+      "empty": 0.0,
+      "cond_coverage": 0.94
+     }
+    }
+   },
+   "mondrian_pred": {
+    "coverage": 0.976,
+    "size": 27.81,
+    "empty": 0.011,
+    "cond_coverage": 0.987,
+    "groups": {
+     "single": {
+      "coverage": 0.986,
+      "size": 27.08,
+      "empty": 0.014,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 1.0,
+      "size": 28.72,
+      "empty": 0.0,
+      "cond_coverage": 1.0
+     },
+     "ternary": {
+      "coverage": 0.88,
+      "size": 32.0,
+      "empty": 0.0,
+      "cond_coverage": 0.88
+     }
+    }
+   },
+   "mondrian_abstain": {
+    "coverage": 0.976,
+    "size": 27.81,
+    "empty": 0.011,
+    "cond_coverage": 0.987,
+    "groups": {
+     "single": {
+      "coverage": 0.986,
+      "size": 27.08,
+      "empty": 0.014,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 1.0,
+      "size": 28.72,
+      "empty": 0.0,
+      "cond_coverage": 1.0
+     },
+     "ternary": {
+      "coverage": 0.88,
+      "size": 32.0,
+      "empty": 0.0,
+      "cond_coverage": 0.88
+     }
+    }
+   },
+   "mondrian_clf": {
+    "coverage": 0.956,
+    "size": 20.62,
+    "empty": 0.016,
+    "cond_coverage": 0.971,
+    "groups": {
+     "single": {
+      "coverage": 0.98,
+      "size": 20.73,
+      "empty": 0.02,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 0.8,
+      "size": 7.58,
+      "empty": 0.0,
+      "cond_coverage": 0.8
+     },
+     "ternary": {
+      "coverage": 0.94,
+      "size": 32.86,
+      "empty": 0.0,
+      "cond_coverage": 0.94
+     }
+    }
+   }
+  },
+  "0.10": {
+   "marginal": {
+    "coverage": 0.907,
+    "size": 25.04,
+    "empty": 0.013,
+    "cond_coverage": 0.919,
+    "groups": {
+     "single": {
+      "coverage": 0.983,
+      "size": 24.39,
+      "empty": 0.017,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 1.0,
+      "size": 26.06,
+      "empty": 0.0,
+      "cond_coverage": 1.0
+     },
+     "ternary": {
+      "coverage": 0.28,
+      "size": 28.58,
+      "empty": 0.0,
+      "cond_coverage": 0.28
+     }
+    }
+   },
+   "mondrian_true": {
+    "coverage": 0.918,
+    "size": 8.64,
+    "empty": 0.047,
+    "cond_coverage": 0.963,
+    "groups": {
+     "single": {
+      "coverage": 0.94,
+      "size": 5.41,
+      "empty": 0.06,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 0.74,
+      "size": 7.04,
+      "empty": 0.0,
+      "cond_coverage": 0.74
+     },
+     "ternary": {
+      "coverage": 0.94,
+      "size": 32.86,
+      "empty": 0.0,
+      "cond_coverage": 0.94
+     }
+    }
+   },
+   "mondrian_pred": {
+    "coverage": 0.907,
+    "size": 25.04,
+    "empty": 0.013,
+    "cond_coverage": 0.919,
+    "groups": {
+     "single": {
+      "coverage": 0.983,
+      "size": 24.39,
+      "empty": 0.017,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 1.0,
+      "size": 26.06,
+      "empty": 0.0,
+      "cond_coverage": 1.0
+     },
+     "ternary": {
+      "coverage": 0.28,
+      "size": 28.58,
+      "empty": 0.0,
+      "cond_coverage": 0.28
+     }
+    }
+   },
+   "mondrian_abstain": {
+    "coverage": 0.907,
+    "size": 25.04,
+    "empty": 0.013,
+    "cond_coverage": 0.919,
+    "groups": {
+     "single": {
+      "coverage": 0.983,
+      "size": 24.39,
+      "empty": 0.017,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 1.0,
+      "size": 26.06,
+      "empty": 0.0,
+      "cond_coverage": 1.0
+     },
+     "ternary": {
+      "coverage": 0.28,
+      "size": 28.58,
+      "empty": 0.0,
+      "cond_coverage": 0.28
+     }
+    }
+   },
+   "mondrian_clf": {
+    "coverage": 0.911,
+    "size": 9.54,
+    "empty": 0.044,
+    "cond_coverage": 0.953,
+    "groups": {
+     "single": {
+      "coverage": 0.943,
+      "size": 6.65,
+      "empty": 0.057,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 0.74,
+      "size": 7.02,
+      "empty": 0.0,
+      "cond_coverage": 0.74
+     },
+     "ternary": {
+      "coverage": 0.86,
+      "size": 32.32,
+      "empty": 0.0,
+      "cond_coverage": 0.86
+     }
+    }
+   }
+  },
+  "0.15": {
+   "marginal": {
+    "coverage": 0.864,
+    "size": 12.96,
+    "empty": 0.018,
+    "cond_coverage": 0.88,
+    "groups": {
+     "single": {
+      "coverage": 0.977,
+      "size": 13.05,
+      "empty": 0.023,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 0.94,
+      "size": 12.68,
+      "empty": 0.0,
+      "cond_coverage": 0.94
+     },
+     "ternary": {
+      "coverage": 0.0,
+      "size": 12.6,
+      "empty": 0.0,
+      "cond_coverage": 0.0
+     }
+    }
+   },
+   "mondrian_true": {
+    "coverage": 0.896,
+    "size": 7.49,
+    "empty": 0.067,
+    "cond_coverage": 0.96,
+    "groups": {
+     "single": {
+      "coverage": 0.914,
+      "size": 4.02,
+      "empty": 0.086,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 0.74,
+      "size": 6.8,
+      "empty": 0.0,
+      "cond_coverage": 0.74
+     },
+     "ternary": {
+      "coverage": 0.92,
+      "size": 32.44,
+      "empty": 0.0,
+      "cond_coverage": 0.92
+     }
+    }
+   },
+   "mondrian_pred": {
+    "coverage": 0.864,
+    "size": 12.96,
+    "empty": 0.018,
+    "cond_coverage": 0.88,
+    "groups": {
+     "single": {
+      "coverage": 0.977,
+      "size": 13.05,
+      "empty": 0.023,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 0.94,
+      "size": 12.68,
+      "empty": 0.0,
+      "cond_coverage": 0.94
+     },
+     "ternary": {
+      "coverage": 0.0,
+      "size": 12.6,
+      "empty": 0.0,
+      "cond_coverage": 0.0
+     }
+    }
+   },
+   "mondrian_abstain": {
+    "coverage": 0.864,
+    "size": 12.96,
+    "empty": 0.018,
+    "cond_coverage": 0.88,
+    "groups": {
+     "single": {
+      "coverage": 0.977,
+      "size": 13.05,
+      "empty": 0.023,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 0.94,
+      "size": 12.68,
+      "empty": 0.0,
+      "cond_coverage": 0.94
+     },
+     "ternary": {
+      "coverage": 0.0,
+      "size": 12.6,
+      "empty": 0.0,
+      "cond_coverage": 0.0
+     }
+    }
+   },
+   "mondrian_clf": {
+    "coverage": 0.896,
+    "size": 8.0,
+    "empty": 0.051,
+    "cond_coverage": 0.944,
+    "groups": {
+     "single": {
+      "coverage": 0.934,
+      "size": 4.8,
+      "empty": 0.066,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 0.74,
+      "size": 6.72,
+      "empty": 0.0,
+      "cond_coverage": 0.74
+     },
+     "ternary": {
+      "coverage": 0.78,
+      "size": 31.68,
+      "empty": 0.0,
+      "cond_coverage": 0.78
+     }
+    }
+   }
+  },
+  "0.20": {
+   "marginal": {
+    "coverage": 0.809,
+    "size": 7.26,
+    "empty": 0.033,
+    "cond_coverage": 0.837,
+    "groups": {
+     "single": {
+      "coverage": 0.963,
+      "size": 7.69,
+      "empty": 0.037,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 0.54,
+      "size": 5.64,
+      "empty": 0.02,
+      "cond_coverage": 0.551
+     },
+     "ternary": {
+      "coverage": 0.0,
+      "size": 5.84,
+      "empty": 0.02,
+      "cond_coverage": 0.0
+     }
+    }
+   },
+   "mondrian_true": {
+    "coverage": 0.86,
+    "size": 6.63,
+    "empty": 0.087,
+    "cond_coverage": 0.942,
+    "groups": {
+     "single": {
+      "coverage": 0.886,
+      "size": 2.99,
+      "empty": 0.111,
+      "cond_coverage": 0.997
+     },
+     "binary": {
+      "coverage": 0.68,
+      "size": 6.42,
+      "empty": 0.0,
+      "cond_coverage": 0.68
+     },
+     "ternary": {
+      "coverage": 0.86,
+      "size": 32.3,
+      "empty": 0.0,
+      "cond_coverage": 0.86
+     }
+    }
+   },
+   "mondrian_pred": {
+    "coverage": 0.809,
+    "size": 7.26,
+    "empty": 0.033,
+    "cond_coverage": 0.837,
+    "groups": {
+     "single": {
+      "coverage": 0.963,
+      "size": 7.69,
+      "empty": 0.037,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 0.54,
+      "size": 5.64,
+      "empty": 0.02,
+      "cond_coverage": 0.551
+     },
+     "ternary": {
+      "coverage": 0.0,
+      "size": 5.84,
+      "empty": 0.02,
+      "cond_coverage": 0.0
+     }
+    }
+   },
+   "mondrian_abstain": {
+    "coverage": 0.809,
+    "size": 7.26,
+    "empty": 0.033,
+    "cond_coverage": 0.837,
+    "groups": {
+     "single": {
+      "coverage": 0.963,
+      "size": 7.69,
+      "empty": 0.037,
+      "cond_coverage": 1.0
+     },
+     "binary": {
+      "coverage": 0.54,
+      "size": 5.64,
+      "empty": 0.02,
+      "cond_coverage": 0.551
+     },
+     "ternary": {
+      "coverage": 0.0,
+      "size": 5.84,
+      "empty": 0.02,
+      "cond_coverage": 0.0
+     }
+    }
+   },
+   "mondrian_clf": {
+    "coverage": 0.847,
+    "size": 6.92,
+    "empty": 0.073,
+    "cond_coverage": 0.914,
+    "groups": {
+     "single": {
+      "coverage": 0.903,
+      "size": 3.57,
+      "empty": 0.094,
+      "cond_coverage": 0.997
+     },
+     "binary": {
+      "coverage": 0.68,
+      "size": 6.38,
+      "empty": 0.0,
+      "cond_coverage": 0.68
+     },
+     "ternary": {
+      "coverage": 0.62,
+      "size": 30.92,
+      "empty": 0.0,
+      "cond_coverage": 0.62
+     }
+    }
+   }
+  }
+ },
+ "folds": {
+  "q_marginal": [
+   100.859,
+   102.513,
+   95.011,
+   94.504,
+   124.166
+  ],
+  "q_true": {
+   "single": [
+    64.041,
+    59.061,
+    59.018,
+    58.686,
+    84.32
+   ],
+   "binary": [
+    73.214,
+    64.028,
+    61.151,
+    67.067,
+    100.589
+   ],
+   "ternary": [
+    108.441,
+    109.629,
+    101.121,
+    103.385,
+    135.167
+   ]
+  },
+  "q_pred": {
+   "single": [
+    100.859,
+    102.513,
+    95.011,
+    94.504,
+    124.166
+   ],
+   "binary": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "ternary": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  "cal_mass": {
+   "single": [
+    180,
+    180,
+    180,
+    180,
+    180
+   ],
+   "binary": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "ternary": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "cal_mass_clf": {
+   "single": [
+    120,
+    121,
+    126,
+    125,
+    122
+   ],
+   "binary": [
+    20,
+    24,
+    20,
+    20,
+    24
+   ],
+   "ternary": [
+    40,
+    35,
+    34,
+    35,
+    34
+   ]
+  },
+  "q_clf": {
+   "single": [
+    67.603,
+    59.338,
+    57.252,
+    59.275,
+    83.432
+   ],
+   "binary": [
+    73.214,
+    64.005,
+    61.151,
+    67.067,
+    100.067
+   ],
+   "ternary": [
+    102.925,
+    108.371,
+    98.586,
+    100.634,
+    133.001
+   ]
+  },
+  "clf_acc": [
+   0.889,
+   0.894,
+   0.922,
+   0.917,
+   0.9
+  ]
+ },
+ "group_identifiability": {
+  "accuracy": 0.778,
+  "confusion": {
+   "single": {
+    "single": 350,
+    "binary": 0,
+    "ternary": 0
+   },
+   "binary": {
+    "single": 50,
+    "binary": 0,
+    "ternary": 0
+   },
+   "ternary": {
+    "single": 50,
+    "binary": 0,
+    "ternary": 0
+   }
+  }
+ },
+ "zero_shot": {
+  "0.05": {
+   "q": 102.84,
+   "coverage": 0.62,
+   "size": 18.51,
+   "empty": 0.0,
+   "binary_coverage": 1.0,
+   "ternary_coverage": 0.24,
+   "binary_empty": 0.0,
+   "ternary_empty": 0.0
+  },
+  "0.10": {
+   "q": 77.612,
+   "coverage": 0.37,
+   "size": 3.81,
+   "empty": 0.15,
+   "binary_coverage": 0.74,
+   "ternary_coverage": 0.0,
+   "binary_empty": 0.06,
+   "ternary_empty": 0.24
+  },
+  "0.15": {
+   "q": 57.334,
+   "coverage": 0.04,
+   "size": 0.48,
+   "empty": 0.6,
+   "binary_coverage": 0.08,
+   "ternary_coverage": 0.0,
+   "binary_empty": 0.54,
+   "ternary_empty": 0.66
+  },
+  "0.20": {
+   "q": 51.944,
+   "coverage": 0.0,
+   "size": 0.22,
+   "empty": 0.8,
+   "binary_coverage": 0.0,
+   "ternary_coverage": 0.0,
+   "binary_empty": 0.78,
+   "ternary_empty": 0.82
+  }
+ },
+ "zero_shot_support": {
+  "n_cal": 175,
+  "cal_max": 132.535,
+  "ternary_min": 93.078,
+  "ratio": 0.702,
+  "cal_fraction_above": 0.091,
+  "alpha_needed": 0.9086
+ }
+}

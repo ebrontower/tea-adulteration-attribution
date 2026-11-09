@@ -1,0 +1,742 @@
+{
+ "prereg": "preregistrations/exp47-N_noise_stress_preregistration_v1.md",
+ "protocol": "exp47 folds and arms unchanged (blocked 5-fold, fit blocks<5 / cal blocks>=5 / test blocks%5==k); noise applied per fold with its own seed; every arm sees the same X_n; k=0 reference cell runs through this same per-fold path",
+ "families": [
+  "iso",
+  "sub",
+  "drift"
+ ],
+ "levels": [
+  2.0,
+  10.0
+ ],
+ "regimes": [
+  "matched",
+  "shift"
+ ],
+ "stages": {
+  "T1_T2": false,
+  "partA": true
+ },
+ "torch_arms": "cnn and cnn6 excluded from this sweep (see module docstring)",
+ "noise_definitions": {
+  "iso": "iid Gaussian, SD = k x mean within-class residual SD over channels",
+  "sub": "k x draw from the within-class residual covariance on its leading 60 directions - the part the whitener absorbs by construction",
+  "drift": "k x (random offset + random slope), per-channel amplitude = observed between-block drift SD fitted on training blocks only"
+ },
+ "calibration": "noise magnitude is a multiple of this corpus's own measured repeatability / block drift, never an arbitrary SNR",
+ "window": [
+  900.0,
+  1800.0
+ ],
+ "seed_base": 1000,
+ "n_spectra": 450,
+ "n_channels": 933,
+ "cells": [
+  {
+   "family": "iso",
+   "k": 2.0,
+   "regime": "shift",
+   "n_folds": 5,
+   "minutes": 32.552,
+   "noise_rms_per_channel": [
+    0.203,
+    0.204,
+    0.203,
+    0.204,
+    0.184
+   ],
+   "fold_errors": [],
+   "A_adult_auroc": {
+    "ae_resid": 0.531,
+    "d2m0": 0.5,
+    "hotelling_t2": 0.599,
+    "knn_all_raw": 0.595,
+    "knn_all_white": 0.504,
+    "knn_pure_raw": 0.5,
+    "maha_white": 0.505,
+    "ours_gate": 0.561,
+    "ours_gate_abs": 0.504,
+    "spe_q": 0.51
+   },
+   "A_adult_flag10": {
+    "ae_resid": 0.167,
+    "d2m0": 0.11,
+    "hotelling_t2": 0.25,
+    "knn_all_raw": 0.213,
+    "knn_all_white": 0.12,
+    "knn_pure_raw": 0.107,
+    "maha_white": 0.117,
+    "ours_gate": 0.22,
+    "ours_gate_abs": 0.12,
+    "spe_q": 0.13
+   },
+   "A_composite": {
+    "ae_resid": {
+     "auroc": 0.786,
+     "orphan_flag_at_tau": 1.0,
+     "inset_flag_at_tau": 1.0,
+     "orphan_flag_at_10pct_inset": 0.51,
+     "coverage_accepted": null,
+     "mean_size_accepted": null,
+     "top1_accepted": null
+    },
+    "ae_resid_pub": {
+     "auroc": 0.656,
+     "orphan_flag_at_tau": 1.0,
+     "inset_flag_at_tau": 1.0,
+     "orphan_flag_at_10pct_inset": 0.25,
+     "coverage_accepted": null,
+     "mean_size_accepted": null,
+     "top1_accepted": null
+    },
+    "d2m0": {
+     "auroc": 0.529,
+     "orphan_flag_at_tau": 0.61,
+     "inset_flag_at_tau": 0.527,
+     "orphan_flag_at_10pct_inset": 0.02,
+     "coverage_accepted": 1.0,
+     "mean_size_accepted": 64.0,
+     "top1_accepted": 0.031
+    },
+    "hotelling_t2": {
+     "auroc": 0.753,
+     "orphan_flag_at_tau": 0.71,
+     "inset_flag_at_tau": 0.353,
+     "orphan_flag_at_10pct_inset": 0.32,
+     "coverage_accepted": 1.0,
+     "mean_size_accepted": 64.0,
+     "top1_accepted": 0.039
+    },
+    "hotelling_t2_pub": {
+     "auroc": 0.487,
+     "orphan_flag_at_tau": 0.36,
+     "inset_flag_at_tau": 0.353,
+     "orphan_flag_at_10pct_inset": 0.08,
+     "coverage_accepted": 1.0,
+     "mean_size_accepted": 64.0,
+     "top1_accepted": 0.038
+    },
+    "knn_all_raw": {
+     "auroc": 0.638,
+     "orphan_flag_at_tau": 1.0,
+     "inset_flag_at_tau": 1.0,
+     "orphan_flag_at_10pct_inset": 0.3,
+     "coverage_accepted": null,
+     "mean_size_accepted": null,
+     "top1_accepted": null
+    },
+    "knn_all_white": {
+     "auroc": 0.452,
+     "orphan_flag_at_tau": 1.0,
+     "inset_flag_at_tau": 1.0,
+     "orphan_flag_at_10pct_inset": 0.07,
+     "coverage_accepted": null,
+     "mean_size_accepted": null,
+     "top1_accepted": null
+    },
+    "knn_all_white_pub": {
+     "auroc": 0.447,
+     "orphan_flag_at_tau": 1.0,
+     "inset_flag_at_tau": 1.0,
+     "orphan_flag_at_10pct_inset": 0.09,
+     "coverage_accepted": null,
+     "mean_size_accepted": null,
+     "top1_accepted": null
+    },
+    "knn_pure_raw": {
+     "auroc": 0.707,
+     "orphan_flag_at_tau": 1.0,
+     "inset_flag_at_tau": 1.0,
+     "orphan_flag_at_10pct_inset": 0.07,
+     "coverage_accepted": null,
+     "mean_size_accepted": null,
+     "top1_accepted": null
+    },
+    "maha_white": {
+     "auroc": 0.454,
+     "orphan_flag_at_tau": 1.0,
+     "inset_flag_at_tau": 1.0,
+     "orphan_flag_at_10pct_inset": 0.07,
+     "coverage_accepted": null,
+     "mean_size_accepted": null,
+     "top1_accepted": null
+    },
+    "maha_white_pub": {
+     "auroc": 0.448,
+     "orphan_flag_at_tau": 1.0,
+     "inset_flag_at_tau": 1.0,
+     "orphan_flag_at_10pct_inset": 0.08,
+     "coverage_accepted": null,
+     "mean_size_accepted": null,
+     "top1_accepted": null
+    },
+    "ocsvm": {
+     "auroc": null,
+     "orphan_flag_at_tau": null,
+     "inset_flag_at_tau": null,
+     "orphan_flag_at_10pct_inset": null,
+     "coverage_accepted": null,
+     "mean_size_accepted": null,
+     "top1_accepted": null
+    },
+    "ocsvm_pub": {
+     "auroc": null,
+     "orphan_flag_at_tau": null,
+     "inset_flag_at_tau": null,
+     "orphan_flag_at_10pct_inset": null,
+     "coverage_accepted": null,
+     "mean_size_accepted": null,
+     "top1_accepted": null
+    },
+    "ours_gate": {
+     "auroc": 0.463,
+     "orphan_flag_at_tau": 0.0,
+     "inset_flag_at_tau": 0.0,
+     "orphan_flag_at_10pct_inset": 0.08,
+     "coverage_accepted": 1.0,
+     "mean_size_accepted": 64.0,
+     "top1_accepted": 0.037
+    },
+    "ours_gate_abs": {
+     "auroc": 0.452,
+     "orphan_flag_at_tau": 1.0,
+     "inset_flag_at_tau": 1.0,
+     "orphan_flag_at_10pct_inset": 0.07,
+     "coverage_accepted": null,
+     "mean_size_accepted": null,
+     "top1_accepted": null
+    },
+    "ours_gate_pub": {
+     "auroc": 0.515,
+     "orphan_flag_at_tau": 0.2,
+     "inset_flag_at_tau": 0.2,
+     "orphan_flag_at_10pct_inset": 0.12,
+     "coverage_accepted": 1.0,
+     "mean_size_accepted": 64.0,
+     "top1_accepted": 0.042
+    },
+    "spe_q": {
+     "auroc": 0.463,
+     "orphan_flag_at_tau": 1.0,
+     "inset_flag_at_tau": 1.0,
+     "orphan_flag_at_10pct_inset": 0.08,
+     "coverage_accepted": null,
+     "mean_size_accepted": null,
+     "top1_accepted": null
+    },
+    "spe_q_pub": {
+     "auroc": 0.449,
+     "orphan_flag_at_tau": 1.0,
+     "inset_flag_at_tau": 1.0,
+     "orphan_flag_at_10pct_inset": 0.08,
+     "coverage_accepted": null,
+     "mean_size_accepted": null,
+     "top1_accepted": null
+    }
+   },
+   "A_composite_absent": {
+    "ae_resid": [],
+    "ae_resid_pub": [],
+    "d2m0": [],
+    "hotelling_t2": [],
+    "hotelling_t2_pub": [],
+    "knn_all_raw": [],
+    "knn_all_white": [],
+    "knn_all_white_pub": [],
+    "knn_pure_raw": [],
+    "maha_white": [],
+    "maha_white_pub": [],
+    "ocsvm": [
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])"
+    ],
+    "ocsvm_pub": [
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])"
+    ],
+    "ours_gate": [],
+    "ours_gate_abs": [],
+    "ours_gate_pub": [],
+    "spe_q": [],
+    "spe_q_pub": []
+   }
+  },
+  {
+   "family": "sub",
+   "k": 2.0,
+   "regime": "shift",
+   "n_folds": 5,
+   "minutes": 40.824,
+   "noise_rms_per_channel": [
+    0.181,
+    0.157,
+    0.183,
+    0.172,
+    0.15
+   ],
+   "fold_errors": [],
+   "A_adult_auroc": {
+    "ae_resid": 0.517,
+    "d2m0": 0.5,
+    "hotelling_t2": 0.594,
+    "knn_all_raw": 0.535,
+    "knn_all_white": 0.833,
+    "knn_pure_raw": 0.5,
+    "maha_white": 0.746,
+    "ours_gate": 0.847,
+    "ours_gate_abs": 0.883,
+    "spe_q": 0.671
+   },
+   "A_adult_flag10": {
+    "ae_resid": 0.12,
+    "d2m0": 0.12,
+    "hotelling_t2": 0.25,
+    "knn_all_raw": 0.143,
+    "knn_all_white": 0.453,
+    "knn_pure_raw": 0.113,
+    "maha_white": 0.487,
+    "ours_gate": 0.59,
+    "ours_gate_abs": 0.63,
+    "spe_q": 0.3
+   },
+   "A_composite": {
+    "ae_resid": {
+     "auroc": 0.682,
+     "orphan_flag_at_tau": 0.8,
+     "inset_flag_at_tau": 0.563,
+     "orphan_flag_at_10pct_inset": 0.28,
+     "coverage_accepted": 0.889,
+     "mean_size_accepted": 1.098,
+     "top1_accepted": 0.876
+    },
+    "ae_resid_pub": {
+     "auroc": 0.604,
+     "orphan_flag_at_tau": 0.64,
+     "inset_flag_at_tau": 0.493,
+     "orphan_flag_at_10pct_inset": 0.17,
+     "coverage_accepted": 0.905,
+     "mean_size_accepted": 1.155,
+     "top1_accepted": 0.863
+    },
+    "d2m0": {
+     "auroc": 0.559,
+     "orphan_flag_at_tau": 0.41,
+     "inset_flag_at_tau": 0.357,
+     "orphan_flag_at_10pct_inset": 0.1,
+     "coverage_accepted": 0.877,
+     "mean_size_accepted": 1.086,
+     "top1_accepted": 0.866
+    },
+    "hotelling_t2": {
+     "auroc": 0.687,
+     "orphan_flag_at_tau": 0.76,
+     "inset_flag_at_tau": 0.6,
+     "orphan_flag_at_10pct_inset": 0.4,
+     "coverage_accepted": 0.891,
+     "mean_size_accepted": 1.133,
+     "top1_accepted": 0.859
+    },
+    "hotelling_t2_pub": {
+     "auroc": 0.527,
+     "orphan_flag_at_tau": 0.52,
+     "inset_flag_at_tau": 0.487,
+     "orphan_flag_at_10pct_inset": 0.17,
+     "coverage_accepted": 0.871,
+     "mean_size_accepted": 1.164,
+     "top1_accepted": 0.822
+    },
+    "knn_all_raw": {
+     "auroc": 0.593,
+     "orphan_flag_at_tau": 0.53,
+     "inset_flag_at_tau": 0.364,
+     "orphan_flag_at_10pct_inset": 0.11,
+     "coverage_accepted": 0.89,
+     "mean_size_accepted": 1.076,
+     "top1_accepted": 0.87
+    },
+    "knn_all_white": {
+     "auroc": 0.778,
+     "orphan_flag_at_tau": 0.52,
+     "inset_flag_at_tau": 0.257,
+     "orphan_flag_at_10pct_inset": 0.3,
+     "coverage_accepted": 0.919,
+     "mean_size_accepted": 1.11,
+     "top1_accepted": 0.883
+    },
+    "knn_all_white_pub": {
+     "auroc": 0.448,
+     "orphan_flag_at_tau": 0.37,
+     "inset_flag_at_tau": 0.38,
+     "orphan_flag_at_10pct_inset": 0.05,
+     "coverage_accepted": 0.938,
+     "mean_size_accepted": 1.016,
+     "top1_accepted": 0.932
+    },
+    "knn_pure_raw": {
+     "auroc": 0.609,
+     "orphan_flag_at_tau": 0.55,
+     "inset_flag_at_tau": 0.383,
+     "orphan_flag_at_10pct_inset": 0.11,
+     "coverage_accepted": 0.877,
+     "mean_size_accepted": 1.056,
+     "top1_accepted": 0.867
+    },
+    "maha_white": {
+     "auroc": 0.811,
+     "orphan_flag_at_tau": 0.75,
+     "inset_flag_at_tau": 0.33,
+     "orphan_flag_at_10pct_inset": 0.44,
+     "coverage_accepted": 0.888,
+     "mean_size_accepted": 1.046,
+     "top1_accepted": 0.862
+    },
+    "maha_white_pub": {
+     "auroc": 0.672,
+     "orphan_flag_at_tau": 0.68,
+     "inset_flag_at_tau": 0.4,
+     "orphan_flag_at_10pct_inset": 0.27,
+     "coverage_accepted": 0.877,
+     "mean_size_accepted": 1.015,
+     "top1_accepted": 0.871
+    },
+    "ocsvm": {
+     "auroc": null,
+     "orphan_flag_at_tau": null,
+     "inset_flag_at_tau": null,
+     "orphan_flag_at_10pct_inset": null,
+     "coverage_accepted": null,
+     "mean_size_accepted": null,
+     "top1_accepted": null
+    },
+    "ocsvm_pub": {
+     "auroc": null,
+     "orphan_flag_at_tau": null,
+     "inset_flag_at_tau": null,
+     "orphan_flag_at_10pct_inset": null,
+     "coverage_accepted": null,
+     "mean_size_accepted": null,
+     "top1_accepted": null
+    },
+    "ours_gate": {
+     "auroc": 0.658,
+     "orphan_flag_at_tau": 0.22,
+     "inset_flag_at_tau": 0.087,
+     "orphan_flag_at_10pct_inset": 0.33,
+     "coverage_accepted": 0.894,
+     "mean_size_accepted": 1.199,
+     "top1_accepted": 0.83
+    },
+    "ours_gate_abs": {
+     "auroc": 0.771,
+     "orphan_flag_at_tau": 0.51,
+     "inset_flag_at_tau": 0.253,
+     "orphan_flag_at_10pct_inset": 0.27,
+     "coverage_accepted": 0.919,
+     "mean_size_accepted": 1.154,
+     "top1_accepted": 0.874
+    },
+    "ours_gate_pub": {
+     "auroc": 0.922,
+     "orphan_flag_at_tau": 0.91,
+     "inset_flag_at_tau": 0.223,
+     "orphan_flag_at_10pct_inset": 0.9,
+     "coverage_accepted": 0.915,
+     "mean_size_accepted": 1.192,
+     "top1_accepted": 0.857
+    },
+    "spe_q": {
+     "auroc": 0.654,
+     "orphan_flag_at_tau": 0.67,
+     "inset_flag_at_tau": 0.473,
+     "orphan_flag_at_10pct_inset": 0.21,
+     "coverage_accepted": 0.89,
+     "mean_size_accepted": 1.08,
+     "top1_accepted": 0.869
+    },
+    "spe_q_pub": {
+     "auroc": 0.441,
+     "orphan_flag_at_tau": 0.35,
+     "inset_flag_at_tau": 0.463,
+     "orphan_flag_at_10pct_inset": 0.08,
+     "coverage_accepted": 0.931,
+     "mean_size_accepted": 1.06,
+     "top1_accepted": 0.925
+    }
+   },
+   "A_composite_absent": {
+    "ae_resid": [],
+    "ae_resid_pub": [],
+    "d2m0": [],
+    "hotelling_t2": [],
+    "hotelling_t2_pub": [],
+    "knn_all_raw": [],
+    "knn_all_white": [],
+    "knn_all_white_pub": [],
+    "knn_pure_raw": [],
+    "maha_white": [],
+    "maha_white_pub": [],
+    "ocsvm": [
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])"
+    ],
+    "ocsvm_pub": [
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])"
+    ],
+    "ours_gate": [],
+    "ours_gate_abs": [],
+    "ours_gate_pub": [],
+    "spe_q": [],
+    "spe_q_pub": []
+   }
+  },
+  {
+   "family": "drift",
+   "k": 2.0,
+   "regime": "shift",
+   "n_folds": 5,
+   "minutes": 46.438,
+   "noise_rms_per_channel": [
+    0.058,
+    0.054,
+    0.056,
+    0.051,
+    0.05
+   ],
+   "fold_errors": [],
+   "A_adult_auroc": {
+    "ae_resid": 0.535,
+    "d2m0": 0.5,
+    "hotelling_t2": 0.621,
+    "knn_all_raw": 0.61,
+    "knn_all_white": 0.93,
+    "knn_pure_raw": 0.5,
+    "maha_white": 0.831,
+    "ours_gate": 0.942,
+    "ours_gate_abs": 0.95,
+    "spe_q": 0.739
+   },
+   "A_adult_flag10": {
+    "ae_resid": 0.147,
+    "d2m0": 0.12,
+    "hotelling_t2": 0.27,
+    "knn_all_raw": 0.213,
+    "knn_all_white": 0.783,
+    "knn_pure_raw": 0.113,
+    "maha_white": 0.647,
+    "ours_gate": 0.79,
+    "ours_gate_abs": 0.867,
+    "spe_q": 0.367
+   },
+   "A_composite": {
+    "ae_resid": {
+     "auroc": 0.762,
+     "orphan_flag_at_tau": 0.6,
+     "inset_flag_at_tau": 0.263,
+     "orphan_flag_at_10pct_inset": 0.39,
+     "coverage_accepted": 0.968,
+     "mean_size_accepted": 0.986,
+     "top1_accepted": 0.981
+    },
+    "ae_resid_pub": {
+     "auroc": 0.634,
+     "orphan_flag_at_tau": 0.4,
+     "inset_flag_at_tau": 0.203,
+     "orphan_flag_at_10pct_inset": 0.3,
+     "coverage_accepted": 0.958,
+     "mean_size_accepted": 0.97,
+     "top1_accepted": 0.987
+    },
+    "d2m0": {
+     "auroc": 0.519,
+     "orphan_flag_at_tau": 0.07,
+     "inset_flag_at_tau": 0.163,
+     "orphan_flag_at_10pct_inset": 0.02,
+     "coverage_accepted": 0.958,
+     "mean_size_accepted": 0.969,
+     "top1_accepted": 0.989
+    },
+    "hotelling_t2": {
+     "auroc": 0.694,
+     "orphan_flag_at_tau": 0.65,
+     "inset_flag_at_tau": 0.363,
+     "orphan_flag_at_10pct_inset": 0.28,
+     "coverage_accepted": 0.97,
+     "mean_size_accepted": 0.977,
+     "top1_accepted": 0.993
+    },
+    "hotelling_t2_pub": {
+     "auroc": 0.478,
+     "orphan_flag_at_tau": 0.21,
+     "inset_flag_at_tau": 0.273,
+     "orphan_flag_at_10pct_inset": 0.09,
+     "coverage_accepted": 0.957,
+     "mean_size_accepted": 0.967,
+     "top1_accepted": 0.99
+    },
+    "knn_all_raw": {
+     "auroc": 0.692,
+     "orphan_flag_at_tau": 0.14,
+     "inset_flag_at_tau": 0.077,
+     "orphan_flag_at_10pct_inset": 0.26,
+     "coverage_accepted": 0.954,
+     "mean_size_accepted": 0.972,
+     "top1_accepted": 0.982
+    },
+    "knn_all_white": {
+     "auroc": 0.876,
+     "orphan_flag_at_tau": 0.25,
+     "inset_flag_at_tau": 0.067,
+     "orphan_flag_at_10pct_inset": 0.48,
+     "coverage_accepted": 0.988,
+     "mean_size_accepted": 0.996,
+     "top1_accepted": 0.992
+    },
+    "knn_all_white_pub": {
+     "auroc": 0.386,
+     "orphan_flag_at_tau": 0.02,
+     "inset_flag_at_tau": 0.106,
+     "orphan_flag_at_10pct_inset": 0.03,
+     "coverage_accepted": 0.983,
+     "mean_size_accepted": 0.992,
+     "top1_accepted": 0.991
+    },
+    "knn_pure_raw": {
+     "auroc": 0.641,
+     "orphan_flag_at_tau": 0.18,
+     "inset_flag_at_tau": 0.17,
+     "orphan_flag_at_10pct_inset": 0.05,
+     "coverage_accepted": 0.957,
+     "mean_size_accepted": 0.968,
+     "top1_accepted": 0.988
+    },
+    "maha_white": {
+     "auroc": 0.901,
+     "orphan_flag_at_tau": 0.49,
+     "inset_flag_at_tau": 0.08,
+     "orphan_flag_at_10pct_inset": 0.52,
+     "coverage_accepted": 0.991,
+     "mean_size_accepted": 1.0,
+     "top1_accepted": 0.991
+    },
+    "maha_white_pub": {
+     "auroc": 0.783,
+     "orphan_flag_at_tau": 0.18,
+     "inset_flag_at_tau": 0.097,
+     "orphan_flag_at_10pct_inset": 0.35,
+     "coverage_accepted": 0.982,
+     "mean_size_accepted": 0.991,
+     "top1_accepted": 0.991
+    },
+    "ocsvm": {
+     "auroc": null,
+     "orphan_flag_at_tau": null,
+     "inset_flag_at_tau": null,
+     "orphan_flag_at_10pct_inset": null,
+     "coverage_accepted": null,
+     "mean_size_accepted": null,
+     "top1_accepted": null
+    },
+    "ocsvm_pub": {
+     "auroc": null,
+     "orphan_flag_at_tau": null,
+     "inset_flag_at_tau": null,
+     "orphan_flag_at_10pct_inset": null,
+     "coverage_accepted": null,
+     "mean_size_accepted": null,
+     "top1_accepted": null
+    },
+    "ours_gate": {
+     "auroc": 0.897,
+     "orphan_flag_at_tau": 0.34,
+     "inset_flag_at_tau": 0.06,
+     "orphan_flag_at_10pct_inset": 0.72,
+     "coverage_accepted": 0.985,
+     "mean_size_accepted": 1.0,
+     "top1_accepted": 0.985
+    },
+    "ours_gate_abs": {
+     "auroc": 0.877,
+     "orphan_flag_at_tau": 0.25,
+     "inset_flag_at_tau": 0.067,
+     "orphan_flag_at_10pct_inset": 0.49,
+     "coverage_accepted": 0.988,
+     "mean_size_accepted": 0.996,
+     "top1_accepted": 0.992
+    },
+    "ours_gate_pub": {
+     "auroc": 1.0,
+     "orphan_flag_at_tau": 1.0,
+     "inset_flag_at_tau": 0.067,
+     "orphan_flag_at_10pct_inset": 1.0,
+     "coverage_accepted": 0.972,
+     "mean_size_accepted": 0.984,
+     "top1_accepted": 0.988
+    },
+    "spe_q": {
+     "auroc": 0.776,
+     "orphan_flag_at_tau": 0.14,
+     "inset_flag_at_tau": 0.077,
+     "orphan_flag_at_10pct_inset": 0.32,
+     "coverage_accepted": 0.973,
+     "mean_size_accepted": 0.981,
+     "top1_accepted": 0.992
+    },
+    "spe_q_pub": {
+     "auroc": 0.348,
+     "orphan_flag_at_tau": 0.02,
+     "inset_flag_at_tau": 0.107,
+     "orphan_flag_at_10pct_inset": 0.03,
+     "coverage_accepted": 0.968,
+     "mean_size_accepted": 0.976,
+     "top1_accepted": 0.991
+    }
+   },
+   "A_composite_absent": {
+    "ae_resid": [],
+    "ae_resid_pub": [],
+    "d2m0": [],
+    "hotelling_t2": [],
+    "hotelling_t2_pub": [],
+    "knn_all_raw": [],
+    "knn_all_white": [],
+    "knn_all_white_pub": [],
+    "knn_pure_raw": [],
+    "maha_white": [],
+    "maha_white_pub": [],
+    "ocsvm": [
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])"
+    ],
+    "ocsvm_pub": [
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])",
+     "no usable tau in 1/1 folds (skipped folds [0])"
+    ],
+    "ours_gate": [],
+    "ours_gate_abs": [],
+    "ours_gate_pub": [],
+    "spe_q": [],
+    "spe_q_pub": []
+   }
+  }
+ ]
+}

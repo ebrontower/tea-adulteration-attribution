@@ -1,0 +1,15 @@
+reference cell clean/k=0/matched: ssl T1max 0.869 (ssl_randinit); analytic T1max 0.998 -> comparison only, N7 cannot fire at k=0
+N7 @ iso/k=2.0/matched: analytic T1max 0.609 (raw), SSL T1max 0.316 (ssl_randinit), gap -0.293  -> ceiling opened, SSL did NOT beat the analytic best (needs > +0.02) => N7 NOT fired
+    T2 exact-set (analytic raw): {"gbdt": 0.01, "nls_cal": 0.09, "dictargmin": 0.03}
+    T2 exact-set (analytic white): {"gbdt": 0.01, "nls_cal": 0.02, "dictargmin": 0.01}
+    T2 exact-set (ssl_barlow): {"gbdt": 0.0, "nls_cal": 0.02, "dictargmin": 0.0}
+    T2 exact-set (ssl_randinit): {"gbdt": 0.0, "nls_cal": 0.0, "dictargmin": 0.01}
+    T2 exact-set (ssl_vicreg): {"gbdt": 0.0, "nls_cal": 0.05, "dictargmin": 0.05}
+N7 @ iso/k=2.0/shift: analytic T1max 0.831 (raw), SSL T1max 0.229 (ssl_randinit), gap -0.602  -> ceiling opened, SSL did NOT beat the analytic best (needs > +0.02) => N7 NOT fired
+    T2 exact-set (analytic raw): {"gbdt": 0.13, "nls_cal": 0.08, "dictargmin": 0.05}
+    T2 exact-set (analytic white): {"gbdt": 0.01, "nls_cal": 0.01, "dictargmin": 0.02}
+    T2 exact-set (ssl_barlow): {"gbdt": 0.0, "nls_cal": 0.01, "dictargmin": 0.01}
+    T2 exact-set (ssl_randinit): {"gbdt": 0.0, "nls_cal": 0.0, "dictargmin": 0.01}
+    T2 exact-set (ssl_vicreg): {"gbdt": 0.01, "nls_cal": 0.04, "dictargmin": 0.0}
+
+VERDICT: N7 does NOT fire - §3.10 keeps the SNR qualification and gains the stronger statement that noise-matched pretraining did not reopen the axis
